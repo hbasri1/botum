@@ -1,0 +1,26 @@
+{
+  "test_name": "Süper Akıllı Sistem Testi",
+  "timestamp": "2025-01-20",
+  "test_cases": [
+    {
+      "question": "selamlar fiyat soracaktım",
+      "expected": "Hangi ürün fiyatını öğrenmek istiyorsunuz?",
+      "category": "karmaşık_cümle"
+    },
+    {
+      "question": "afrika geceliği ne kadar",
+      "expected": "Afrika gecelik fiyatı",
+      "category": "türkçe_ek"
+    },
+    {
+      "question": "telefon numarası",
+      "expected": "0555 555 55 55",
+      "category": "meta_bilgi"
+    },
+    {
+      "question": "merhaba",
+      "expected": "Hoş geldiniz mesajı",
+      "category": "selamlama"
+    }
+  ]
+}
