@@ -143,13 +143,13 @@ def ask_gemini(prompt: str):
         }
     }
     response = requests.post(url, headers=headers, json=payload)
-    try:
-        return response.json()["candidates"][0]["content"]["parts"][0]["text"]
-    except:
-        return None
+    return response.json()["candidates"][0]["content"]["parts"][0]["text"]
 
-# OPTİMİZE EDİLMİŞ PROMPT TEMPLATE - V2
-OPTIMIZED_PROMPT_TEMPLATE = """
+def generate_optimized_prompt(question: str) -> str:
+    # Bu fonksiyon, f-string'lerin neden olduğu KeyError'u önlemek için
+    # prompt'u dinamik olarak oluşturur.
+
+    base_prompt = """
 Sen bir e-ticaret müşteri hizmetleri asistanısın. Görevin, kullanıcı sorularını analiz edip SADECE JSON formatında bir çıktı üretmektir.
 
 # ANA KURALLAR
@@ -265,9 +265,10 @@ Soru: "çok teşekkürler"
 ```
 
 # GERÇEK SORU
-Soru: "{{question}}"
+Soru: "{question}"
 Çıktı:
 """
+    return base_prompt.format(question=question)
 
 # Sabit cevaplar - LLM'e gerek yok
 STATIC_RESPONSES = {
@@ -456,63 +457,32 @@ async def ask(question: Question):
 
     # Context kontrolü - önceki soru clarify ise
     context = get_user_context(user_id)
-    if context.get("last_intent") == "clarify":
-        # Kullanıcı ürün ismi verdi, önceki soruya göre işle
-        original_question = context.get("last_question", "")
-        
-        # Eğer önceki soruda "içerik", "detay" gibi kelimeler varsa
-        if any(word in original_question.lower() for word in ["içerik", "detay", "açıklama", "bilgi"]):
-            # Ürün detaylarını göster
-            products = search_products_by_name(query)
-            if products:
-                product = products[0]
-                # Şimdilik basit detay göster
-                answer = f"{product['name']}\n\nFiyat: {product.get('final_price', '-')} TL\nRenk: {product.get('color', '-')}\nStok: {product.get('stock', '-')} adet\nKod: {product.get('code', '-')}"
+    # SADECE LLM - Her şeyi LLM yapsın
+    prompt = generate_optimized_prompt(question.question.strip())
+    result = ask_gemini(prompt)
+    print("RAW LLM RESPONSE:", result)
 
-                # Context'i temizle
-                save_user_context(user_id, query, "product", {"product": query})
-                return {"answer": answer}
-        
-        # Normal ürün sorgusu olarak işle - fiyat default
-        data = {"intent": "product", "product": query, "attr": "fiyat"}
+    if not result:
+        log_failed_query(query, "llm_error", "No response from LLM", "llm_no_response")
+        return {"answer": "Üzgünüm, şu anda yanıt veremiyorum. Lütfen tekrar deneyin."}
+
+    # JSON'u temizle ve parse et
+    result_clean = result.strip()
+    if result_clean.startswith('```json'):
+        result_clean = result_clean[7:]
+    if result_clean.endswith('```'):
+        result_clean = result_clean[:-3]
+    result_clean = result_clean.strip()
+
+    data = None
+    if result_clean:
+        data = json.loads(result_clean)
+        # Orijinal sorguyu da ekleyelim
+    if isinstance(data, dict) and "original_query" not in data:
+            data["original_query"] = query
     else:
-        # SADECE LLM - Her şeyi LLM yapsın
-        prompt = OPTIMIZED_PROMPT_TEMPLATE.format(question=question.question.strip())
-        result = ask_gemini(prompt)
-        print("LLM RESPONSE:", result)
-        
-        if not result:
-            log_failed_query(query, "llm_error", "No response from LLM", "llm_no_response")
-            return {"answer": "Üzgünüm, şu anda yanıt veremiyorum. Lütfen tekrar deneyin."}
-
-        # JSON'u temizle ve parse et
-        result_clean = result.strip()
-        if result_clean.startswith('```json'):
-            result_clean = result_clean[7:]
-        if result_clean.endswith('```'):
-            result_clean = result_clean[:-3]
-        result_clean = result_clean.strip()
-
-        try:
-            data = json.loads(result_clean)
-            # Orijinal sorguyu da ekleyelim
-            if "original_query" not in data:
-                data["original_query"] = query
-        except json.JSONDecodeError:
-            log_failed_query(query, "json_error", result, "json_decode_error")
-            # Regex ile JSON çıkarmaya çalış
-            json_match = re.search(r'\{.*\}', result_clean, re.DOTALL)
-            if json_match:
-                try:
-                    data = json.loads(json_match.group())
-                    if "original_query" not in data:
-                        data["original_query"] = query
-                except json.JSONDecodeError:
-                    log_failed_query(query, "json_error", json_match.group(), "json_regex_decode_error")
-                    return {"answer": "Üzgünüm, sorunuzu işlerken bir sorun oluştu."}
-            else:
-                log_failed_query(query, "json_error", result, "no_json_found")
-                return {"answer": "Üzgünüm, sorunuzu anlayamadım. Lütfen daha açık bir şekilde sorar mısınız?"}
+        log_failed_query(query, "llm_error", "Empty response from LLM", "llm_empty_response")
+        return {"answer": "Üzgünüm, şu anda yanıt veremiyorum. Lütfen tekrar deneyin."}
 
     intent = data.get("intent", "unknown")
 
