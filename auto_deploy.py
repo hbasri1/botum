@@ -88,11 +88,11 @@ def deploy():
         
         # 1. Git pull
         logger.info("📥 Pulling latest changes...")
-        success, stdout, stderr = run_command(f'git fetch origin {BRANCH}', PROJECT_PATH)
+        success, stdout, stderr = run_command(f'/usr/bin/git fetch origin {BRANCH}', PROJECT_PATH)
         if not success:
             return jsonify({'error': f'Git fetch failed: {stderr}'}), 500
         
-        success, stdout, stderr = run_command(f'git reset --hard origin/{BRANCH}', PROJECT_PATH)
+        success, stdout, stderr = run_command(f'/usr/bin/git reset --hard origin/{BRANCH}', PROJECT_PATH)
         if not success:
             return jsonify({'error': f'Git reset failed: {stderr}'}), 500
         
@@ -178,7 +178,7 @@ def deploy_status():
     """Deploy sistemi durumu"""
     try:
         # Git durumu
-        success, stdout, stderr = run_command('git log -1 --oneline', PROJECT_PATH)
+        success, stdout, stderr = run_command('/usr/bin/git log -1 --oneline', PROJECT_PATH)
         last_commit = stdout.strip() if success else 'Unknown'
         
         # Servis durumları
@@ -210,7 +210,7 @@ def manual_deploy():
         logger.info("🔧 Manual deploy triggered...")
         
         # Basit git pull ve restart
-        success, stdout, stderr = run_command(f'git pull origin {BRANCH}', PROJECT_PATH)
+        success, stdout, stderr = run_command(f'/usr/bin/git pull origin {BRANCH}', PROJECT_PATH)
         if not success:
             return jsonify({'error': f'Git pull failed: {stderr}'}), 500
         
