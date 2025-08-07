@@ -14,7 +14,7 @@ BLUE='\033[0;34m'
 NC='\033[0m' # No Color
 
 # Configuration
-BRANCH="chatbot-optimization-jules"
+BRANCH="main"
 SERVER_IP="3.74.156.223"
 SERVER_USER="ubuntu"
 KEY_PATH="~/Downloads/kobibot-key.pem"

@@ -22,7 +22,7 @@ app = Flask(__name__)
 # GitHub webhook secret (güvenlik için)
 WEBHOOK_SECRET = os.getenv('GITHUB_WEBHOOK_SECRET', 'kobibot-deploy-secret-2024')
 PROJECT_PATH = '/home/ubuntu/kobibot'
-BRANCH = 'chatbot-optimization-jules'
+BRANCH = 'main'
 
 def verify_signature(payload_body, signature_header):
     """GitHub webhook signature doğrulama"""
