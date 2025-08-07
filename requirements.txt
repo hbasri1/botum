@@ -1,29 +1,55 @@
-# Core Dependencies
-flask==3.0.0
-flask-cors==4.0.0
+# Core Flask dependencies
+Flask==3.0.0
+Flask-CORS==4.0.0
+Werkzeug==3.0.1
+
+# Environment and configuration
 python-dotenv==1.0.0
 
-# AI/ML Dependencies
-google-generativeai==0.3.2
-scikit-learn==1.3.2
+# HTTP requests
+requests==2.31.0
+
+# Data processing and ML
 numpy==1.24.3
+pandas==2.0.3
+scikit-learn==1.3.0
 
-# Text Processing
-fuzzywuzzy==0.18.0
-python-levenshtein==0.21.1
+# Google AI
+google-generativeai==0.3.2
 
-# File Processing
-pandas==2.1.4
-openpyxl==3.1.2
-xlrd==2.0.1
-
-# AWS Integration
+# AWS Bedrock
 boto3==1.34.0
-botocore==1.34.0
+
+# Text processing
+unidecode==1.3.7
+
+# Date and time
+python-dateutil==2.8.2
+
+# Production server
+gunicorn==21.2.0
+
+# File handling
+openpyxl==3.1.2
 
 # Security
-werkzeug==3.0.1
+cryptography==41.0.7
 
-# Optional: For production deployment
-gunicorn==21.2.0
-waitress==2.1.2
+# Rate limiting
+Flask-Limiter==3.5.0
+
+# Session management
+Flask-Session==0.5.0
+
+# Form handling
+WTForms==3.1.0
+Flask-WTF==1.2.1
+
+# Timezone handling
+pytz==2023.3
+
+# Progress bars
+tqdm==4.66.1
+
+# Performance monitoring
+psutil==5.9.6
