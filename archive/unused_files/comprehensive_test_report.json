@@ -1,0 +1,34 @@
+{
+  "test_timestamp": 1753739158.826265,
+  "total_test_time": 21.058731079101562,
+  "accuracy_stats": {
+    "total_tests": 17,
+    "successful_tests": 16,
+    "correct_intents": 13,
+    "accuracy_rate": 81.25,
+    "success_rate": 94.11764705882352,
+    "average_response_time": 0.5287110656499863,
+    "average_confidence": 0.8
+  },
+  "performance_stats": {
+    "total_requests": 80,
+    "successful_requests": 80,
+    "failed_requests": 0,
+    "success_rate": 100.0,
+    "avg_response_time": 0.1649754226207733,
+    "median_response_time": 0.14022207260131836,
+    "min_response_time": 0.1027688980102539,
+    "max_response_time": 0.3414881229400635,
+    "p95_response_time": 0.3151109218597412,
+    "avg_processing_time": 0.157225,
+    "requests_per_second": 6.061508945479024
+  },
+  "edge_case_stats": {
+    "total_edge_cases": 15,
+    "successful_edge_cases": 14,
+    "edge_success_rate": 93.33333333333333,
+    "avg_edge_response_time": 0.0988978658403669,
+    "unclear_rate": 35.714285714285715
+  },
+  "overall_grade": "A (Very Good)"
+}

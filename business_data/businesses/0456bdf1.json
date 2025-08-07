@@ -1,0 +1,25 @@
+{
+  "business_id": "0456bdf1",
+  "name": "Demo Butik",
+  "email": "demo@butik.com",
+  "phone": "0555 555 55 55",
+  "website": "www.demobutik.com",
+  "instagram_handle": "@demobutik",
+  "sector": "fashion",
+  "status": "trial",
+  "created_at": "2025-08-04T19:25:30.612577",
+  "chatbot_config": {
+    "chatbot_name": "Asistan",
+    "welcome_message": "Merhaba! Demo Butik asistanıyım. Size nasıl yardımcı olabilirim?",
+    "business_info": {
+      "name": "Demo Butik",
+      "phone": "0555 555 55 55",
+      "website": "www.demobutik.com",
+      "email": "demo@butik.com"
+    },
+    "theme": {
+      "primary_color": "#2563eb",
+      "secondary_color": "#64748b"
+    }
+  }
+}

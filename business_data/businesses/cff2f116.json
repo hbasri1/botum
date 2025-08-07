@@ -1,0 +1,25 @@
+{
+  "business_id": "cff2f116",
+  "name": "Test Butik 2025",
+  "email": "ahmet@testbutik.com",
+  "phone": "0555 123 4567",
+  "website": "https://testbutik.com",
+  "instagram_handle": "@testbutik2025",
+  "sector": "fashion",
+  "status": "trial",
+  "created_at": "2025-08-05T15:14:33.486623",
+  "chatbot_config": {
+    "chatbot_name": "Asistan",
+    "welcome_message": "Merhaba! Test Butik 2025 asistanıyım. Size nasıl yardımcı olabilirim?",
+    "business_info": {
+      "name": "Test Butik 2025",
+      "phone": "0555 123 4567",
+      "website": "https://testbutik.com",
+      "email": "ahmet@testbutik.com"
+    },
+    "theme": {
+      "primary_color": "#2563eb",
+      "secondary_color": "#64748b"
+    }
+  }
+}

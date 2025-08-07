@@ -1,0 +1,198 @@
+{
+  "timestamp": 1753740063.672758,
+  "total_tests": 19,
+  "successful_tests": 17,
+  "success_rate": 89.47368421052632,
+  "total_time": 0.18964552879333496,
+  "average_time": 0.00998134362070184,
+  "grade": "B (Good)",
+  "critical_issues": [],
+  "detailed_results": [
+    {
+      "message": "merhaba",
+      "expected_intent": "greeting",
+      "actual_intent": "greeting",
+      "correct": true,
+      "confidence": 0.9,
+      "products_found": 0,
+      "time": 0.008726835250854492,
+      "response_length": 101
+    },
+    {
+      "message": "sağol",
+      "expected_intent": "thanks",
+      "actual_intent": "thanks",
+      "correct": true,
+      "confidence": 0.9,
+      "products_found": 0,
+      "time": 0.004183769226074219,
+      "response_length": 36
+    },
+    {
+      "message": "teşekkürler",
+      "expected_intent": "thanks",
+      "actual_intent": "thanks",
+      "correct": true,
+      "confidence": 0.9,
+      "products_found": 0,
+      "time": 0.004406929016113281,
+      "response_length": 36
+    },
+    {
+      "message": "güle güle",
+      "expected_intent": "goodbye",
+      "actual_intent": "goodbye",
+      "correct": true,
+      "confidence": 0.9,
+      "products_found": 0,
+      "time": 0.006008148193359375,
+      "response_length": 37
+    },
+    {
+      "message": "iyi günler",
+      "expected_intent": "greeting",
+      "actual_intent": "goodbye",
+      "correct": false,
+      "confidence": 0.9,
+      "products_found": 0,
+      "time": 0.00590205192565918,
+      "response_length": 37
+    },
+    {
+      "message": "telefon numaranız",
+      "expected_intent": "phone_inquiry",
+      "actual_intent": "phone_inquiry",
+      "correct": true,
+      "confidence": 0.8,
+      "products_found": 0,
+      "time": 0.007568836212158203,
+      "response_length": 35
+    },
+    {
+      "message": "iade var mı",
+      "expected_intent": "return_policy",
+      "actual_intent": "return_policy",
+      "correct": true,
+      "confidence": 0.8,
+      "products_found": 0,
+      "time": 0.006175994873046875,
+      "response_length": 94
+    },
+    {
+      "message": "kargo bilgisi",
+      "expected_intent": "shipping_info",
+      "actual_intent": "shipping_info",
+      "correct": true,
+      "confidence": 0.8,
+      "products_found": 0,
+      "time": 0.00484776496887207,
+      "response_length": 78
+    },
+    {
+      "message": "web siteniz",
+      "expected_intent": "website_inquiry",
+      "actual_intent": "website_inquiry",
+      "correct": true,
+      "confidence": 0.8,
+      "products_found": 0,
+      "time": 0.0057773590087890625,
+      "response_length": 28
+    },
+    {
+      "message": "afrika gecelik",
+      "expected_intent": "product_search",
+      "actual_intent": "product_search",
+      "correct": true,
+      "confidence": 0.8,
+      "products_found": 1,
+      "time": 0.022140979766845703,
+      "response_length": 177
+    },
+    {
+      "message": "hamile pijama",
+      "expected_intent": "product_search",
+      "actual_intent": "product_search",
+      "correct": true,
+      "confidence": 0.8,
+      "products_found": 5,
+      "time": 0.021322965621948242,
+      "response_length": 738
+    },
+    {
+      "message": "dantelli gecelik",
+      "expected_intent": "product_search",
+      "actual_intent": "product_search",
+      "correct": true,
+      "confidence": 0.8,
+      "products_found": 5,
+      "time": 0.017480134963989258,
+      "response_length": 709
+    },
+    {
+      "message": "siyah takım",
+      "expected_intent": "product_search",
+      "actual_intent": "product_search",
+      "correct": true,
+      "confidence": 0.8,
+      "products_found": 5,
+      "time": 0.01941084861755371,
+      "response_length": 743
+    },
+    {
+      "message": "tamamdırS",
+      "expected_intent": "unclear",
+      "actual_intent": "unclear",
+      "correct": true,
+      "confidence": 0.3,
+      "products_found": 0,
+      "time": 0.0058019161224365234,
+      "response_length": 141
+    },
+    {
+      "message": "asdasd",
+      "expected_intent": "unclear",
+      "actual_intent": "unclear",
+      "correct": true,
+      "confidence": 0.3,
+      "products_found": 0,
+      "time": 0.00550389289855957,
+      "response_length": 141
+    },
+    {
+      "message": "",
+      "error": "HTTP 400",
+      "correct": false,
+      "time": 0.005563974380493164
+    },
+    {
+      "message": "afrika gecelik",
+      "expected_intent": "product_search",
+      "actual_intent": "product_search",
+      "correct": true,
+      "confidence": 0.8,
+      "products_found": 1,
+      "time": 0.03092503547668457,
+      "response_length": 177
+    },
+    {
+      "message": "1",
+      "expected_intent": "followup",
+      "actual_intent": "followup",
+      "correct": true,
+      "confidence": 0.9,
+      "products_found": 0,
+      "time": 0.004694938659667969,
+      "response_length": 177
+    },
+    {
+      "message": "fiyatı",
+      "expected_intent": "followup",
+      "actual_intent": "followup",
+      "correct": true,
+      "confidence": 0.9,
+      "products_found": 0,
+      "time": 0.003203153610229492,
+      "response_length": 76
+    }
+  ]
+}

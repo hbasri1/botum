@@ -1,0 +1,67 @@
+[
+  {
+    "product_id": "8354524a",
+    "business_id": "cff2f116",
+    "name": "Hamile Pijama Takımı Premium",
+    "description": "Rahat ve şık hamile pijama takımı, premium kalite",
+    "price": 399.99,
+    "final_price": 399.99,
+    "discount": 0.0,
+    "color": "mavi",
+    "category": "giyim",
+    "stock": 15,
+    "created_at": "2025-08-05T15:15:49.832009"
+  },
+  {
+    "product_id": "bb70df02",
+    "business_id": "cff2f116",
+    "name": "Dantelli Gecelik Siyah",
+    "description": "Şık dantelli gecelik, özel günler için",
+    "price": 299.0,
+    "final_price": 299.0,
+    "discount": 0.0,
+    "color": "siyah",
+    "category": "giyim",
+    "stock": 8,
+    "created_at": "2025-08-05T15:15:49.832344"
+  },
+  {
+    "product_id": "2d4b4376",
+    "business_id": "cff2f116",
+    "name": "Büyük Beden Sabahlık",
+    "description": "Büyük beden rahat sabahlık",
+    "price": 199.5,
+    "final_price": 199.5,
+    "discount": 0.0,
+    "color": "pembe",
+    "category": "giyim",
+    "stock": 12,
+    "created_at": "2025-08-05T15:15:49.832585"
+  },
+  {
+    "product_id": "47a88bc6",
+    "business_id": "cff2f116",
+    "name": "Hamile Elbise Günlük",
+    "description": "Günlük kullanım için rahat hamile elbise",
+    "price": 249.0,
+    "final_price": 249.0,
+    "discount": 0.0,
+    "color": "yeşil",
+    "category": "giyim",
+    "stock": 6,
+    "created_at": "2025-08-05T15:15:49.832883"
+  },
+  {
+    "product_id": "73ed5e0a",
+    "business_id": "cff2f116",
+    "name": "Dantelli Takım Beyaz",
+    "description": "Özel günler için dantelli takım",
+    "price": 449.99,
+    "final_price": 449.99,
+    "discount": 0.0,
+    "color": "beyaz",
+    "category": "giyim",
+    "stock": 4,
+    "created_at": "2025-08-05T15:15:49.833132"
+  }
+]

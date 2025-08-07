@@ -1,0 +1,899 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Butik Chatbot - İç Giyim Asistanı</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .chat-container {
+            width: 90%;
+            max-width: 800px;
+            height: 90vh;
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+            display: flex;
+            flex-direction: column;
+            overflow: hidden;
+        }
+
+        .chat-header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 20px;
+            text-align: center;
+            position: relative;
+        }
+
+        .chat-header h1 {
+            font-size: 24px;
+            margin-bottom: 5px;
+        }
+
+        .chat-header p {
+            opacity: 0.9;
+            font-size: 14px;
+        }
+
+        .status-indicator {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            width: 12px;
+            height: 12px;
+            background: #4CAF50;
+            border-radius: 50%;
+            animation: pulse 2s infinite;
+        }
+
+        @keyframes pulse {
+            0% { opacity: 1; }
+            50% { opacity: 0.5; }
+            100% { opacity: 1; }
+        }
+
+        .chat-messages {
+            flex: 1;
+            padding: 20px;
+            overflow-y: auto;
+            background: #f8f9fa;
+        }
+
+        .message {
+            margin-bottom: 20px;
+            display: flex;
+            align-items: flex-start;
+        }
+
+        .message.user {
+            justify-content: flex-end;
+        }
+
+        .message-content {
+            max-width: 70%;
+            padding: 15px 20px;
+            border-radius: 20px;
+            position: relative;
+            word-wrap: break-word;
+        }
+
+        /* Mobile Responsive Styles - Instagram Chat Style */
+        @media (max-width: 768px) {
+            body {
+                margin: 0;
+                padding: 0;
+                background: #f0f2f5;
+            }
+
+            .chat-container {
+                height: 100vh;
+                border-radius: 0;
+                margin: 0;
+                max-width: 100%;
+                background: #ffffff;
+                box-shadow: none;
+            }
+
+            .chat-header {
+                padding: 12px 16px;
+                border-radius: 0;
+                background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+                border-bottom: 1px solid rgba(255,255,255,0.1);
+            }
+
+            .chat-header h1 {
+                font-size: 18px;
+                font-weight: 600;
+                color: white;
+                margin: 0;
+            }
+
+            .chat-header p {
+                font-size: 12px;
+                color: rgba(255,255,255,0.8);
+                margin: 2px 0 0 0;
+            }
+
+            .status-indicator {
+                top: 12px;
+                right: 16px;
+                width: 8px;
+                height: 8px;
+                border: 2px solid white;
+            }
+
+            .chat-messages {
+                padding: 8px;
+                background: #f8f9fa;
+                flex: 1;
+                overflow-y: auto;
+            }
+
+            .message {
+                margin-bottom: 12px;
+                display: flex;
+                align-items: flex-end;
+            }
+
+            .message.user {
+                justify-content: flex-end;
+            }
+
+            .message.bot {
+                justify-content: flex-start;
+            }
+
+            .message-content {
+                max-width: 80%;
+                padding: 12px 16px;
+                font-size: 15px;
+                line-height: 1.4;
+                word-wrap: break-word;
+                position: relative;
+            }
+
+            .message.bot .message-content {
+                background: #ffffff;
+                border: 1px solid #e1e8ed;
+                border-radius: 18px 18px 18px 4px;
+                margin-left: 8px;
+                box-shadow: 0 1px 2px rgba(0,0,0,0.1);
+            }
+
+            .message.user .message-content {
+                background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+                color: white;
+                border-radius: 18px 18px 4px 18px;
+                margin-right: 8px;
+                box-shadow: 0 1px 2px rgba(0,0,0,0.2);
+            }
+
+            .message-avatar {
+                width: 32px;
+                height: 32px;
+                font-size: 14px;
+                border-radius: 50%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-shrink: 0;
+            }
+
+            .message.bot .message-avatar {
+                background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+                color: white;
+                order: -1;
+            }
+
+            .message.user .message-avatar {
+                background: #e1e8ed;
+                color: #657786;
+                order: 1;
+            }
+
+            .chat-input {
+                padding: 12px 16px;
+                gap: 12px;
+                background: white;
+                border-top: 1px solid #e1e8ed;
+            }
+
+            .input-container {
+                border-radius: 24px;
+                border: 1px solid #e1e8ed;
+                background: #f7f9fa;
+                flex: 1;
+                display: flex;
+                align-items: center;
+            }
+
+            .input-container input {
+                padding: 12px 16px;
+                font-size: 16px;
+                border: none;
+                background: transparent;
+                border-radius: 24px;
+                flex: 1;
+                outline: none;
+            }
+
+            .input-container input::placeholder {
+                color: #657786;
+            }
+
+            .send-button {
+                width: 44px;
+                height: 44px;
+                border-radius: 50%;
+                background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+                border: none;
+                color: white;
+                font-size: 18px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                cursor: pointer;
+                transition: all 0.2s ease;
+                flex-shrink: 0;
+            }
+
+            .send-button:hover {
+                transform: scale(1.05);
+                box-shadow: 0 4px 12px rgba(102, 126, 234, 0.4);
+            }
+
+            .send-button:disabled {
+                opacity: 0.5;
+                transform: none;
+                box-shadow: none;
+            }
+
+            .stats-bar {
+                padding: 6px 16px;
+                font-size: 10px;
+                background: rgba(0,0,0,0.05);
+                color: #657786;
+                border-top: 1px solid #e1e8ed;
+            }
+
+            .quick-actions {
+                display: none; /* Hide on mobile */
+            }
+            
+            .mobile-quick-actions {
+                display: flex;
+                gap: 8px;
+                padding: 8px 16px;
+                background: white;
+                border-top: 1px solid #e1e8ed;
+                overflow-x: auto;
+            }
+            
+            .mobile-quick-action {
+                padding: 6px 12px;
+                font-size: 12px;
+                background: #f7f9fa;
+                border: 1px solid #e1e8ed;
+                border-radius: 16px;
+                color: #1da1f2;
+                white-space: nowrap;
+                cursor: pointer;
+                transition: all 0.2s;
+            }
+            
+            .mobile-quick-action:hover {
+                background: #e1f5fe;
+                border-color: #1da1f2;
+            }
+
+            .quick-action {
+                padding: 8px 16px;
+                font-size: 13px;
+                background: #f7f9fa;
+                border: 1px solid #e1e8ed;
+                border-radius: 20px;
+                color: #1da1f2;
+                display: inline-block;
+                white-space: nowrap;
+                transition: all 0.2s ease;
+            }
+
+            .quick-action:hover {
+                background: #e8f5fe;
+                border-color: #1da1f2;
+            }
+
+            .typing-indicator {
+                margin: 8px;
+                padding: 12px 16px;
+                background: white;
+                border-radius: 18px 18px 18px 4px;
+                border: 1px solid #e1e8ed;
+                max-width: 80px;
+            }
+
+            .typing-dots {
+                display: flex;
+                gap: 4px;
+                justify-content: center;
+            }
+
+            .typing-dot {
+                width: 6px;
+                height: 6px;
+                background: #657786;
+                border-radius: 50%;
+            }
+
+            /* Hide desktop elements on mobile */
+            .stats-bar span:last-child {
+                display: none;
+            }
+        }
+
+        /* Extra small screens */
+        @media (max-width: 480px) {
+            .message-content {
+                max-width: 90%;
+                padding: 10px 14px;
+                font-size: 13px;
+            }
+
+            .chat-header h1 {
+                font-size: 18px;
+            }
+
+            .quick-actions {
+                flex-wrap: wrap;
+            }
+
+            .quick-action {
+                flex: 1;
+                min-width: calc(50% - 4px);
+            }
+        }
+
+        .message.bot .message-content {
+            background: white;
+            border: 1px solid #e0e0e0;
+            margin-left: 10px;
+        }
+
+        .message.user .message-content {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            margin-right: 10px;
+        }
+
+        .message-avatar {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            color: white;
+            font-size: 16px;
+        }
+
+        .message.bot .message-avatar {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        }
+
+        .message.user .message-avatar {
+            background: #6c757d;
+        }
+
+        .message-meta {
+            font-size: 11px;
+            opacity: 0.7;
+            margin-top: 5px;
+        }
+
+        .chat-input-container {
+            padding: 20px;
+            background: white;
+            border-top: 1px solid #e0e0e0;
+        }
+
+        .chat-input-wrapper {
+            display: flex;
+            gap: 10px;
+            align-items: center;
+        }
+
+        .chat-input {
+            flex: 1;
+            padding: 15px 20px;
+            border: 2px solid #e0e0e0;
+            border-radius: 25px;
+            font-size: 16px;
+            outline: none;
+            transition: border-color 0.3s;
+        }
+
+        .chat-input:focus {
+            border-color: #667eea;
+        }
+
+        .send-button {
+            width: 50px;
+            height: 50px;
+            border: none;
+            border-radius: 50%;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: transform 0.2s;
+        }
+
+        .send-button:hover {
+            transform: scale(1.05);
+        }
+
+        .send-button:disabled {
+            opacity: 0.5;
+            cursor: not-allowed;
+            transform: none;
+        }
+
+        .typing-indicator {
+            display: none;
+            padding: 15px 20px;
+            background: white;
+            border: 1px solid #e0e0e0;
+            border-radius: 20px;
+            margin-left: 50px;
+            margin-bottom: 20px;
+        }
+
+        .typing-dots {
+            display: flex;
+            gap: 4px;
+        }
+
+        .typing-dot {
+            width: 8px;
+            height: 8px;
+            background: #667eea;
+            border-radius: 50%;
+            animation: typing 1.4s infinite;
+        }
+
+        .typing-dot:nth-child(2) { animation-delay: 0.2s; }
+        .typing-dot:nth-child(3) { animation-delay: 0.4s; }
+
+        @keyframes typing {
+            0%, 60%, 100% { transform: translateY(0); }
+            30% { transform: translateY(-10px); }
+        }
+
+        .stats-bar {
+            background: #f8f9fa;
+            padding: 10px 20px;
+            border-top: 1px solid #e0e0e0;
+            font-size: 12px;
+            color: #6c757d;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .quick-actions {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 15px;
+            flex-wrap: wrap;
+        }
+        
+        /* Desktop: Show quick actions, hide mobile ones */
+        @media (min-width: 769px) {
+            .quick-actions {
+                display: flex !important;
+            }
+            
+            .mobile-quick-actions {
+                display: none;
+            }
+        }
+
+        .quick-action {
+            padding: 8px 15px;
+            background: #f8f9fa;
+            border: 1px solid #e0e0e0;
+            border-radius: 20px;
+            cursor: pointer;
+            font-size: 14px;
+            transition: all 0.3s;
+        }
+
+        .quick-action:hover {
+            background: #667eea;
+            color: white;
+            border-color: #667eea;
+        }
+
+        .error-message {
+            background: #f8d7da;
+            color: #721c24;
+            padding: 10px 15px;
+            border-radius: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #f5c6cb;
+        }
+
+        @media (max-width: 768px) {
+            .chat-container {
+                width: 100%;
+                height: 100vh;
+                border-radius: 0;
+            }
+            
+            .message-content {
+                max-width: 85%;
+            }
+            
+            .chat-header h1 {
+                font-size: 20px;
+            }
+        }
+
+        /* Scrollbar styling */
+        .chat-messages::-webkit-scrollbar {
+            width: 6px;
+        }
+
+        .chat-messages::-webkit-scrollbar-track {
+            background: #f1f1f1;
+        }
+
+        .chat-messages::-webkit-scrollbar-thumb {
+            background: #c1c1c1;
+            border-radius: 3px;
+        }
+
+        .chat-messages::-webkit-scrollbar-thumb:hover {
+            background: #a8a8a8;
+        }
+    </style>
+</head>
+<body>
+    <div class="chat-container">
+        <div class="chat-header">
+            <div class="status-indicator" id="statusIndicator"></div>
+            <h1>🛍️ Butik Asistanı</h1>
+            <p>İç giyim ürünleri hakkında size yardımcı olabilirim</p>
+        </div>
+
+        <div class="chat-messages" id="chatMessages">
+            <div class="message bot">
+                <div class="message-avatar">🤖</div>
+                <div class="message-content">
+                    Merhaba! 👋 Size nasıl yardımcı olabilirim?<br><br>
+                    💡 <strong>Yapabileceklerim:</strong><br>
+                    • 🔍 Ürün arama<br>
+                    • 💰 Fiyat bilgisi<br>
+                    • 📦 Stok durumu<br>
+                    • 🏢 Mağaza bilgileri
+                </div>
+            </div>
+        </div>
+
+        <div class="typing-indicator" id="typingIndicator">
+            <div class="typing-dots">
+                <div class="typing-dot"></div>
+                <div class="typing-dot"></div>
+                <div class="typing-dot"></div>
+            </div>
+        </div>
+
+        <div class="chat-input-container">
+            <!-- Mobile Quick Actions - Above Input -->
+            <div class="mobile-quick-actions">
+                <div class="mobile-quick-action" onclick="sendQuickMessage('hamile pijama arıyorum')">🤱 Hamile</div>
+                <div class="mobile-quick-action" onclick="sendQuickMessage('dantelli gecelik')">✨ Dantelli</div>
+                <div class="mobile-quick-action" onclick="sendQuickMessage('kargo bilgisi')">🚚 Kargo</div>
+            </div>
+            
+            <div class="chat-input-wrapper">
+                <input type="text" id="messageInput" class="chat-input" 
+                       placeholder="Mesajınızı yazın..." 
+                       onkeypress="handleKeyPress(event)">
+                <button id="sendButton" class="send-button" onclick="sendMessage()">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z"/>
+                    </svg>
+                </button>
+            </div>
+        </div>
+
+        <div class="stats-bar" id="statsBar">
+            <span>Sistem Hazır</span>
+            <span id="responseTime">⚡ 0ms</span>
+        </div>
+    </div>
+
+    <script>
+        let messageCount = 0;
+        let isTyping = false;
+
+        function addMessage(content, isUser = false, metadata = {}) {
+            const messagesContainer = document.getElementById('chatMessages');
+            const messageDiv = document.createElement('div');
+            messageDiv.className = `message ${isUser ? 'user' : 'bot'}`;
+            
+            const avatar = isUser ? '👤' : '🤖';
+            const time = new Date().toLocaleTimeString('tr-TR', { 
+                hour: '2-digit', 
+                minute: '2-digit' 
+            });
+            
+            let metaInfo = '';
+            if (metadata.intent && metadata.confidence) {
+                metaInfo = `<div class="message-meta">
+                    Intent: ${metadata.intent} (${(metadata.confidence * 100).toFixed(0)}%)
+                    ${metadata.processing_time ? ` • ${metadata.processing_time}ms` : ''}
+                </div>`;
+            }
+            
+            messageDiv.innerHTML = `
+                <div class="message-avatar">${avatar}</div>
+                <div class="message-content">
+                    ${content.replace(/\n/g, '<br>')}
+                    ${metaInfo}
+                </div>
+            `;
+            
+            messagesContainer.appendChild(messageDiv);
+            messagesContainer.scrollTop = messagesContainer.scrollHeight;
+            messageCount++;
+        }
+
+        function showTyping() {
+            if (isTyping) return;
+            isTyping = true;
+            document.getElementById('typingIndicator').style.display = 'block';
+            const messagesContainer = document.getElementById('chatMessages');
+            messagesContainer.scrollTop = messagesContainer.scrollHeight;
+        }
+
+        function hideTyping() {
+            isTyping = false;
+            document.getElementById('typingIndicator').style.display = 'none';
+        }
+
+        function updateStats(stats) {
+            const statsBar = document.getElementById('statsBar');
+            const responseTimeEl = document.getElementById('responseTime');
+            
+            if (stats) {
+                const responseTimeText = `⚡ ${stats.processing_time}ms • Cache: ${stats.cache_hit_rate}%`;
+                
+                if (responseTimeEl) {
+                    responseTimeEl.textContent = responseTimeText;
+                }
+                
+                if (statsBar) {
+                    statsBar.innerHTML = `
+                        <span>Toplam: ${stats.total_requests} • Ortalama: ${stats.average_response_time}ms</span>
+                        <span>${responseTimeText}</span>
+                    `;
+                }
+            }
+        }
+
+        function setStatus(online = true) {
+            const indicator = document.getElementById('statusIndicator');
+            indicator.style.background = online ? '#4CAF50' : '#f44336';
+        }
+
+        async function sendMessage(message = null) {
+            const input = document.getElementById('messageInput');
+            const sendButton = document.getElementById('sendButton');
+            
+            const userMessage = message || input.value.trim();
+            if (!userMessage) return;
+            
+            // Add user message
+            addMessage(userMessage, true);
+            
+            // Clear input and disable button
+            input.value = '';
+            sendButton.disabled = true;
+            showTyping();
+            
+            try {
+                const startTime = Date.now();
+                const response = await fetch('/chat', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify({ message: userMessage })
+                });
+                
+                const endTime = Date.now();
+                hideTyping();
+                
+                // Check response status
+                if (!response.ok) {
+                    throw new Error(`Server error: ${response.status} ${response.statusText}`);
+                }
+                
+                // Check content type
+                const contentType = response.headers.get('content-type');
+                if (!contentType || !contentType.includes('application/json')) {
+                    throw new Error('Server returned invalid response format');
+                }
+                
+                const data = await response.json();
+                
+                // Validate response structure
+                if (!data || typeof data !== 'object') {
+                    throw new Error('Invalid response data');
+                }
+                
+                // Enhanced response validation and handling
+                if (data.success !== false && data.response) {
+                    addMessage(data.response, false, {
+                        intent: data.intent || 'unknown',
+                        confidence: data.confidence || 0,
+                        processing_time: (data.processing_time || 0) * 1000
+                    });
+                    
+                    if (data.stats) {
+                        updateStats({
+                            ...data.stats,
+                            processing_time: endTime - startTime
+                        });
+                    }
+                    
+                    setStatus(true);
+                } else {
+                    // Handle error responses
+                    const errorMsg = data.response || 'Bilinmeyen hata oluştu';
+                    addMessage(`❌ ${errorMsg}`, false);
+                    setStatus(false);
+                    
+                    // Log error details for debugging
+                    console.error('Server error response:', data);
+                }
+                
+            } catch (error) {
+                hideTyping();
+                
+                // Enhanced error handling with better categorization
+                let errorMessage = '❌ Bir hata oluştu. ';
+                
+                // Network errors
+                if (error.name === 'TypeError' && (error.message.includes('fetch') || error.message.includes('Failed to fetch'))) {
+                    errorMessage = '🌐 İnternet bağlantısı sorunu. Lütfen bağlantınızı kontrol edin.';
+                } 
+                // Timeout errors
+                else if (error.message.includes('timeout') || error.name === 'AbortError') {
+                    errorMessage = '⏱️ İstek zaman aşımına uğradı. Lütfen tekrar deneyin.';
+                } 
+                // Server errors
+                else if (error.message.includes('500') || error.message.includes('Internal Server Error')) {
+                    errorMessage = '🔧 Sunucu hatası. Birkaç saniye sonra tekrar deneyin.';
+                } 
+                // Not found errors
+                else if (error.message.includes('404') || error.message.includes('Not Found')) {
+                    errorMessage = '🔍 Servis bulunamadı. Sayfa yenilemeyi deneyin.';
+                } 
+                // Generic server errors
+                else if (error.message.includes('Server error')) {
+                    errorMessage = '🔧 Sunucu geçici olarak kullanılamıyor. Lütfen tekrar deneyin.';
+                } 
+                // Response format errors
+                else if (error.message.includes('Invalid response') || error.message.includes('Unexpected token')) {
+                    errorMessage = '📡 Sunucudan geçersiz yanıt alındı. Sayfa yenilemeyi deneyin.';
+                } 
+                // JSON parsing errors
+                else if (error.message.includes('JSON') || error.name === 'SyntaxError') {
+                    errorMessage = '📄 Yanıt formatı hatası. Sayfa yenilemeyi deneyin.';
+                } 
+                // Catch-all for unknown errors
+                else {
+                    errorMessage = '❌ Beklenmeyen hata oluştu. Lütfen tekrar deneyin.';
+                    
+                    // If it's a specific error we haven't handled, show more details
+                    if (error.message && error.message.length < 100) {
+                        errorMessage += ` (${error.message})`;
+                    }
+                }
+                
+                addMessage(errorMessage, false);
+                setStatus(false);
+                
+                // Enhanced logging for debugging
+                console.error('Chat Error Details:', {
+                    name: error.name,
+                    message: error.message,
+                    stack: error.stack,
+                    timestamp: new Date().toISOString(),
+                    userMessage: userMessage,
+                    url: window.location.href,
+                    userAgent: navigator.userAgent
+                });
+                
+                // Try to send error report to server (optional)
+                try {
+                    fetch('/error-report', {
+                        method: 'POST',
+                        headers: { 'Content-Type': 'application/json' },
+                        body: JSON.stringify({
+                            error: error.message,
+                            userMessage: userMessage,
+                            timestamp: new Date().toISOString()
+                        })
+                    }).catch(() => {}); // Ignore if error reporting fails
+                } catch (e) {
+                    // Ignore error reporting failures
+                }
+            } finally {
+                sendButton.disabled = false;
+                input.focus();
+            }
+        }
+
+        function sendQuickMessage(message) {
+            sendMessage(message);
+        }
+
+        function handleKeyPress(event) {
+            if (event.key === 'Enter' && !event.shiftKey) {
+                event.preventDefault();
+                sendMessage();
+            }
+        }
+
+        // Initialize
+        document.addEventListener('DOMContentLoaded', function() {
+            document.getElementById('messageInput').focus();
+            
+            // Clear cache on page load/refresh
+            fetch('/reset', {
+                method: 'POST'
+            }).catch(() => {}); // Ignore errors
+            
+            // Check health on load
+            fetch('/health')
+                .then(response => response.json())
+                .then(data => {
+                    setStatus(data.status === 'healthy');
+                    if (data.stats) {
+                        updateStats(data.stats);
+                    }
+                })
+                .catch(() => setStatus(false));
+        });
+
+        // Auto-resize input
+        const input = document.getElementById('messageInput');
+        input.addEventListener('input', function() {
+            this.style.height = 'auto';
+            this.style.height = Math.min(this.scrollHeight, 120) + 'px';
+        });
+    </script>
+</body>
+</html>

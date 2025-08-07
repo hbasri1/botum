@@ -1,0 +1,30 @@
+{
+  "business_id": "14821439",
+  "name": "Moda Butik Premium",
+  "email": "info@modabutik.com",
+  "phone": "0555 111 1111",
+  "website": "https://modabutik.com",
+  "instagram_handle": "@modabutik",
+  "sector": "fashion",
+  "status": "trial",
+  "created_at": "2025-08-06T00:27:43.875502",
+  "chatbot_config": {
+    "chatbot_name": "Asistan",
+    "welcome_message": "Merhaba! Moda Butik Premium asistanıyım. Size nasıl yardımcı olabilirim?",
+    "business_info": {
+      "name": "Moda Butik Premium",
+      "phone": "0555 111 1111",
+      "website": "https://modabutik.com",
+      "email": "info@modabutik.com"
+    },
+    "theme": {
+      "primary_color": "#2563eb",
+      "secondary_color": "#64748b"
+    }
+  },
+  "owner_name": "",
+  "instagram_user_id": "",
+  "instagram_access_token": "",
+  "registration_source": "admin",
+  "registration_date": "2025-08-06T00:27:43.875508"
+}

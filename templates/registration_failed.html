@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kayıt Başarısız - AI Chatbot</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 2rem;
+        }
+        
+        .error-container {
+            background: white;
+            color: #333;
+            padding: 3rem;
+            border-radius: 20px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+            max-width: 600px;
+            width: 100%;
+            text-align: center;
+        }
+        
+        .error-icon {
+            font-size: 4rem;
+            margin-bottom: 1rem;
+            color: #e74c3c;
+        }
+        
+        .error-container h1 {
+            color: #e74c3c;
+            margin-bottom: 1rem;
+            font-size: 2rem;
+        }
+        
+        .error-container p {
+            margin-bottom: 1.5rem;
+            color: #666;
+            line-height: 1.6;
+        }
+        
+        .error-details {
+            background: #fee2e2;
+            padding: 1.5rem;
+            border-radius: 12px;
+            margin: 2rem 0;
+            border-left: 4px solid #e74c3c;
+            text-align: left;
+        }
+        
+        .error-details h3 {
+            color: #991b1b;
+            margin-bottom: 1rem;
+        }
+        
+        .error-details ul {
+            color: #7f1d1d;
+            margin-left: 1rem;
+        }
+        
+        .error-details li {
+            margin-bottom: 0.5rem;
+        }
+        
+        .solutions {
+            background: #f0f9ff;
+            padding: 2rem;
+            border-radius: 12px;
+            margin: 2rem 0;
+            border-left: 4px solid #0ea5e9;
+            text-align: left;
+        }
+        
+        .solutions h3 {
+            color: #0c4a6e;
+            margin-bottom: 1rem;
+        }
+        
+        .solutions ol {
+            color: #075985;
+            margin-left: 1rem;
+        }
+        
+        .solutions li {
+            margin-bottom: 0.5rem;
+        }
+        
+        .btn {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            border: none;
+            padding: 1rem 2rem;
+            border-radius: 10px;
+            font-size: 1.1rem;
+            font-weight: 600;
+            cursor: pointer;
+            text-decoration: none;
+            display: inline-block;
+            margin: 0.5rem;
+            transition: all 0.3s;
+        }
+        
+        .btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 20px rgba(102, 126, 234, 0.3);
+        }
+        
+        .btn-secondary {
+            background: #6c757d;
+        }
+        
+        .btn-secondary:hover {
+            background: #5a6268;
+            box-shadow: 0 10px 20px rgba(108, 117, 125, 0.3);
+        }
+        
+        .contact-info {
+            background: #f8f9fa;
+            padding: 1.5rem;
+            border-radius: 12px;
+            margin: 2rem 0;
+            border: 1px solid #e1e5e9;
+        }
+        
+        .contact-info h4 {
+            color: #333;
+            margin-bottom: 1rem;
+        }
+        
+        .contact-info p {
+            color: #666;
+            margin: 0.5rem 0;
+        }
+        
+        @media (max-width: 768px) {
+            .error-container {
+                margin: 1rem;
+                padding: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="error-container">
+        <div class="error-icon">❌</div>
+        <h1>Kayıt Tamamlanamadı</h1>
+        <p>Üzgünüz, kayıt işleminiz sırasında bir sorun oluştu. Lütfen aşağıdaki çözümleri deneyin.</p>
+        
+        <div class="error-details">
+            <h3>🔍 Olası Nedenler</h3>
+            <ul>
+                <li>Instagram hesabınıza erişim izni verilemedi</li>
+                <li>İnternet bağlantısı sorunu</li>
+                <li>Instagram API geçici olarak kullanılamıyor</li>
+                <li>Eksik veya hatalı bilgi girişi</li>
+                <li>Sistem bakımı devam ediyor</li>
+            </ul>
+        </div>
+        
+        <div class="solutions">
+            <h3>💡 Çözüm Önerileri</h3>
+            <ol>
+                <li><strong>Tekrar deneyin:</strong> Ana sayfaya dönüp kayıt işlemini yeniden başlatın</li>
+                <li><strong>Instagram izinleri:</strong> Instagram'da uygulama izinlerini kontrol edin</li>
+                <li><strong>Tarayıcı temizliği:</strong> Çerezleri temizleyip farklı tarayıcı deneyin</li>
+                <li><strong>Bilgileri kontrol edin:</strong> Email ve telefon formatlarının doğru olduğundan emin olun</li>
+                <li><strong>Destek alın:</strong> Sorun devam ederse bizimle iletişime geçin</li>
+            </ol>
+        </div>
+        
+        <div class="contact-info">
+            <h4>📞 Destek İletişim</h4>
+            <p><strong>Email:</strong> support@chatbot.com</p>
+            <p><strong>Telefon:</strong> 0555 123 4567</p>
+            <p><strong>Çalışma Saatleri:</strong> 09:00 - 18:00 (Hafta içi)</p>
+        </div>
+        
+        <div style="margin-top: 2rem;">
+            <a href="/" class="btn">
+                🔄 Tekrar Dene
+            </a>
+            <a href="mailto:support@chatbot.com" class="btn btn-secondary">
+                📧 Destek Al
+            </a>
+        </div>
+        
+        <div style="margin-top: 2rem; padding-top: 2rem; border-top: 1px solid #e1e5e9;">
+            <p style="color: #999; font-size: 0.9rem;">
+                Hata Kodu: REG_FAILED_{{ "now"|strftime("%Y%m%d_%H%M%S") }} | 
+                <a href="/" style="color: #667eea;">Ana Sayfa</a>
+            </p>
+        </div>
+    </div>
+    
+    <script>
+        // Get error details from URL parameters or session storage
+        const urlParams = new URLSearchParams(window.location.search);
+        const errorMessage = urlParams.get('error');
+        
+        if (errorMessage) {
+            const errorDetails = document.querySelector('.error-details ul');
+            const customError = document.createElement('li');
+            customError.innerHTML = `<strong>Hata Detayı:</strong> ${errorMessage}`;
+            customError.style.color = '#991b1b';
+            customError.style.fontWeight = 'bold';
+            errorDetails.insertBefore(customError, errorDetails.firstChild);
+        }
+        
+        // Auto-redirect after 60 seconds (optional)
+        let countdown = 60;
+        const countdownElement = document.createElement('div');
+        countdownElement.style.cssText = `
+            background: #fff3cd;
+            border: 1px solid #ffeaa7;
+            border-radius: 8px;
+            padding: 1rem;
+            margin: 1rem 0;
+            color: #856404;
+            text-align: center;
+        `;
+        
+        function updateCountdown() {
+            if (countdown > 0) {
+                countdownElement.innerHTML = `⏰ ${countdown} saniye sonra ana sayfaya yönlendirileceksiniz.`;
+                countdown--;
+                setTimeout(updateCountdown, 1000);
+            } else {
+                window.location.href = '/';
+            }
+        }
+        
+        // Add countdown to page
+        document.querySelector('.error-container').appendChild(countdownElement);
+        
+        // Start countdown (uncomment to enable)
+        // updateCountdown();
+        
+        // Log error for debugging
+        console.error('Registration failed:', {
+            timestamp: new Date().toISOString(),
+            userAgent: navigator.userAgent,
+            url: window.location.href,
+            referrer: document.referrer
+        });
+    </script>
+</body>
+</html>

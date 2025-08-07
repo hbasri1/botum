@@ -1,0 +1,75 @@
+{
+  "business_info": {
+    "id": "fashion_boutique",
+    "name": "Butik Cemünay",
+    "description": "Kadın giyim ve iç giyim mağazası",
+    "contact": {
+      "phone": "+90 555 123 4567",
+      "email": "info@butikcemunay.com",
+      "address": "İstanbul, Türkiye"
+    },
+    "policies": {
+      "return_policy": "14 gün içinde iade edilebilir",
+      "shipping_info": "Ücretsiz kargo 200 TL üzeri",
+      "payment_methods": ["Kredi Kartı", "Havale", "Kapıda Ödeme"]
+    },
+    "website": "www.butikcemunay.com",
+    "social_media": {
+      "instagram": "@butikcemunay",
+      "facebook": "Butik Cemünay"
+    }
+  },
+  "products": [
+    {
+      "id": 1,
+      "code": "18K18202",
+      "name": "Dantelli Önü Düğmeli Hamile Lohusa Sabahlık Takımı",
+      "category": "İç Giyim",
+      "subcategory": "Hamile & Lohusa",
+      "color": "EKRU",
+      "size": "S-M-L-XL",
+      "material": "Pamuk Karışımı",
+      "price": 3621.90,
+      "final_price": 2535.33,
+      "discount": 30.0,
+      "stock": 15,
+      "description": "Hamile ve lohusa döneminde kullanılabilir konforlu sabahlık takımı",
+      "features": ["Hamile", "Lohusa", "Dantelli", "Takım", "Sabahlık"],
+      "tags": ["hamile", "lohusa", "anne", "gebelik", "emzirme", "takım", "sabahlık", "dantelli"]
+    },
+    {
+      "id": 2,
+      "code": "18K18203",
+      "name": "Dantelli Önü Düğmeli Hamile Lohusa 3'lü Pijama Takımı",
+      "category": "İç Giyim",
+      "subcategory": "Hamile & Lohusa",
+      "color": "EKRU",
+      "size": "S-M-L-XL",
+      "material": "Pamuk Karışımı",
+      "price": 3855.90,
+      "final_price": 2699.13,
+      "discount": 30.0,
+      "stock": 12,
+      "description": "3 parçalı hamile lohusa pijama takımı - üst, alt ve sabahlık",
+      "features": ["Hamile", "Lohusa", "3'lü", "Pijama", "Takım"],
+      "tags": ["hamile", "lohusa", "anne", "gebelik", "emzirme", "takım", "pijama", "3lü"]
+    },
+    {
+      "id": 3,
+      "code": "22Y22080",
+      "name": "Afrika Etnik Baskılı Dantelli \"Africa Style\" Gecelik",
+      "category": "İç Giyim",
+      "subcategory": "Gecelik",
+      "color": "BEJ",
+      "size": "S-M-L-XL",
+      "material": "Viskon",
+      "price": 1299.90,
+      "final_price": 844.94,
+      "discount": 35.0,
+      "stock": 8,
+      "description": "Afrika desenli etnik tarzda şık gecelik",
+      "features": ["Afrika", "Etnik", "Dantelli", "Gecelik"],
+      "tags": ["afrika", "etnik", "desenli", "gecelik", "dantelli", "africa", "style"]
+    }
+  ]
+}

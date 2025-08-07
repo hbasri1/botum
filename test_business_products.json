@@ -1,0 +1,42 @@
+[
+  {
+    "name": "Hamile Pijama Takımı Premium",
+    "price": "399.99 TL",
+    "color": "mavi",
+    "category": "hamile giyim",
+    "stock": 15,
+    "description": "Rahat ve şık hamile pijama takımı, premium kalite"
+  },
+  {
+    "name": "Dantelli Gecelik Siyah",
+    "price": "299 TL", 
+    "color": "siyah",
+    "category": "gecelik",
+    "stock": 8,
+    "description": "Şık dantelli gecelik, özel günler için"
+  },
+  {
+    "name": "Büyük Beden Sabahlık",
+    "price": "199.50₺",
+    "color": "pembe",
+    "category": "sabahlık", 
+    "stock": 12,
+    "description": "Büyük beden rahat sabahlık"
+  },
+  {
+    "name": "Hamile Elbise Günlük",
+    "price": "249 TL",
+    "color": "yeşil",
+    "category": "hamile giyim",
+    "stock": 6,
+    "description": "Günlük kullanım için rahat hamile elbise"
+  },
+  {
+    "name": "Dantelli Takım Beyaz",
+    "price": "449.99 TL",
+    "color": "beyaz", 
+    "category": "takım",
+    "stock": 4,
+    "description": "Özel günler için dantelli takım"
+  }
+]

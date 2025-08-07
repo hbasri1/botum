@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Chatbot - İşletmenizi Dijitalleştirin</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            line-height: 1.6;
+            color: #333;
+        }
+        
+        .hero {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 4rem 2rem;
+            text-align: center;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+        }
+        
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            font-weight: 700;
+        }
+        
+        .hero p {
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+            opacity: 0.9;
+            max-width: 600px;
+        }
+        
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin: 3rem 0;
+            max-width: 800px;
+        }
+        
+        .feature {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 2rem;
+            border-radius: 12px;
+            text-align: center;
+            backdrop-filter: blur(10px);
+        }
+        
+        .feature-icon {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+        
+        .feature h3 {
+            margin-bottom: 1rem;
+            font-size: 1.3rem;
+        }
+        
+        .registration-form {
+            background: white;
+            padding: 3rem;
+            border-radius: 20px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+            max-width: 500px;
+            width: 100%;
+            margin-top: 3rem;
+        }
+        
+        .registration-form h2 {
+            color: #333;
+            margin-bottom: 2rem;
+            text-align: center;
+            font-size: 1.8rem;
+        }
+        
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+        
+        .form-row {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1rem;
+        }
+        
+        .form-group label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-weight: 500;
+            color: #555;
+        }
+        
+        .form-group input, .form-group select {
+            width: 100%;
+            padding: 1rem;
+            border: 2px solid #e1e5e9;
+            border-radius: 10px;
+            font-size: 1rem;
+            transition: all 0.3s;
+        }
+        
+        .form-group input:focus, .form-group select:focus {
+            outline: none;
+            border-color: #667eea;
+            box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+        }
+        
+        .btn {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            border: none;
+            padding: 1rem 2rem;
+            border-radius: 10px;
+            font-size: 1.1rem;
+            font-weight: 600;
+            cursor: pointer;
+            width: 100%;
+            transition: all 0.3s;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.5rem;
+        }
+        
+        .btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 20px rgba(102, 126, 234, 0.3);
+        }
+        
+        .btn:disabled {
+            opacity: 0.6;
+            cursor: not-allowed;
+            transform: none;
+        }
+        
+        .instagram-info {
+            background: #f8f9fa;
+            padding: 1.5rem;
+            border-radius: 10px;
+            margin: 1.5rem 0;
+            border-left: 4px solid #E4405F;
+        }
+        
+        .instagram-info h4 {
+            color: #E4405F;
+            margin-bottom: 0.5rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+        
+        .instagram-info p {
+            color: #666;
+            font-size: 0.9rem;
+        }
+        
+        .loading {
+            display: none;
+            text-align: center;
+            padding: 2rem;
+        }
+        
+        .spinner {
+            border: 3px solid #f3f4f6;
+            border-top: 3px solid #667eea;
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            animation: spin 1s linear infinite;
+            margin: 0 auto 1rem;
+        }
+        
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+        
+        .alert {
+            padding: 1rem;
+            border-radius: 8px;
+            margin-bottom: 1rem;
+            display: none;
+        }
+        
+        .alert-success {
+            background: #d4edda;
+            color: #155724;
+            border: 1px solid #c3e6cb;
+        }
+        
+        .alert-error {
+            background: #f8d7da;
+            color: #721c24;
+            border: 1px solid #f5c6cb;
+        }
+        
+        .steps {
+            display: flex;
+            justify-content: center;
+            margin: 2rem 0;
+            gap: 1rem;
+        }
+        
+        .step {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 0.5rem 1rem;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 20px;
+            font-size: 0.9rem;
+        }
+        
+        .step.active {
+            background: rgba(255, 255, 255, 0.2);
+        }
+        
+        .step.completed {
+            background: rgba(16, 185, 129, 0.2);
+        }
+        
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2rem;
+            }
+            
+            .hero p {
+                font-size: 1rem;
+            }
+            
+            .registration-form {
+                margin: 2rem 1rem;
+                padding: 2rem;
+            }
+            
+            .form-row {
+                grid-template-columns: 1fr;
+            }
+            
+            .steps {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="hero">
+        <h1>🤖 AI Chatbot Sistemi</h1>
+        <p>İşletmenizi dijitalleştirin! Instagram hesabınızı bağlayın ve müşterilerinizle otomatik sohbet edin.</p>
+        
+        <div class="features">
+            <div class="feature">
+                <div class="feature-icon">🚀</div>
+                <h3>Hızlı Kurulum</h3>
+                <p>5 dakikada sisteminiz hazır</p>
+            </div>
+            <div class="feature">
+                <div class="feature-icon">📱</div>
+                <h3>Instagram Entegrasyonu</h3>
+                <p>Otomatik Instagram bağlantısı</p>
+            </div>
+            <div class="feature">
+                <div class="feature-icon">🤖</div>
+                <h3>AI Destekli</h3>
+                <p>Gemini AI ile akıllı yanıtlar</p>
+            </div>
+        </div>
+        
+        <div class="steps">
+            <div class="step active" id="step1">
+                <span>1️⃣</span>
+                <span>Bilgilerinizi Girin</span>
+            </div>
+            <div class="step" id="step2">
+                <span>2️⃣</span>
+                <span>Instagram Bağlayın</span>
+            </div>
+            <div class="step" id="step3">
+                <span>3️⃣</span>
+                <span>Sisteminiz Hazır!</span>
+            </div>
+        </div>
+        
+        <div class="registration-form">
+            <h2>🎯 Hemen Başlayın</h2>
+            
+            <div class="alert alert-success" id="successAlert"></div>
+            <div class="alert alert-error" id="errorAlert"></div>
+            
+            <div id="registrationForm">
+                <form id="customerForm">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label>Ad *</label>
+                            <input type="text" name="first_name" required placeholder="Adınız">
+                        </div>
+                        <div class="form-group">
+                            <label>Soyad *</label>
+                            <input type="text" name="last_name" required placeholder="Soyadınız">
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label>E-posta *</label>
+                        <input type="email" name="email" required placeholder="ornek@email.com">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label>Telefon *</label>
+                        <input type="tel" name="phone" required placeholder="0555 123 4567">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label>İşletme Adı *</label>
+                        <input type="text" name="business_name" required placeholder="İşletmenizin adı">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label>Website (Opsiyonel)</label>
+                        <input type="url" name="website" placeholder="https://example.com">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label>Sektör</label>
+                        <select name="sector">
+                            <option value="fashion">Moda & Giyim</option>
+                            <option value="beauty">Güzellik & Bakım</option>
+                            <option value="home">Ev & Yaşam</option>
+                            <option value="electronics">Elektronik</option>
+                            <option value="food">Gıda & İçecek</option>
+                            <option value="health">Sağlık & Wellness</option>
+                            <option value="general">Genel</option>
+                        </select>
+                    </div>
+                    
+                    <div class="instagram-info">
+                        <h4>📸 Instagram Bağlantısı</h4>
+                        <p>Bir sonraki adımda Instagram hesabınızı bağlayacaksınız. Bu sayede müşterileriniz Instagram üzerinden size ulaşabilecek.</p>
+                    </div>
+                    
+                    <button type="submit" class="btn" id="submitBtn">
+                        <span>🚀 Kayıt Ol ve Instagram'ı Bağla</span>
+                    </button>
+                </form>
+            </div>
+            
+            <div class="loading" id="loadingDiv">
+                <div class="spinner"></div>
+                <p>Kayıt işleminiz başlatılıyor...</p>
+                <p><small>Instagram sayfasına yönlendirileceksiniz</small></p>
+            </div>
+        </div>
+    </div>
+    
+    <script>
+        document.getElementById('customerForm').addEventListener('submit', async function(e) {
+            e.preventDefault();
+            
+            const submitBtn = document.getElementById('submitBtn');
+            const loadingDiv = document.getElementById('loadingDiv');
+            const registrationForm = document.getElementById('registrationForm');
+            const errorAlert = document.getElementById('errorAlert');
+            const successAlert = document.getElementById('successAlert');
+            
+            // Hide alerts
+            errorAlert.style.display = 'none';
+            successAlert.style.display = 'none';
+            
+            // Show loading
+            submitBtn.disabled = true;
+            loadingDiv.style.display = 'block';
+            registrationForm.style.display = 'none';
+            
+            // Update step
+            document.getElementById('step1').classList.add('completed');
+            document.getElementById('step1').classList.remove('active');
+            document.getElementById('step2').classList.add('active');
+            
+            try {
+                const formData = new FormData(this);
+                const data = Object.fromEntries(formData);
+                
+                const response = await fetch('/register', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify(data)
+                });
+                
+                const result = await response.json();
+                
+                if (result.success) {
+                    // Store session ID
+                    localStorage.setItem('registration_session_id', result.session_id);
+                    
+                    // Show success message
+                    successAlert.textContent = result.message;
+                    successAlert.style.display = 'block';
+                    
+                    // Redirect to Instagram after 2 seconds
+                    setTimeout(() => {
+                        window.location.href = result.instagram_auth_url;
+                    }, 2000);
+                    
+                } else {
+                    throw new Error(result.error);
+                }
+                
+            } catch (error) {
+                console.error('Registration error:', error);
+                
+                // Show error
+                errorAlert.textContent = 'Kayıt sırasında hata oluştu: ' + error.message;
+                errorAlert.style.display = 'block';
+                
+                // Reset form
+                loadingDiv.style.display = 'none';
+                registrationForm.style.display = 'block';
+                submitBtn.disabled = false;
+                
+                // Reset steps
+                document.getElementById('step1').classList.remove('completed');
+                document.getElementById('step1').classList.add('active');
+                document.getElementById('step2').classList.remove('active');
+            }
+        });
+        
+        // Check if returning from Instagram
+        const urlParams = new URLSearchParams(window.location.search);
+        if (urlParams.get('success') === 'true') {
+            document.getElementById('step2').classList.add('completed');
+            document.getElementById('step2').classList.remove('active');
+            document.getElementById('step3').classList.add('active');
+            
+            const successAlert = document.getElementById('successAlert');
+            successAlert.textContent = '🎉 Kayıt başarıyla tamamlandı! Dashboard\'a yönlendiriliyorsunuz...';
+            successAlert.style.display = 'block';
+            
+            // Redirect to dashboard
+            setTimeout(() => {
+                const businessId = urlParams.get('business_id');
+                if (businessId) {
+                    window.location.href = `/dashboard/${businessId}`;
+                }
+            }, 3000);
+        }
+        
+        // Form validation
+        const inputs = document.querySelectorAll('input[required]');
+        inputs.forEach(input => {
+            input.addEventListener('blur', function() {
+                if (this.value.trim() === '') {
+                    this.style.borderColor = '#e74c3c';
+                } else {
+                    this.style.borderColor = '#27ae60';
+                }
+            });
+        });
+        
+        // Email validation
+        const emailInput = document.querySelector('input[type="email"]');
+        emailInput.addEventListener('blur', function() {
+            const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            if (!emailRegex.test(this.value)) {
+                this.style.borderColor = '#e74c3c';
+            } else {
+                this.style.borderColor = '#27ae60';
+            }
+        });
+        
+        // Phone formatting
+        const phoneInput = document.querySelector('input[type="tel"]');
+        phoneInput.addEventListener('input', function() {
+            let value = this.value.replace(/\D/g, '');
+            if (value.length > 0) {
+                if (value.length <= 4) {
+                    value = value.replace(/(\d{4})/, '$1');
+                } else if (value.length <= 7) {
+                    value = value.replace(/(\d{4})(\d{3})/, '$1 $2');
+                } else {
+                    value = value.replace(/(\d{4})(\d{3})(\d{2})(\d{2})/, '$1 $2 $3 $4');
+                }
+            }
+            this.value = value;
+        });
+    </script>
+</body>
+</html>

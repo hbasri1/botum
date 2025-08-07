@@ -1,0 +1,846 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Panel - Gelişmiş İşletme Yönetimi</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: #f8fafc;
+            color: #334155;
+        }
+        
+        .header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 1.5rem 2rem;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        
+        .header h1 {
+            font-size: 1.8rem;
+            margin-bottom: 0.5rem;
+        }
+        
+        .header p {
+            opacity: 0.9;
+            font-size: 0.9rem;
+        }
+        
+        .container {
+            max-width: 1400px;
+            margin: 2rem auto;
+            padding: 0 2rem;
+        }
+        
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+            margin-bottom: 2rem;
+        }
+        
+        .stat-card {
+            background: white;
+            border-radius: 12px;
+            padding: 1.5rem;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            border-left: 4px solid #3b82f6;
+        }
+        
+        .stat-card.success {
+            border-left-color: #10b981;
+        }
+        
+        .stat-card.warning {
+            border-left-color: #f59e0b;
+        }
+        
+        .stat-card.info {
+            border-left-color: #8b5cf6;
+        }
+        
+        .stat-number {
+            font-size: 2.5rem;
+            font-weight: bold;
+            margin-bottom: 0.5rem;
+        }
+        
+        .stat-label {
+            color: #64748b;
+            font-size: 0.9rem;
+        }
+        
+        .card {
+            background: white;
+            border-radius: 12px;
+            padding: 2rem;
+            margin-bottom: 2rem;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        
+        .card h2 {
+            margin-bottom: 1.5rem;
+            color: #1e293b;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+        
+        .btn {
+            background: #3b82f6;
+            color: white;
+            border: none;
+            padding: 0.75rem 1.5rem;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 0.9rem;
+            font-weight: 500;
+            transition: all 0.2s;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+        
+        .btn:hover {
+            background: #2563eb;
+            transform: translateY(-1px);
+        }
+        
+        .btn-success {
+            background: #10b981;
+        }
+        
+        .btn-success:hover {
+            background: #059669;
+        }
+        
+        .btn-danger {
+            background: #ef4444;
+        }
+        
+        .btn-danger:hover {
+            background: #dc2626;
+        }
+        
+        .btn-secondary {
+            background: #6b7280;
+        }
+        
+        .btn-secondary:hover {
+            background: #4b5563;
+        }
+        
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+        
+        .form-group label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-weight: 500;
+            color: #374151;
+        }
+        
+        .form-group input, .form-group select {
+            width: 100%;
+            padding: 0.75rem;
+            border: 2px solid #e5e7eb;
+            border-radius: 8px;
+            font-size: 0.9rem;
+            transition: border-color 0.2s;
+        }
+        
+        .form-group input:focus, .form-group select:focus {
+            outline: none;
+            border-color: #3b82f6;
+        }
+        
+        .business-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+            gap: 1.5rem;
+        }
+        
+        .business-card {
+            background: white;
+            border: 2px solid #e5e7eb;
+            border-radius: 12px;
+            padding: 1.5rem;
+            transition: all 0.2s;
+        }
+        
+        .business-card:hover {
+            border-color: #3b82f6;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        }
+        
+        .business-card h3 {
+            margin-bottom: 1rem;
+            color: #1e293b;
+            font-size: 1.2rem;
+        }
+        
+        .business-info {
+            font-size: 0.9rem;
+            color: #64748b;
+            margin-bottom: 1.5rem;
+            line-height: 1.6;
+        }
+        
+        .business-info div {
+            margin-bottom: 0.5rem;
+        }
+        
+        .business-actions {
+            display: flex;
+            gap: 0.75rem;
+            flex-wrap: wrap;
+        }
+        
+        .business-actions .btn {
+            padding: 0.5rem 1rem;
+            font-size: 0.8rem;
+        }
+        
+        .status-badge {
+            display: inline-block;
+            padding: 0.25rem 0.75rem;
+            border-radius: 20px;
+            font-size: 0.75rem;
+            font-weight: 600;
+            text-transform: uppercase;
+        }
+        
+        .status-active {
+            background: #dcfce7;
+            color: #166534;
+        }
+        
+        .status-trial {
+            background: #fef3c7;
+            color: #92400e;
+        }
+        
+        .status-inactive {
+            background: #fee2e2;
+            color: #991b1b;
+        }
+        
+        .modal {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0,0,0,0.6);
+            z-index: 1000;
+            backdrop-filter: blur(4px);
+        }
+        
+        .modal-content {
+            background: white;
+            margin: 3% auto;
+            padding: 2rem;
+            border-radius: 16px;
+            max-width: 600px;
+            position: relative;
+            max-height: 90vh;
+            overflow-y: auto;
+        }
+        
+        .close {
+            position: absolute;
+            top: 1rem;
+            right: 1rem;
+            font-size: 1.5rem;
+            cursor: pointer;
+            color: #64748b;
+            width: 32px;
+            height: 32px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            transition: all 0.2s;
+        }
+        
+        .close:hover {
+            background: #f1f5f9;
+            color: #1e293b;
+        }
+        
+        .alert {
+            padding: 1rem;
+            border-radius: 8px;
+            margin-bottom: 1rem;
+            border-left: 4px solid;
+        }
+        
+        .alert-success {
+            background: #dcfce7;
+            color: #166534;
+            border-left-color: #10b981;
+        }
+        
+        .alert-error {
+            background: #fee2e2;
+            color: #991b1b;
+            border-left-color: #ef4444;
+        }
+        
+        .alert-info {
+            background: #dbeafe;
+            color: #1e40af;
+            border-left-color: #3b82f6;
+        }
+        
+        .file-upload-area {
+            border: 2px dashed #d1d5db;
+            border-radius: 8px;
+            padding: 2rem;
+            text-align: center;
+            transition: all 0.2s;
+            cursor: pointer;
+        }
+        
+        .file-upload-area:hover {
+            border-color: #3b82f6;
+            background: #f8fafc;
+        }
+        
+        .file-upload-area.dragover {
+            border-color: #10b981;
+            background: #ecfdf5;
+        }
+        
+        .processing-indicator {
+            display: none;
+            text-align: center;
+            padding: 2rem;
+        }
+        
+        .spinner {
+            border: 3px solid #f3f4f6;
+            border-top: 3px solid #3b82f6;
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            animation: spin 1s linear infinite;
+            margin: 0 auto 1rem;
+        }
+        
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+        
+        .feature-list {
+            background: #f8fafc;
+            padding: 1rem;
+            border-radius: 8px;
+            margin: 1rem 0;
+        }
+        
+        .feature-list ul {
+            margin: 0.5rem 0;
+            padding-left: 1.5rem;
+        }
+        
+        .feature-list li {
+            margin-bottom: 0.25rem;
+        }
+        
+        @media (max-width: 768px) {
+            .container {
+                padding: 0 1rem;
+            }
+            
+            .stats-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .business-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .modal-content {
+                margin: 1rem;
+                max-width: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>🚀 Gelişmiş Admin Panel</h1>
+        <p>İşletme yönetimi ve dosya işleme sistemi - Gemini 2.5 Flash destekli</p>
+    </div>
+    
+    <div class="container">
+        <!-- System Stats -->
+        <div class="stats-grid">
+            <div class="stat-card">
+                <div class="stat-number" style="color: #3b82f6;">{{ stats.total or 0 }}</div>
+                <div class="stat-label">📊 Toplam İşletme</div>
+            </div>
+            <div class="stat-card success">
+                <div class="stat-number" style="color: #10b981;">{{ stats.active or 0 }}</div>
+                <div class="stat-label">✅ Aktif İşletme</div>
+            </div>
+            <div class="stat-card warning">
+                <div class="stat-number" style="color: #f59e0b;">{{ stats.trial or 0 }}</div>
+                <div class="stat-label">⏳ Deneme Sürümü</div>
+            </div>
+            <div class="stat-card info">
+                <div class="stat-number" style="color: #8b5cf6;">AI</div>
+                <div class="stat-label">🤖 Gemini 2.5 Flash</div>
+            </div>
+        </div>
+        
+        <!-- Quick Actions -->
+        <div class="card">
+            <h2>⚡ Hızlı İşlemler</h2>
+            <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
+                <button class="btn btn-success" onclick="openModal('newBusinessModal')">
+                    ➕ Yeni İşletme Oluştur
+                </button>
+                <button class="btn btn-secondary" onclick="checkSystemHealth()">
+                    🏥 Sistem Durumu
+                </button>
+                <button class="btn" onclick="openModal('fileProcessorInfoModal')">
+                    📄 Dosya İşleme Bilgisi
+                </button>
+            </div>
+        </div>
+        
+        <!-- Business List -->
+        <div class="card">
+            <h2>🏪 İşletmeler</h2>
+            {% if businesses %}
+            <div class="business-grid">
+                {% for business in businesses %}
+                <div class="business-card">
+                    <h3>{{ business.name }}</h3>
+                    <div class="business-info">
+                        <div>📧 {{ business.email }}</div>
+                        <div>📱 {{ business.phone }}</div>
+                        {% if business.website %}
+                        <div>🌐 <a href="{{ business.website }}" target="_blank">{{ business.website }}</a></div>
+                        {% endif %}
+                        {% if business.instagram_handle %}
+                        <div>📸 {{ business.instagram_handle }}</div>
+                        {% endif %}
+                        <div>🏷️ {{ business.sector or 'Genel' }}</div>
+                        <div>📅 {{ business.created_at[:10] if business.created_at else 'Bilinmiyor' }}</div>
+                        <div><span class="status-badge status-{{ business.status or 'inactive' }}">{{ (business.status or 'inactive').upper() }}</span></div>
+                    </div>
+                    <div class="business-actions">
+                        <button class="btn" onclick="viewBusiness('{{ business.business_id }}')">
+                            📊 İstatistik
+                        </button>
+                        <button class="btn btn-success" onclick="uploadProducts('{{ business.business_id }}')">
+                            📁 Dosya Yükle
+                        </button>
+                        <button class="btn btn-secondary" onclick="testBusiness('{{ business.business_id }}')">
+                            🧪 Test Et
+                        </button>
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+            {% else %}
+            <div style="text-align: center; padding: 3rem; color: #64748b;">
+                <div style="font-size: 3rem; margin-bottom: 1rem;">🏪</div>
+                <h3>Henüz işletme yok</h3>
+                <p>İlk işletmenizi oluşturmak için yukarıdaki butonu kullanın.</p>
+            </div>
+            {% endif %}
+        </div>
+    </div>
+    
+    <!-- New Business Modal -->
+    <div id="newBusinessModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('newBusinessModal')">&times;</span>
+            <h2>➕ Yeni İşletme Oluştur</h2>
+            <form id="newBusinessForm">
+                <div class="form-group">
+                    <label>İşletme Adı *</label>
+                    <input type="text" name="name" required placeholder="Örn: Moda Butik">
+                </div>
+                <div class="form-group">
+                    <label>E-posta *</label>
+                    <input type="email" name="email" required placeholder="info@example.com">
+                </div>
+                <div class="form-group">
+                    <label>Telefon *</label>
+                    <input type="tel" name="phone" required placeholder="+90 555 123 4567">
+                </div>
+                <div class="form-group">
+                    <label>Website</label>
+                    <input type="url" name="website" placeholder="https://example.com">
+                </div>
+                <div class="form-group">
+                    <label>Instagram Handle</label>
+                    <input type="text" name="instagram_handle" placeholder="@username">
+                </div>
+                <div class="form-group">
+                    <label>Sektör</label>
+                    <select name="sector">
+                        <option value="fashion">Moda & Giyim</option>
+                        <option value="home">Ev & Yaşam</option>
+                        <option value="electronics">Elektronik</option>
+                        <option value="beauty">Güzellik & Bakım</option>
+                        <option value="sports">Spor & Outdoor</option>
+                        <option value="general">Genel</option>
+                    </select>
+                </div>
+                <button type="submit" class="btn btn-success">İşletme Oluştur</button>
+            </form>
+        </div>
+    </div>
+    
+    <!-- Product Upload Modal -->
+    <div id="productUploadModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('productUploadModal')">&times;</span>
+            <h2>📁 Ürün Dosyası Yükleme</h2>
+            <div id="uploadBusinessId" style="display: none;"></div>
+            
+            <div class="processing-indicator" id="processingIndicator">
+                <div class="spinner"></div>
+                <p>Dosya Gemini AI ile işleniyor...</p>
+                <small>Bu işlem birkaç dakika sürebilir</small>
+            </div>
+            
+            <div id="uploadForm">
+                <div class="feature-list">
+                    <strong>🤖 AI Destekli Dosya İşleme:</strong>
+                    <ul>
+                        <li>Gemini 2.5 Flash ile otomatik ürün çıkarma</li>
+                        <li>Fiyat standardizasyonu (₺, TL sembolleri temizlenir)</li>
+                        <li>Renk normalizasyonu (İngilizce → Türkçe)</li>
+                        <li>Kategori sınıflandırması</li>
+                        <li>Veri doğrulama ve temizleme</li>
+                    </ul>
+                </div>
+                
+                <form id="productUploadForm" enctype="multipart/form-data">
+                    <div class="form-group">
+                        <label>Ürün Dosyası</label>
+                        <div class="file-upload-area" onclick="document.getElementById('fileInput').click()">
+                            <div style="font-size: 2rem; margin-bottom: 1rem;">📄</div>
+                            <p><strong>Dosya seçin veya sürükleyip bırakın</strong></p>
+                            <p style="color: #64748b; font-size: 0.9rem;">JSON, CSV, Excel desteklenir (Max 10MB)</p>
+                        </div>
+                        <input type="file" id="fileInput" name="file" accept=".json,.csv,.xlsx,.xls" required style="display: none;">
+                    </div>
+                    
+                    <div class="feature-list">
+                        <strong>Desteklenen Formatlar:</strong>
+                        <ul>
+                            <li><strong>JSON:</strong> name, price, color, category, stock, description</li>
+                            <li><strong>CSV:</strong> Başlık satırı ile, UTF-8 kodlamalı</li>
+                            <li><strong>Excel:</strong> İlk sayfa kullanılır (.xlsx, .xls)</li>
+                        </ul>
+                    </div>
+                    
+                    <button type="submit" class="btn btn-success">🚀 AI ile İşle ve Yükle</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Test Modal -->
+    <div id="testModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('testModal')">&times;</span>
+            <h2>🧪 Chatbot Test</h2>
+            <div id="testBusinessId" style="display: none;"></div>
+            <div class="form-group">
+                <label>Test Mesajı</label>
+                <input type="text" id="testMessage" value="merhaba" placeholder="Test mesajınızı yazın">
+            </div>
+            <button class="btn" onclick="runTest()">🧪 Test Et</button>
+            <div id="testResult" style="margin-top: 1rem;"></div>
+        </div>
+    </div>
+    
+    <!-- File Processor Info Modal -->
+    <div id="fileProcessorInfoModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('fileProcessorInfoModal')">&times;</span>
+            <h2>📄 Dosya İşleme Sistemi</h2>
+            <div id="fileProcessorInfo">
+                <div class="spinner"></div>
+                <p>Bilgiler yükleniyor...</p>
+            </div>
+        </div>
+    </div>
+    
+    <script>
+        // File upload drag & drop
+        const fileUploadArea = document.querySelector('.file-upload-area');
+        const fileInput = document.getElementById('fileInput');
+        
+        if (fileUploadArea && fileInput) {
+            fileUploadArea.addEventListener('dragover', (e) => {
+                e.preventDefault();
+                fileUploadArea.classList.add('dragover');
+            });
+            
+            fileUploadArea.addEventListener('dragleave', () => {
+                fileUploadArea.classList.remove('dragover');
+            });
+            
+            fileUploadArea.addEventListener('drop', (e) => {
+                e.preventDefault();
+                fileUploadArea.classList.remove('dragover');
+                const files = e.dataTransfer.files;
+                if (files.length > 0) {
+                    fileInput.files = files;
+                    updateFileDisplay(files[0]);
+                }
+            });
+            
+            fileInput.addEventListener('change', (e) => {
+                if (e.target.files.length > 0) {
+                    updateFileDisplay(e.target.files[0]);
+                }
+            });
+        }
+        
+        function updateFileDisplay(file) {
+            const area = document.querySelector('.file-upload-area');
+            area.innerHTML = `
+                <div style="font-size: 2rem; margin-bottom: 1rem;">📄</div>
+                <p><strong>${file.name}</strong></p>
+                <p style="color: #64748b; font-size: 0.9rem;">${(file.size / 1024 / 1024).toFixed(2)} MB</p>
+            `;
+        }
+        
+        // Modal functions
+        function openModal(modalId) {
+            document.getElementById(modalId).style.display = 'block';
+            
+            // Load file processor info if needed
+            if (modalId === 'fileProcessorInfoModal') {
+                loadFileProcessorInfo();
+            }
+        }
+        
+        function closeModal(modalId) {
+            document.getElementById(modalId).style.display = 'none';
+        }
+        
+        // Business functions
+        function viewBusiness(businessId) {
+            fetch(`/api/businesses/${businessId}/stats`)
+                .then(response => response.json())
+                .then(data => {
+                    if (data.success) {
+                        const stats = data.stats;
+                        alert(`📊 İşletme İstatistikleri:\n\n` +
+                              `🏪 Ad: ${stats.business_name}\n` +
+                              `📦 Ürün Sayısı: ${stats.product_count}\n` +
+                              `🏷️ Kategoriler: ${stats.categories.join(', ')}\n` +
+                              `🎨 Renkler: ${stats.colors.join(', ')}\n` +
+                              `📊 Toplam Stok: ${stats.total_stock}\n` +
+                              `💰 Ortalama Fiyat: ${stats.average_price} TL\n` +
+                              `📈 Durum: ${stats.status.toUpperCase()}`);
+                    } else {
+                        alert('❌ Hata: ' + data.error);
+                    }
+                })
+                .catch(error => alert('❌ Hata: ' + error));
+        }
+        
+        function testBusiness(businessId) {
+            document.getElementById('testBusinessId').textContent = businessId;
+            openModal('testModal');
+        }
+        
+        function uploadProducts(businessId) {
+            document.getElementById('uploadBusinessId').textContent = businessId;
+            openModal('productUploadModal');
+        }
+        
+        function runTest() {
+            const businessId = document.getElementById('testBusinessId').textContent;
+            const message = document.getElementById('testMessage').value;
+            
+            fetch(`/api/businesses/${businessId}/test`, {
+                method: 'POST',
+                headers: {'Content-Type': 'application/json'},
+                body: JSON.stringify({message: message})
+            })
+            .then(response => response.json())
+            .then(data => {
+                if (data.success) {
+                    document.getElementById('testResult').innerHTML = `
+                        <div class="alert alert-success">
+                            <strong>🧪 Test Başarılı!</strong><br>
+                            <strong>Mesaj:</strong> ${data.test_message}<br>
+                            <strong>Intent:</strong> ${data.intent} (${Math.round(data.confidence * 100)}%)<br>
+                            <strong>Yanıt:</strong> ${data.response}<br>
+                            <strong>İşlem Süresi:</strong> ${data.processing_time}s<br>
+                            <strong>Bulunan Ürün:</strong> ${data.products_found}
+                        </div>
+                    `;
+                } else {
+                    document.getElementById('testResult').innerHTML = `
+                        <div class="alert alert-error">
+                            <strong>❌ Test Başarısız:</strong> ${data.error}
+                        </div>
+                    `;
+                }
+            })
+            .catch(error => {
+                document.getElementById('testResult').innerHTML = `
+                    <div class="alert alert-error">
+                        <strong>❌ Hata:</strong> ${error}
+                    </div>
+                `;
+            });
+        }
+        
+        function checkSystemHealth() {
+            fetch('/api/system/health')
+                .then(response => response.json())
+                .then(data => {
+                    if (data.success) {
+                        const components = data.components;
+                        let status = data.healthy ? '✅ Sistem Sağlıklı' : '⚠️ Sistem Sorunları';
+                        let details = `\n\n📊 Bileşen Durumları:\n`;
+                        details += `🏢 Business Manager: ${components.business_manager ? '✅' : '❌'}\n`;
+                        details += `📄 File Processor: ${components.file_processor ? '✅' : '❌'}\n`;
+                        details += `📁 Upload Folder: ${components.upload_folder ? '✅' : '❌'}\n`;
+                        details += `🤖 Gemini API: ${components.gemini_api ? '✅' : '❌'}\n`;
+                        if (components.business_count !== undefined) {
+                            details += `📈 İşletme Sayısı: ${components.business_count}`;
+                        }
+                        
+                        alert(status + details);
+                    } else {
+                        alert('❌ Sistem durumu kontrol edilemedi: ' + data.error);
+                    }
+                })
+                .catch(error => alert('❌ Hata: ' + error));
+        }
+        
+        function loadFileProcessorInfo() {
+            fetch('/api/file-processor/stats')
+                .then(response => response.json())
+                .then(data => {
+                    if (data.success) {
+                        const stats = data.stats;
+                        document.getElementById('fileProcessorInfo').innerHTML = `
+                            <div class="alert alert-info">
+                                <strong>🤖 AI Model:</strong> ${stats.model_used}<br>
+                                <strong>📁 Max Dosya Boyutu:</strong> ${stats.max_file_size}<br>
+                                <strong>📄 Desteklenen Formatlar:</strong> ${stats.supported_formats.join(', ')}
+                            </div>
+                            <h3>🚀 Özellikler:</h3>
+                            <ul>
+                                ${stats.processing_features.map(feature => `<li>${feature}</li>`).join('')}
+                            </ul>
+                        `;
+                    } else {
+                        document.getElementById('fileProcessorInfo').innerHTML = `
+                            <div class="alert alert-error">
+                                <strong>❌ Bilgiler yüklenemedi:</strong> ${data.error}
+                            </div>
+                        `;
+                    }
+                })
+                .catch(error => {
+                    document.getElementById('fileProcessorInfo').innerHTML = `
+                        <div class="alert alert-error">
+                            <strong>❌ Hata:</strong> ${error}
+                        </div>
+                    `;
+                });
+        }
+        
+        // Form submissions
+        document.getElementById('newBusinessForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const formData = new FormData(this);
+            const data = Object.fromEntries(formData);
+            
+            fetch('/api/businesses', {
+                method: 'POST',
+                headers: {'Content-Type': 'application/json'},
+                body: JSON.stringify(data)
+            })
+            .then(response => response.json())
+            .then(data => {
+                if (data.success) {
+                    alert('✅ İşletme başarıyla oluşturuldu: ' + data.business_id);
+                    location.reload();
+                } else {
+                    alert('❌ Hata: ' + data.error);
+                }
+            })
+            .catch(error => alert('❌ Hata: ' + error));
+        });
+        
+        document.getElementById('productUploadForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const businessId = document.getElementById('uploadBusinessId').textContent;
+            const formData = new FormData(this);
+            
+            // Show processing indicator
+            document.getElementById('uploadForm').style.display = 'none';
+            document.getElementById('processingIndicator').style.display = 'block';
+            
+            fetch(`/api/businesses/${businessId}/products`, {
+                method: 'POST',
+                body: formData
+            })
+            .then(response => response.json())
+            .then(data => {
+                // Hide processing indicator
+                document.getElementById('processingIndicator').style.display = 'none';
+                document.getElementById('uploadForm').style.display = 'block';
+                
+                if (data.success) {
+                    alert(`✅ ${data.message}\n\n📊 İşlenen: ${data.processed_count}\n📦 Eklenen: ${data.added_count}`);
+                    closeModal('productUploadModal');
+                    location.reload();
+                } else {
+                    alert('❌ Hata: ' + data.error);
+                }
+            })
+            .catch(error => {
+                // Hide processing indicator
+                document.getElementById('processingIndicator').style.display = 'none';
+                document.getElementById('uploadForm').style.display = 'block';
+                alert('❌ Hata: ' + error);
+            });
+        });
+        
+        // Close modals when clicking outside
+        window.onclick = function(event) {
+            const modals = document.getElementsByClassName('modal');
+            for (let modal of modals) {
+                if (event.target === modal) {
+                    modal.style.display = 'none';
+                }
+            }
+        }
+    </script>
+</body>
+</html>

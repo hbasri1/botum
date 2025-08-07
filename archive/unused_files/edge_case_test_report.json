@@ -1,0 +1,674 @@
+{
+  "timestamp": 1753723743.961766,
+  "total_tests": 65,
+  "successful_tests": 65,
+  "test_results": [
+    {
+      "test_name": "Morning greeting",
+      "input": "iyi günler",
+      "expected": "Should be interpreted as greeting in morning/start of conversation",
+      "response": "🤔 Anlayamadım. Size nasıl yardımcı olabilirim?\n\n💡 **Yapabileceklerim:**\n• Ürün arama\n• Fiyat bilgisi\n• Stok durumu\n• Mağaza bilgileri",
+      "intent": "unclear",
+      "confidence": 0.3,
+      "processing_time": 0.5031170845031738,
+      "success": true
+    },
+    {
+      "test_name": "Product search after greeting",
+      "input": "hamile pijama arıyorum",
+      "expected": "Should find hamile pijama products",
+      "response": "Size uygun 5 ürün buldum:\n\n1. Dantelli Önü Düğmeli Hamile Lohusa Pijama Takımı\n   Renk: EKRU - Fiyat: 1903.93 TL (%30.0 indirim) - Stok: Mevcut\n\n2. Dantelli Önü Düğmeli Hamile Lohusa Pijama Takımı\n   Renk: LACİVERT - Fiyat: 1903.93 TL (%30.0 indirim) - Stok: Mevcut\n\n3. Dantelli Önü Düğmeli Hamile Lohusa Pijama Takımı\n   Renk: VİZON - Fiyat: 1903.93 TL (%30.0 indirim) - Stok: Mevcut\n\n4. Brode Dantelli Önü Düğmeli Hamile Lohusa Pijama Takımı\n   Renk: PARLEMENT MAVİSİ - Fiyat: 856.64 TL (%35.0 indirim) - Stok: Mevcut\n\n5. Dantelli Önü Düğmeli Hamile Lohusa 3'lü Pijama Takımı\n   Renk: EKRU - Fiyat: 2699.13 TL (%30.0 indirim) - Stok: Mevcut\n\nHangi ürün hakkında daha detaylı bilgi almak istersiniz?",
+      "intent": "product_search",
+      "confidence": 0.6,
+      "processing_time": 0.10127806663513184,
+      "success": true
+    },
+    {
+      "test_name": "Evening goodbye",
+      "input": "iyi günler",
+      "expected": "Should be interpreted as goodbye after conversation",
+      "response": "🤔 Anlayamadım. Size nasıl yardımcı olabilirim?\n\n💡 **Yapabileceklerim:**\n• Ürün arama\n• Fiyat bilgisi\n• Stok durumu\n• Mağaza bilgileri",
+      "intent": "unclear",
+      "confidence": 0.3,
+      "processing_time": 0.14344191551208496,
+      "success": true
+    },
+    {
+      "test_name": "Nonsense: tamamdırS...",
+      "input": "tamamdırS",
+      "expected": "Should handle typos and unclear text",
+      "response": "🤔 Anlayamadım. Size nasıl yardımcı olabilirim?\n\n💡 **Yapabileceklerim:**\n• Ürün arama\n• Fiyat bilgisi\n• Stok durumu\n• Mağaza bilgileri",
+      "intent": "unclear",
+      "confidence": 0.3,
+      "processing_time": 0.10025906562805176,
+      "success": true
+    },
+    {
+      "test_name": "Nonsense: asdasdasd...",
+      "input": "asdasdasd",
+      "expected": "Should handle random characters",
+      "response": "🤔 Anlayamadım. Size nasıl yardımcı olabilirim?\n\n💡 **Yapabileceklerim:**\n• Ürün arama\n• Fiyat bilgisi\n• Stok durumu\n• Mağaza bilgileri",
+      "intent": "unclear",
+      "confidence": 0.3,
+      "processing_time": 0.1457042694091797,
+      "success": true
+    },
+    {
+      "test_name": "Nonsense: 123456...",
+      "input": "123456",
+      "expected": "Should handle numbers only",
+      "response": "🤔 Anlayamadım. Size nasıl yardımcı olabilirim?\n\n💡 **Yapabileceklerim:**\n• Ürün arama\n• Fiyat bilgisi\n• Stok durumu\n• Mağaza bilgileri",
+      "intent": "unclear",
+      "confidence": 0.3,
+      "processing_time": 0.10052204132080078,
+      "success": true
+    },
+    {
+      "test_name": "Nonsense: !@#$%...",
+      "input": "!@#$%",
+      "expected": "Should handle special characters",
+      "response": "🤔 Anlayamadım. Size nasıl yardımcı olabilirim?\n\n💡 **Yapabileceklerim:**\n• Ürün arama\n• Fiyat bilgisi\n• Stok durumu\n• Mağaza bilgileri",
+      "intent": "unclear",
+      "confidence": 0.3,
+      "processing_time": 0.14385390281677246,
+      "success": true
+    },
+    {
+      "test_name": "Nonsense: ...",
+      "input": "",
+      "expected": "Should handle empty input",
+      "response": "📝 Lütfen bir mesaj yazın.",
+      "intent": "empty",
+      "confidence": 0.0,
+      "processing_time": 1.6927719116210938e-05,
+      "success": true
+    },
+    {
+      "test_name": "Nonsense:    ...",
+      "input": "   ",
+      "expected": "Should handle whitespace only",
+      "response": "📝 Lütfen bir mesaj yazın.",
+      "intent": "empty",
+      "confidence": 0.0,
+      "processing_time": 1.5974044799804688e-05,
+      "success": true
+    },
+    {
+      "test_name": "Nonsense: a...",
+      "input": "a",
+      "expected": "Should handle single character",
+      "response": "🤔 Anlayamadım. Size nasıl yardımcı olabilirim?\n\n💡 **Yapabileceklerim:**\n• Ürün arama\n• Fiyat bilgisi\n• Stok durumu\n• Mağaza bilgileri",
+      "intent": "unclear",
+      "confidence": 0.3,
+      "processing_time": 0.10428500175476074,
+      "success": true
+    },
+    {
+      "test_name": "Nonsense: aaaaaaaaaaaaaaaaa...",
+      "input": "aaaaaaaaaaaaaaaaa",
+      "expected": "Should handle repeated characters",
+      "response": "🤔 Anlayamadım. Size nasıl yardımcı olabilirim?\n\n💡 **Yapabileceklerim:**\n• Ürün arama\n• Fiyat bilgisi\n• Stok durumu\n• Mağaza bilgileri",
+      "intent": "unclear",
+      "confidence": 0.3,
+      "processing_time": 0.14734101295471191,
+      "success": true
+    },
+    {
+      "test_name": "Nonsense: merhaba nasılsın iyi...",
+      "input": "merhaba nasılsın iyi misin",
+      "expected": "Should handle overly long greetings",
+      "response": "Merhaba! 👋 Size nasıl yardımcı olabilirim? Ürünlerimiz hakkında bilgi alabilir, fiyat sorabilirsiniz.",
+      "intent": "greeting",
+      "confidence": 0.9,
+      "processing_time": 0.10007500648498535,
+      "success": true
+    },
+    {
+      "test_name": "Nonsense: ürün ürün ürün...",
+      "input": "ürün ürün ürün",
+      "expected": "Should handle repeated words",
+      "response": "🤔 Anlayamadım. Size nasıl yardımcı olabilirim?\n\n💡 **Yapabileceklerim:**\n• Ürün arama\n• Fiyat bilgisi\n• Stok durumu\n• Mağaza bilgileri",
+      "intent": "unclear",
+      "confidence": 0.3,
+      "processing_time": 0.14539074897766113,
+      "success": true
+    },
+    {
+      "test_name": "Incomplete: siyah",
+      "input": "siyah",
+      "expected": "Should ask for product type when only color given",
+      "response": "Size uygun 5 ürün buldum:\n\n1. Sırtı Dekolteli Tüllü ve Dantelli Pijama Takımı\n   Renk: SİYAH - Fiyat: 1821.33 TL (%30.0 indirim) - Stok: Mevcut\n\n2. Kolu Omzu ve Yakası Dantelli Önü Düğmeli Gecelik\n   Renk: SİYAH - Fiyat: 1486.73 TL (%30.0 indirim) - Stok: Mevcut\n\n3. Yakası ve Omzu Dantelli Önü Düğmeli Pijama Takımı\n   Renk: SİYAH - Fiyat: 1769.53 TL (%30.0 indirim) - Stok: Mevcut\n\n4. Yakası ve Omzu Dantelli Önü Düğmeli Pijama Takımı\n   Renk: SİYAH - Fiyat: 1912.33 TL (%30.0 indirim) - Stok: Mevcut\n\n5. Kolu Omzu ve Yakası Dantelli Önü Düğmeli Gecelik\n   Renk: SİYAH - Fiyat: 1415.33 TL (%30.0 indirim) - Stok: Mevcut\n\nHangi ürün hakkında daha detaylı bilgi almak istersiniz?",
+      "intent": "product_search",
+      "confidence": 0.6,
+      "processing_time": 0.14162898063659668,
+      "success": true
+    },
+    {
+      "test_name": "Incomplete: gecelik",
+      "input": "gecelik",
+      "expected": "Should ask for color/size when only type given",
+      "response": "Size uygun 5 ürün buldum:\n\n1. Kolu Omzu ve Yakası Dantelli Önü Düğmeli Gecelik\n   Renk: EKRU - Fiyat: 1415.33 TL (%30.0 indirim) - Stok: Mevcut\n\n2. Kolu Omzu ve Yakası Dantelli Önü Düğmeli Gecelik\n   Renk: LACİVERT - Fiyat: 1415.33 TL (%30.0 indirim) - Stok: Mevcut\n\n3. Dantelli Önü Düğmeli Hamile Lohusa Gecelik\n   Renk: EKRU - Fiyat: 1632.33 TL (%30.0 indirim) - Stok: Mevcut\n\n4. Dantelli Önü Düğmeli Hamile Lohusa Gecelik\n   Renk: LACİVERT - Fiyat: 1632.33 TL (%30.0 indirim) - Stok: Mevcut\n\n5. Kolu Omzu ve Yakası Dantelli Önü Düğmeli Gecelik\n   Renk: BORDO - Fiyat: 1486.73 TL (%30.0 indirim) - Stok: Mevcut\n\nHangi ürün hakkında daha detaylı bilgi almak istersiniz?",
+      "intent": "product_search",
+      "confidence": 0.6,
+      "processing_time": 0.129364013671875,
+      "success": true
+    },
+    {
+      "test_name": "Incomplete: xl",
+      "input": "xl",
+      "expected": "Should ask for product type when only size given",
+      "response": "🤔 Anlayamadım. Size nasıl yardımcı olabilirim?\n\n💡 **Yapabileceklerim:**\n• Ürün arama\n• Fiyat bilgisi\n• Stok durumu\n• Mağaza bilgileri",
+      "intent": "unclear",
+      "confidence": 0.3,
+      "processing_time": 0.11728096008300781,
+      "success": true
+    },
+    {
+      "test_name": "Incomplete: dantelli",
+      "input": "dantelli",
+      "expected": "Should ask for product type when only feature given",
+      "response": "Size uygun 5 ürün buldum:\n\n1. Sırtı Dekolteli Tüllü ve Dantelli Pijama Takımı\n   Renk: SİYAH - Fiyat: 1821.33 TL (%30.0 indirim) - Stok: Mevcut\n\n2. Kolu Omzu ve Yakası Dantelli Önü Düğmeli Gecelik\n   Renk: EKRU - Fiyat: 1415.33 TL (%30.0 indirim) - Stok: Mevcut\n\n3. Yakası ve Omzu Dantelli Önü Boydan Düğmeli Pijama Takımı\n   Renk: EKRU - Fiyat: 1912.33 TL (%30.0 indirim) - Stok: Mevcut\n\n4. Dantelli Önü Düğmeli Hamile Lohusa 3'lü Pijama Takımı\n   Renk: EKRU - Fiyat: 2699.13 TL (%30.0 indirim) - Stok: Mevcut\n\n5. Kolu Omzu ve Yakası Dantelli Önü Düğmeli Gecelik\n   Renk: LACİVERT - Fiyat: 1415.33 TL (%30.0 indirim) - Stok: Mevcut\n\nHangi ürün hakkında daha detaylı bilgi almak istersiniz?",
+      "intent": "product_search",
+      "confidence": 0.6,
+      "processing_time": 0.1534128189086914,
+      "success": true
+    },
+    {
+      "test_name": "Incomplete: hamile",
+      "input": "hamile",
+      "expected": "Should ask for specific product type",
+      "response": "Size uygun 5 ürün buldum:\n\n1. Dantelli Önü Düğmeli Hamile Lohusa 3'lü Pijama Takımı\n   Renk: EKRU - Fiyat: 2699.13 TL (%30.0 indirim) - Stok: Mevcut\n\n2. Dantelli Önü Düğmeli Hamile Lohusa 3'lü Pijama Takımı\n   Renk: LACİVERT - Fiyat: 2699.13 TL (%30.0 indirim) - Stok: Mevcut\n\n3. Dantelli Önü Düğmeli Hamile Lohusa Gecelik\n   Renk: EKRU - Fiyat: 1632.33 TL (%30.0 indirim) - Stok: Mevcut\n\n4. Dantelli Önü Düğmeli Hamile Lohusa Gecelik\n   Renk: LACİVERT - Fiyat: 1632.33 TL (%30.0 indirim) - Stok: Mevcut\n\n5. Dantelli Önü Düğmeli Hamile Lohusa Pijama Takımı\n   Renk: EKRU - Fiyat: 1903.93 TL (%30.0 indirim) - Stok: Mevcut\n\nHangi ürün hakkında daha detaylı bilgi almak istersiniz?",
+      "intent": "product_search",
+      "confidence": 0.6,
+      "processing_time": 0.12399983406066895,
+      "success": true
+    },
+    {
+      "test_name": "Incomplete: takım",
+      "input": "takım",
+      "expected": "Should ask for color or other details",
+      "response": "Size uygun 5 ürün buldum:\n\n1. Sırtı Dekolteli Tüllü ve Dantelli Pijama Takımı\n   Renk: SİYAH - Fiyat: 1821.33 TL (%30.0 indirim) - Stok: Mevcut\n\n2. Yakası ve Omzu Dantelli Önü Boydan Düğmeli Pijama Takımı\n   Renk: EKRU - Fiyat: 1912.33 TL (%30.0 indirim) - Stok: Mevcut\n\n3. Dantelli Önü Düğmeli Hamile Lohusa 3'lü Pijama Takımı\n   Renk: EKRU - Fiyat: 2699.13 TL (%30.0 indirim) - Stok: Mevcut\n\n4. Yakası ve Omzu Dantelli Önü Boydan Düğmeli Pijama Takımı\n   Renk: LACİVERT - Fiyat: 1912.33 TL (%30.0 indirim) - Stok: Mevcut\n\n5. Dantelli Önü Düğmeli Hamile Lohusa 3'lü Pijama Takımı\n   Renk: LACİVERT - Fiyat: 2699.13 TL (%30.0 indirim) - Stok: Mevcut\n\nHangi ürün hakkında daha detaylı bilgi almak istersiniz?",
+      "intent": "product_search",
+      "confidence": 0.6,
+      "processing_time": 0.14973115921020508,
+      "success": true
+    },
+    {
+      "test_name": "Incomplete: pahalı",
+      "input": "pahalı",
+      "expected": "Should ask for specific product",
+      "response": "🤔 Anlayamadım. Size nasıl yardımcı olabilirim?\n\n💡 **Yapabileceklerim:**\n• Ürün arama\n• Fiyat bilgisi\n• Stok durumu\n• Mağaza bilgileri",
+      "intent": "unclear",
+      "confidence": 0.3,
+      "processing_time": 0.09671187400817871,
+      "success": true
+    },
+    {
+      "test_name": "Incomplete: ucuz",
+      "input": "ucuz",
+      "expected": "Should ask for specific product",
+      "response": "🤔 Anlayamadım. Size nasıl yardımcı olabilirim?\n\n💡 **Yapabileceklerim:**\n• Ürün arama\n• Fiyat bilgisi\n• Stok durumu\n• Mağaza bilgileri",
+      "intent": "unclear",
+      "confidence": 0.3,
+      "processing_time": 0.1485731601715088,
+      "success": true
+    },
+    {
+      "test_name": "Incomplete: güzel",
+      "input": "güzel",
+      "expected": "Should ask for clarification",
+      "response": "🤔 Anlayamadım. Size nasıl yardımcı olabilirim?\n\n💡 **Yapabileceklerim:**\n• Ürün arama\n• Fiyat bilgisi\n• Stok durumu\n• Mağaza bilgileri",
+      "intent": "unclear",
+      "confidence": 0.3,
+      "processing_time": 0.10343503952026367,
+      "success": true
+    },
+    {
+      "test_name": "Incomplete: var mı",
+      "input": "var mı",
+      "expected": "Should ask what product they're looking for",
+      "response": "📦 Hangi ürünün stok durumunu öğrenmek istiyorsunuz? Ürün adını söylerseniz stok bilgisini kontrol edebilirim.",
+      "intent": "stock_inquiry",
+      "confidence": 0.7,
+      "processing_time": 0.15654206275939941,
+      "success": true
+    },
+    {
+      "test_name": "Initial product search",
+      "input": "dantelli hamile lohusa",
+      "expected": "Should find dantelli hamile lohusa products",
+      "response": "Size uygun 5 ürün buldum:\n\n1. Dantelli Hamile Lohusa 3'lü Pijama Takımı\n   Renk: VİZON - Fiyat: 2718.73 TL (%30.0 indirim) - Stok: Mevcut\n\n2. Dantelli Hamile Lohusa 3'lü Pijama Takımı\n   Renk: LACİVERT - Fiyat: 2718.73 TL (%30.0 indirim) - Stok: Mevcut\n\n3. Dantelli Hamile Lohusa 3'lü Pijama Takımı\n   Renk: EKRU - Fiyat: 2718.73 TL (%30.0 indirim) - Stok: Mevcut\n\n4. Dantelli Hamile Lohusa 3'lü Pijama Takımı\n   Renk: AÇIK YEŞİL - Fiyat: 2718.73 TL (%30.0 indirim) - Stok: Mevcut\n\n5. Dantelli Hamile Lohusa 3'lü Pijama Takımı\n   Renk: YEŞİL - Fiyat: 2718.73 TL (%30.0 indirim) - Stok: Mevcut\n\nHangi ürün hakkında daha detaylı bilgi almak istersiniz?",
+      "intent": "product_search",
+      "confidence": 0.6,
+      "processing_time": 0.12595891952514648,
+      "success": true
+    },
+    {
+      "test_name": "Context switch to sabahlık",
+      "input": "sabahlık",
+      "expected": "Should search for sabahlık products, not continue with previous search",
+      "response": "Size uygun 5 ürün buldum:\n\n1. Dekolteli Yakası ve Kolu Dantelli Sabahlık Takımı\n   Renk: SİYAH - Fiyat: 2143.33 TL (%30.0 indirim) - Stok: Mevcut\n\n2. Dantelli Önü Düğmeli Hamile Lohusa Sabahlık Takımı\n   Renk: EKRU - Fiyat: 2535.33 TL (%30.0 indirim) - Stok: Mevcut\n\n3. Dantelli Önü Düğmeli Hamile Lohusa Sabahlık Takımı\n   Renk: LACİVERT - Fiyat: 2535.33 TL (%30.0 indirim) - Stok: Mevcut\n\n4. Dantelli Hamile Lohusa Sabahlık Takımı\n   Renk: LACİVERT - Fiyat: 2508.73 TL (%30.0 indirim) - Stok: Mevcut\n\n5. Dantelli Hamile Lohusa Sabahlık Takımı\n   Renk: EKRU - Fiyat: 2508.73 TL (%30.0 indirim) - Stok: Mevcut\n\nHangi ürün hakkında daha detaylı bilgi almak istersiniz?",
+      "intent": "product_search",
+      "confidence": 0.6,
+      "processing_time": 0.14887189865112305,
+      "success": true
+    },
+    {
+      "test_name": "Vague follow-up",
+      "input": "tamam",
+      "expected": "Should ask for clarification about which product",
+      "response": "🤔 Anlayamadım. Size nasıl yardımcı olabilirim?\n\n💡 **Yapabileceklerim:**\n• Ürün arama\n• Fiyat bilgisi\n• Stok durumu\n• Mağaza bilgileri",
+      "intent": "unclear",
+      "confidence": 0.3,
+      "processing_time": 0.09587407112121582,
+      "success": true
+    },
+    {
+      "test_name": "Number selection",
+      "input": "1",
+      "expected": "Should select first product from last search results",
+      "response": "🤔 Anlayamadım. Size nasıl yardımcı olabilirim?\n\n💡 **Yapabileceklerim:**\n• Ürün arama\n• Fiyat bilgisi\n• Stok durumu\n• Mağaza bilgileri",
+      "intent": "unclear",
+      "confidence": 0.3,
+      "processing_time": 0.14826107025146484,
+      "success": true
+    },
+    {
+      "test_name": "First query (no cache)",
+      "input": "dantelli hamile gecelik",
+      "expected": "Should process normally and cache result",
+      "response": "Size uygun 5 ürün buldum:\n\n1. Dantelli Hamile Lohusa Gecelik\n   Renk: LACİVERT - Fiyat: 1272.53 TL (%30.0 indirim) - Stok: Mevcut\n\n2. Önü Düğmeli Dantelli Hamile Lohusa Gecelik\n   Renk: AÇIK YEŞİL - Fiyat: 1209.53 TL (%30.0 indirim) - Stok: Mevcut\n\n3. Önü Düğmeli Dantelli Hamile Lohusa Gecelik\n   Renk: PETROL MAVİSİ - Fiyat: 906.04 TL (%35.0 indirim) - Stok: Mevcut\n\n4. Dantelli Hamile Lohusa Gecelik\n   Renk: EKRU - Fiyat: 1272.53 TL (%30.0 indirim) - Stok: Mevcut\n\n5. Dantelli Hamile Lohusa Gecelik\n   Renk: VİZON - Fiyat: 1272.53 TL (%30.0 indirim) - Stok: Mevcut\n\nHangi ürün hakkında daha detaylı bilgi almak istersiniz?",
+      "intent": "product_search",
+      "confidence": 0.6,
+      "processing_time": 0.13118410110473633,
+      "success": true
+    },
+    {
+      "test_name": "Second query (cached)",
+      "input": "dantelli hamile gecelik",
+      "expected": "Should return cached result faster",
+      "response": "Size uygun 5 ürün buldum:\n\n1. Dantelli Hamile Lohusa Gecelik\n   Renk: LACİVERT - Fiyat: 1272.53 TL (%30.0 indirim) - Stok: Mevcut\n\n2. Önü Düğmeli Dantelli Hamile Lohusa Gecelik\n   Renk: AÇIK YEŞİL - Fiyat: 1209.53 TL (%30.0 indirim) - Stok: Mevcut\n\n3. Önü Düğmeli Dantelli Hamile Lohusa Gecelik\n   Renk: PETROL MAVİSİ - Fiyat: 906.04 TL (%35.0 indirim) - Stok: Mevcut\n\n4. Dantelli Hamile Lohusa Gecelik\n   Renk: EKRU - Fiyat: 1272.53 TL (%30.0 indirim) - Stok: Mevcut\n\n5. Dantelli Hamile Lohusa Gecelik\n   Renk: VİZON - Fiyat: 1272.53 TL (%30.0 indirim) - Stok: Mevcut\n\nHangi ürün hakkında daha detaylı bilgi almak istersiniz?",
+      "intent": "product_search",
+      "confidence": 0.6,
+      "processing_time": 0.14411473274230957,
+      "success": true
+    },
+    {
+      "test_name": "Turkish: Normal Turkish text",
+      "input": "dantelli gecelik",
+      "expected": "Should handle Turkish characters correctly",
+      "response": "Size uygun 5 ürün buldum:\n\n1. Dekoteli Yakası Brode Dantelli Gecelik\n   Renk: EKRU - Fiyat: 626.54 TL (%35.0 indirim) - Stok: Mevcut\n\n2. Yakası Damla Detaylı Dantelli Gecelik\n   Renk: SİYAH - Fiyat: 502.39 TL (%35.0 indirim) - Stok: Mevcut\n\n3. Kolu Omzu ve Yakası Dantelli Önü Düğmeli Gecelik\n   Renk: EKRU - Fiyat: 1415.33 TL (%30.0 indirim) - Stok: Mevcut\n\n4. Kolu Omzu ve Yakası Dantelli Önü Düğmeli Gecelik\n   Renk: LACİVERT - Fiyat: 1415.33 TL (%30.0 indirim) - Stok: Mevcut\n\n5. Kolu Omzu ve Yakası Dantelli Önü Düğmeli Gecelik\n   Renk: BORDO - Fiyat: 1486.73 TL (%30.0 indirim) - Stok: Mevcut\n\nHangi ürün hakkında daha detaylı bilgi almak istersiniz?",
+      "intent": "product_search",
+      "confidence": 0.6,
+      "processing_time": 0.12949371337890625,
+      "success": true
+    },
+    {
+      "test_name": "Turkish: All uppercase",
+      "input": "DANTELLI GECELIK",
+      "expected": "Should handle Turkish characters correctly",
+      "response": "Size uygun 5 ürün buldum:\n\n1. Dekoteli Yakası Brode Dantelli Gecelik\n   Renk: EKRU - Fiyat: 626.54 TL (%35.0 indirim) - Stok: Mevcut\n\n2. Yakası Damla Detaylı Dantelli Gecelik\n   Renk: SİYAH - Fiyat: 502.39 TL (%35.0 indirim) - Stok: Mevcut\n\n3. Kolu Omzu ve Yakası Dantelli Önü Düğmeli Gecelik\n   Renk: EKRU - Fiyat: 1415.33 TL (%30.0 indirim) - Stok: Mevcut\n\n4. Kolu Omzu ve Yakası Dantelli Önü Düğmeli Gecelik\n   Renk: LACİVERT - Fiyat: 1415.33 TL (%30.0 indirim) - Stok: Mevcut\n\n5. Kolu Omzu ve Yakası Dantelli Önü Düğmeli Gecelik\n   Renk: BORDO - Fiyat: 1486.73 TL (%30.0 indirim) - Stok: Mevcut\n\nHangi ürün hakkında daha detaylı bilgi almak istersiniz?",
+      "intent": "product_search",
+      "confidence": 0.6,
+      "processing_time": 0.13616490364074707,
+      "success": true
+    },
+    {
+      "test_name": "Turkish: Title case",
+      "input": "Dantelli Gecelik",
+      "expected": "Should handle Turkish characters correctly",
+      "response": "Size uygun 5 ürün buldum:\n\n1. Dekoteli Yakası Brode Dantelli Gecelik\n   Renk: EKRU - Fiyat: 626.54 TL (%35.0 indirim) - Stok: Mevcut\n\n2. Yakası Damla Detaylı Dantelli Gecelik\n   Renk: SİYAH - Fiyat: 502.39 TL (%35.0 indirim) - Stok: Mevcut\n\n3. Kolu Omzu ve Yakası Dantelli Önü Düğmeli Gecelik\n   Renk: EKRU - Fiyat: 1415.33 TL (%30.0 indirim) - Stok: Mevcut\n\n4. Kolu Omzu ve Yakası Dantelli Önü Düğmeli Gecelik\n   Renk: LACİVERT - Fiyat: 1415.33 TL (%30.0 indirim) - Stok: Mevcut\n\n5. Kolu Omzu ve Yakası Dantelli Önü Düğmeli Gecelik\n   Renk: BORDO - Fiyat: 1486.73 TL (%30.0 indirim) - Stok: Mevcut\n\nHangi ürün hakkında daha detaylı bilgi almak istersiniz?",
+      "intent": "product_search",
+      "confidence": 0.6,
+      "processing_time": 0.13635683059692383,
+      "success": true
+    },
+    {
+      "test_name": "Turkish: Typo with wrong i",
+      "input": "dantellı gecelık",
+      "expected": "Should handle Turkish characters correctly",
+      "response": "🤔 Anlayamadım. Size nasıl yardımcı olabilirim?\n\n💡 **Yapabileceklerim:**\n• Ürün arama\n• Fiyat bilgisi\n• Stok durumu\n• Mağaza bilgileri",
+      "intent": "unclear",
+      "confidence": 0.3,
+      "processing_time": 0.11316895484924316,
+      "success": true
+    },
+    {
+      "test_name": "Turkish: Turkish ş character",
+      "input": "şık gecelik",
+      "expected": "Should handle Turkish characters correctly",
+      "response": "Size uygun 5 ürün buldum:\n\n1. Kolu Omzu ve Yakası Dantelli Önü Düğmeli Gecelik\n   Renk: EKRU - Fiyat: 1415.33 TL (%30.0 indirim) - Stok: Mevcut\n\n2. Kolu Omzu ve Yakası Dantelli Önü Düğmeli Gecelik\n   Renk: LACİVERT - Fiyat: 1415.33 TL (%30.0 indirim) - Stok: Mevcut\n\n3. Dantelli Önü Düğmeli Hamile Lohusa Gecelik\n   Renk: EKRU - Fiyat: 1632.33 TL (%30.0 indirim) - Stok: Mevcut\n\n4. Dantelli Önü Düğmeli Hamile Lohusa Gecelik\n   Renk: LACİVERT - Fiyat: 1632.33 TL (%30.0 indirim) - Stok: Mevcut\n\n5. Kolu Omzu ve Yakası Dantelli Önü Düğmeli Gecelik\n   Renk: BORDO - Fiyat: 1486.73 TL (%30.0 indirim) - Stok: Mevcut\n\nHangi ürün hakkında daha detaylı bilgi almak istersiniz?",
+      "intent": "product_search",
+      "confidence": 0.6,
+      "processing_time": 0.17326712608337402,
+      "success": true
+    },
+    {
+      "test_name": "Turkish: Turkish ü character",
+      "input": "güzel ürün",
+      "expected": "Should handle Turkish characters correctly",
+      "response": "🤔 Anlayamadım. Size nasıl yardımcı olabilirim?\n\n💡 **Yapabileceklerim:**\n• Ürün arama\n• Fiyat bilgisi\n• Stok durumu\n• Mağaza bilgileri",
+      "intent": "unclear",
+      "confidence": 0.3,
+      "processing_time": 0.07420802116394043,
+      "success": true
+    },
+    {
+      "test_name": "Turkish: Turkish ç character",
+      "input": "çok güzel",
+      "expected": "Should handle Turkish characters correctly",
+      "response": "🤔 Anlayamadım. Size nasıl yardımcı olabilirim?\n\n💡 **Yapabileceklerim:**\n• Ürün arama\n• Fiyat bilgisi\n• Stok durumu\n• Mağaza bilgileri",
+      "intent": "unclear",
+      "confidence": 0.3,
+      "processing_time": 0.1721360683441162,
+      "success": true
+    },
+    {
+      "test_name": "Turkish: Turkish ö character",
+      "input": "özel tasarım",
+      "expected": "Should handle Turkish characters correctly",
+      "response": "Size uygun 5 ürün buldum:\n\n1. Kısa Kollu Desenli Gecelik\n   Renk: SARI - Fiyat: 677.89 TL (%35.0 indirim) - Stok: Mevcut\n\n2. Desenli ve Baskılı \"Yoga Sport\" Pijama Takımı\n   Renk: SARI - Fiyat: 1498.63 TL (%30.0 indirim) - Stok: Mevcut\n\n3. Çiçek ve Yaprak Desenli Kuşaklı Elbise\n   Renk: SARI - Fiyat: 1694.63 TL (%30.0 indirim) - Stok: Mevcut\n\n4. Çiçek ve Yaprak Desenli Önü Düğmeli Alt Üst Takım\n   Renk: SARI - Fiyat: 1761.83 TL (%30.0 indirim) - Stok: Mevcut\n\n5. Çiçek ve Yaprak Desenli Önü Düğmeli Alt Üst Takım\n   Renk: SARI - Fiyat: 1661.73 TL (%30.0 indirim) - Stok: Mevcut\n\nHangi ürün hakkında daha detaylı bilgi almak istersiniz?",
+      "intent": "product_search",
+      "confidence": 0.6,
+      "processing_time": 0.11215519905090332,
+      "success": true
+    },
+    {
+      "test_name": "Turkish: Turkish ş in middle",
+      "input": "geniş beden",
+      "expected": "Should handle Turkish characters correctly",
+      "response": "🤔 Anlayamadım. Size nasıl yardımcı olabilirim?\n\n💡 **Yapabileceklerim:**\n• Ürün arama\n• Fiyat bilgisi\n• Stok durumu\n• Mağaza bilgileri",
+      "intent": "unclear",
+      "confidence": 0.3,
+      "processing_time": 0.1349961757659912,
+      "success": true
+    },
+    {
+      "test_name": "Turkish: Turkish ü in middle",
+      "input": "büyük beden",
+      "expected": "Should handle Turkish characters correctly",
+      "response": "🤔 Anlayamadım. Size nasıl yardımcı olabilirim?\n\n💡 **Yapabileceklerim:**\n• Ürün arama\n• Fiyat bilgisi\n• Stok durumu\n• Mağaza bilgileri",
+      "intent": "unclear",
+      "confidence": 0.3,
+      "processing_time": 0.11200189590454102,
+      "success": true
+    },
+    {
+      "test_name": "Rapid fire 1",
+      "input": "merhaba",
+      "expected": "Should handle message 1 in sequence correctly",
+      "response": "Merhaba! 👋 Size nasıl yardımcı olabilirim? Ürünlerimiz hakkında bilgi alabilir, fiyat sorabilirsiniz.",
+      "intent": "greeting",
+      "confidence": 0.9,
+      "processing_time": 0.13416075706481934,
+      "success": true
+    },
+    {
+      "test_name": "Rapid fire 2",
+      "input": "hamile takım",
+      "expected": "Should handle message 2 in sequence correctly",
+      "response": "Size uygun 5 ürün buldum:\n\n1. Dantelli Önü Düğmeli Hamile Lohusa 3'lü Pijama Takımı\n   Renk: EKRU - Fiyat: 2699.13 TL (%30.0 indirim) - Stok: Mevcut\n\n2. Dantelli Önü Düğmeli Hamile Lohusa 3'lü Pijama Takımı\n   Renk: LACİVERT - Fiyat: 2699.13 TL (%30.0 indirim) - Stok: Mevcut\n\n3. Dantelli Önü Düğmeli Hamile Lohusa Pijama Takımı\n   Renk: EKRU - Fiyat: 1903.93 TL (%30.0 indirim) - Stok: Mevcut\n\n4. Dantelli Önü Düğmeli Hamile Lohusa Pijama Takımı\n   Renk: LACİVERT - Fiyat: 1903.93 TL (%30.0 indirim) - Stok: Mevcut\n\n5. Dantelli Hamile Lohusa 3'lü Pijama Takımı\n   Renk: VİZON - Fiyat: 2718.73 TL (%30.0 indirim) - Stok: Mevcut\n\nHangi ürün hakkında daha detaylı bilgi almak istersiniz?",
+      "intent": "product_search",
+      "confidence": 0.6,
+      "processing_time": 0.14492106437683105,
+      "success": true
+    },
+    {
+      "test_name": "Rapid fire 3",
+      "input": "fiyatı",
+      "expected": "Should handle message 3 in sequence correctly",
+      "response": "💰 Hangi ürünün fiyatını öğrenmek istiyorsunuz? Ürün adını söylerseniz size fiyat bilgisini verebilirim.",
+      "intent": "price_inquiry",
+      "confidence": 0.7,
+      "processing_time": 0.10280823707580566,
+      "success": true
+    },
+    {
+      "test_name": "Rapid fire 4",
+      "input": "stok var mı",
+      "expected": "Should handle message 4 in sequence correctly",
+      "response": "📦 Hangi ürünün stok durumunu öğrenmek istiyorsunuz? Ürün adını söylerseniz stok bilgisini kontrol edebilirim.",
+      "intent": "stock_inquiry",
+      "confidence": 0.7,
+      "processing_time": 0.1423020362854004,
+      "success": true
+    },
+    {
+      "test_name": "Rapid fire 5",
+      "input": "1 numara",
+      "expected": "Should handle message 5 in sequence correctly",
+      "response": "📞 Telefon numaramız: 0555 555 55 55",
+      "intent": "phone_inquiry",
+      "confidence": 0.8,
+      "processing_time": 0.10307717323303223,
+      "success": true
+    },
+    {
+      "test_name": "Rapid fire 6",
+      "input": "teşekkürler",
+      "expected": "Should handle message 6 in sequence correctly",
+      "response": "Rica ederim! 😊 Başka sorunuz var mı?",
+      "intent": "thanks",
+      "confidence": 0.9,
+      "processing_time": 0.14522600173950195,
+      "success": true
+    },
+    {
+      "test_name": "Rapid fire 7",
+      "input": "başka sorum yok",
+      "expected": "Should handle message 7 in sequence correctly",
+      "response": "Görüşmek üzere! İyi günler dilerim. 👋",
+      "intent": "goodbye",
+      "confidence": 0.8,
+      "processing_time": 0.10251784324645996,
+      "success": true
+    },
+    {
+      "test_name": "Rapid fire 8",
+      "input": "iyi günler",
+      "expected": "Should handle message 8 in sequence correctly",
+      "response": "🤔 Anlayamadım. Size nasıl yardımcı olabilirim?\n\n💡 **Yapabileceklerim:**\n• Ürün arama\n• Fiyat bilgisi\n• Stok durumu\n• Mağaza bilgileri",
+      "intent": "unclear",
+      "confidence": 0.3,
+      "processing_time": 0.15123414993286133,
+      "success": true
+    },
+    {
+      "test_name": "Business: telefon",
+      "input": "telefon",
+      "expected": "Should provide phone number",
+      "response": "📞 Telefon numaramız: 0555 555 55 55",
+      "intent": "phone_inquiry",
+      "confidence": 0.8,
+      "processing_time": 0.09762692451477051,
+      "success": true
+    },
+    {
+      "test_name": "Business: numara",
+      "input": "numara",
+      "expected": "Should provide phone number",
+      "response": "📞 Telefon numaramız: 0555 555 55 55",
+      "intent": "phone_inquiry",
+      "confidence": 0.8,
+      "processing_time": 0.15397405624389648,
+      "success": true
+    },
+    {
+      "test_name": "Business: ara",
+      "input": "ara",
+      "expected": "Should provide phone number",
+      "response": "🤔 Anlayamadım. Size nasıl yardımcı olabilirim?\n\n💡 **Yapabileceklerim:**\n• Ürün arama\n• Fiyat bilgisi\n• Stok durumu\n• Mağaza bilgileri",
+      "intent": "unclear",
+      "confidence": 0.3,
+      "processing_time": 0.09889411926269531,
+      "success": true
+    },
+    {
+      "test_name": "Business: iletişim",
+      "input": "iletişim",
+      "expected": "Should provide contact info",
+      "response": "🤔 Anlayamadım. Size nasıl yardımcı olabilirim?\n\n💡 **Yapabileceklerim:**\n• Ürün arama\n• Fiyat bilgisi\n• Stok durumu\n• Mağaza bilgileri",
+      "intent": "unclear",
+      "confidence": 0.3,
+      "processing_time": 0.15192294120788574,
+      "success": true
+    },
+    {
+      "test_name": "Business: adres",
+      "input": "adres",
+      "expected": "Should provide address or contact info",
+      "response": "🤔 Anlayamadım. Size nasıl yardımcı olabilirim?\n\n💡 **Yapabileceklerim:**\n• Ürün arama\n• Fiyat bilgisi\n• Stok durumu\n• Mağaza bilgileri",
+      "intent": "unclear",
+      "confidence": 0.3,
+      "processing_time": 0.09631204605102539,
+      "success": true
+    },
+    {
+      "test_name": "Business: site",
+      "input": "site",
+      "expected": "Should provide website",
+      "response": "🌐 Web sitemiz: www.butik.com",
+      "intent": "website_inquiry",
+      "confidence": 0.8,
+      "processing_time": 0.15407180786132812,
+      "success": true
+    },
+    {
+      "test_name": "Business: web",
+      "input": "web",
+      "expected": "Should provide website",
+      "response": "🌐 Web sitemiz: www.butik.com",
+      "intent": "website_inquiry",
+      "confidence": 0.8,
+      "processing_time": 0.09728503227233887,
+      "success": true
+    },
+    {
+      "test_name": "Business: mail",
+      "input": "mail",
+      "expected": "Should provide email",
+      "response": "🤔 Anlayamadım. Size nasıl yardımcı olabilirim?\n\n💡 **Yapabileceklerim:**\n• Ürün arama\n• Fiyat bilgisi\n• Stok durumu\n• Mağaza bilgileri",
+      "intent": "unclear",
+      "confidence": 0.3,
+      "processing_time": 0.1571359634399414,
+      "success": true
+    },
+    {
+      "test_name": "Business: iade",
+      "input": "iade",
+      "expected": "Should provide return policy",
+      "response": "📋 İade politikamız: 14 gün içinde iade kabul edilir. Ürün kullanılmamış ve etiketli olmalıdır.",
+      "intent": "return_policy",
+      "confidence": 0.8,
+      "processing_time": 0.08927392959594727,
+      "success": true
+    },
+    {
+      "test_name": "Business: kargo",
+      "input": "kargo",
+      "expected": "Should provide shipping info",
+      "response": "🚚 Kargo bilgileri: Türkiye geneli ücretsiz kargo. 1-3 iş günü içinde teslimat.",
+      "intent": "shipping_info",
+      "confidence": 0.8,
+      "processing_time": 0.15677475929260254,
+      "success": true
+    },
+    {
+      "test_name": "Business: teslimat",
+      "input": "teslimat",
+      "expected": "Should provide delivery info",
+      "response": "🚚 Kargo bilgileri: Türkiye geneli ücretsiz kargo. 1-3 iş günü içinde teslimat.",
+      "intent": "shipping_info",
+      "confidence": 0.8,
+      "processing_time": 0.09478306770324707,
+      "success": true
+    },
+    {
+      "test_name": "Business: ödeme",
+      "input": "ödeme",
+      "expected": "Should provide payment info",
+      "response": "🤔 Anlayamadım. Size nasıl yardımcı olabilirim?\n\n💡 **Yapabileceklerim:**\n• Ürün arama\n• Fiyat bilgisi\n• Stok durumu\n• Mağaza bilgileri",
+      "intent": "unclear",
+      "confidence": 0.3,
+      "processing_time": 0.1640467643737793,
+      "success": true
+    },
+    {
+      "test_name": "Business: kredi kartı",
+      "input": "kredi kartı",
+      "expected": "Should provide payment info",
+      "response": "🤔 Anlayamadım. Size nasıl yardımcı olabilirim?\n\n💡 **Yapabileceklerim:**\n• Ürün arama\n• Fiyat bilgisi\n• Stok durumu\n• Mağaza bilgileri",
+      "intent": "unclear",
+      "confidence": 0.3,
+      "processing_time": 0.08389711380004883,
+      "success": true
+    },
+    {
+      "test_name": "Error prone: ürünürünürünürünürünürünürünür...",
+      "input": "ürünürünürünürünürünürünürünürünürünürünürünürünürünürünürünürünürünürünürünürünürünürünürünürünürünürünürünürünürünürünürünürünürünürünürünürünürünürünürünürünürünürünürünürünürünürünürünürünürünürünürünürünürünürünürünürünürünürünürünürünürünürünürünürünürünürünürünürünürünürünürünürünürünürünürünürünürünürünürünürünürünürünürünürünürünürünürünürünürünürünürünürünürünürünürünürünürünürünürünürün",
+      "expected": "Should handle very long repeated text",
+      "response": "🤔 Anlayamadım. Size nasıl yardımcı olabilirim?\n\n💡 **Yapabileceklerim:**\n• Ürün arama\n• Fiyat bilgisi\n• Stok durumu\n• Mağaza bilgileri",
+      "intent": "unclear",
+      "confidence": 0.3,
+      "processing_time": 0.17065691947937012,
+      "success": true
+    },
+    {
+      "test_name": "Error prone: çok çok çok çok pahalı ürün is...",
+      "input": "çok çok çok çok pahalı ürün istiyorum ama ucuz olsun",
+      "expected": "Should handle contradictory requests",
+      "response": "🤔 Anlayamadım. Size nasıl yardımcı olabilirim?\n\n💡 **Yapabileceklerim:**\n• Ürün arama\n• Fiyat bilgisi\n• Stok durumu\n• Mağaza bilgileri",
+      "intent": "unclear",
+      "confidence": 0.3,
+      "processing_time": 0.07218384742736816,
+      "success": true
+    },
+    {
+      "test_name": "Error prone: hamile değilim ama hamile ürün...",
+      "input": "hamile değilim ama hamile ürünü istiyorum",
+      "expected": "Should handle contradictory context",
+      "response": "Size uygun 5 ürün buldum:\n\n1. Dantelli Önü Düğmeli Hamile Lohusa 3'lü Pijama Takımı\n   Renk: LACİVERT - Fiyat: 2699.13 TL (%30.0 indirim) - Stok: Mevcut\n\n2. Dantelli Önü Düğmeli Hamile Lohusa Pijama Takımı\n   Renk: EKRU - Fiyat: 1903.93 TL (%30.0 indirim) - Stok: Mevcut\n\n3. Dantelli Önü Düğmeli Hamile Lohusa Pijama Takımı\n   Renk: LACİVERT - Fiyat: 1903.93 TL (%30.0 indirim) - Stok: Mevcut\n\n4. Dantelli Hamile Lohusa 3'lü Pijama Takımı\n   Renk: LACİVERT - Fiyat: 2718.73 TL (%30.0 indirim) - Stok: Mevcut\n\n5. Brode Dantelli Önü Düğmeli Hamile Lohusa Pijama Takımı\n   Renk: PARLEMENT MAVİSİ - Fiyat: 856.64 TL (%35.0 indirim) - Stok: Mevcut\n\nHangi ürün hakkında daha detaylı bilgi almak istersiniz?",
+      "intent": "product_search",
+      "confidence": 0.6,
+      "processing_time": 0.22196578979492188,
+      "success": true
+    },
+    {
+      "test_name": "Error prone: erkek için kadın iç giyimi...",
+      "input": "erkek için kadın iç giyimi",
+      "expected": "Should handle gender mismatch",
+      "response": "🤔 Anlayamadım. Size nasıl yardımcı olabilirim?\n\n💡 **Yapabileceklerim:**\n• Ürün arama\n• Fiyat bilgisi\n• Stok durumu\n• Mağaza bilgileri",
+      "intent": "unclear",
+      "confidence": 0.3,
+      "processing_time": 0.06903314590454102,
+      "success": true
+    },
+    {
+      "test_name": "Error prone: çocuk için yetişkin ürünü...",
+      "input": "çocuk için yetişkin ürünü",
+      "expected": "Should handle age mismatch",
+      "response": "🤔 Anlayamadım. Size nasıl yardımcı olabilirim?\n\n💡 **Yapabileceklerim:**\n• Ürün arama\n• Fiyat bilgisi\n• Stok durumu\n• Mağaza bilgileri",
+      "intent": "unclear",
+      "confidence": 0.3,
+      "processing_time": 0.1818549633026123,
+      "success": true
+    }
+  ],
+  "chatbot_stats": {
+    "total_requests": 65,
+    "successful_requests": 63,
+    "gemini_calls": 0,
+    "fallback_calls": 63,
+    "average_response_time": 0.13450814050341411,
+    "products_loaded": 590,
+    "gemini_available": true,
+    "success_rate": 96.92307692307692
+  },
+  "conversation_stats": {
+    "state": "clarification",
+    "history_length": 10,
+    "clarification_attempts": 31,
+    "last_products_count": 0,
+    "cache_size": 0
+  }
+}

@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RAG Ürün Arama Sistemi</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+            overflow: hidden;
+        }
+
+        .header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 30px;
+            text-align: center;
+        }
+
+        .header h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            font-weight: 300;
+        }
+
+        .header p {
+            font-size: 1.1em;
+            opacity: 0.9;
+        }
+
+        .search-section {
+            padding: 40px;
+            background: #f8f9fa;
+        }
+
+        .search-box {
+            display: flex;
+            gap: 15px;
+            margin-bottom: 30px;
+        }
+
+        .search-input {
+            flex: 1;
+            padding: 15px 20px;
+            border: 2px solid #e9ecef;
+            border-radius: 50px;
+            font-size: 16px;
+            outline: none;
+            transition: all 0.3s ease;
+        }
+
+        .search-input:focus {
+            border-color: #667eea;
+            box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+        }
+
+        .search-btn {
+            padding: 15px 30px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            border: none;
+            border-radius: 50px;
+            font-size: 16px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            min-width: 120px;
+        }
+
+        .search-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 20px rgba(102, 126, 234, 0.3);
+        }
+
+        .search-btn:disabled {
+            opacity: 0.6;
+            cursor: not-allowed;
+            transform: none;
+        }
+
+        .search-info {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+            padding: 15px;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+        }
+
+        .search-message {
+            font-weight: 600;
+            color: #495057;
+        }
+
+        .search-meta {
+            font-size: 0.9em;
+            color: #6c757d;
+        }
+
+        .search-type {
+            display: inline-block;
+            padding: 4px 12px;
+            background: #e9ecef;
+            border-radius: 20px;
+            font-size: 0.8em;
+            font-weight: 600;
+            margin-left: 10px;
+        }
+
+        .search-type.semantic {
+            background: #d4edda;
+            color: #155724;
+        }
+
+        .search-type.price_low {
+            background: #d1ecf1;
+            color: #0c5460;
+        }
+
+        .search-type.price_high {
+            background: #f8d7da;
+            color: #721c24;
+        }
+
+        .search-type.color {
+            background: #fff3cd;
+            color: #856404;
+        }
+
+        .products-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .product-card {
+            background: white;
+            border-radius: 15px;
+            padding: 20px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+            transition: all 0.3s ease;
+            border: 1px solid #e9ecef;
+        }
+
+        .product-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 30px rgba(0,0,0,0.15);
+        }
+
+        .product-name {
+            font-size: 1.1em;
+            font-weight: 600;
+            color: #212529;
+            margin-bottom: 10px;
+            line-height: 1.4;
+        }
+
+        .product-details {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 15px;
+        }
+
+        .product-color {
+            display: inline-block;
+            padding: 5px 12px;
+            background: #f8f9fa;
+            border-radius: 20px;
+            font-size: 0.9em;
+            font-weight: 600;
+            color: #495057;
+        }
+
+        .product-price {
+            font-size: 1.2em;
+            font-weight: 700;
+            color: #28a745;
+        }
+
+        .product-original-price {
+            font-size: 0.9em;
+            color: #6c757d;
+            text-decoration: line-through;
+            margin-right: 8px;
+        }
+
+        .product-meta {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 0.9em;
+            color: #6c757d;
+        }
+
+        .similarity-score {
+            background: #e7f3ff;
+            color: #0066cc;
+            padding: 3px 8px;
+            border-radius: 12px;
+            font-size: 0.8em;
+            font-weight: 600;
+        }
+
+        .loading {
+            text-align: center;
+            padding: 40px;
+            color: #6c757d;
+        }
+
+        .loading::after {
+            content: '';
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            border: 2px solid #f3f3f3;
+            border-top: 2px solid #667eea;
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+            margin-left: 10px;
+        }
+
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+
+        .no-results {
+            text-align: center;
+            padding: 60px 20px;
+            color: #6c757d;
+        }
+
+        .no-results h3 {
+            font-size: 1.5em;
+            margin-bottom: 10px;
+            color: #495057;
+        }
+
+        .stats-section {
+            background: #f8f9fa;
+            padding: 20px;
+            border-top: 1px solid #e9ecef;
+        }
+
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+        }
+
+        .stat-card {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+        }
+
+        .stat-number {
+            font-size: 2em;
+            font-weight: 700;
+            color: #667eea;
+            margin-bottom: 5px;
+        }
+
+        .stat-label {
+            color: #6c757d;
+            font-size: 0.9em;
+        }
+
+        .example-queries {
+            margin-top: 20px;
+        }
+
+        .example-queries h4 {
+            margin-bottom: 10px;
+            color: #495057;
+        }
+
+        .query-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .query-tag {
+            padding: 8px 15px;
+            background: white;
+            border: 1px solid #dee2e6;
+            border-radius: 20px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            font-size: 0.9em;
+        }
+
+        .query-tag:hover {
+            background: #667eea;
+            color: white;
+            border-color: #667eea;
+        }
+
+        @media (max-width: 768px) {
+            .search-box {
+                flex-direction: column;
+            }
+            
+            .search-info {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 10px;
+            }
+            
+            .products-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .stats-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🔍 RAG Ürün Arama</h1>
+            <p>Akıllı arama teknolojisi ile ürünlerinizi kolayca bulun</p>
+        </div>
+
+        <div class="search-section">
+            <div class="search-box">
+                <input type="text" id="searchInput" class="search-input" 
+                       placeholder="Örnek: hamile için rahat pijama, siyah dantelli gecelik, ekonomik takım...">
+                <button id="searchBtn" class="search-btn">Ara</button>
+            </div>
+
+            <div class="example-queries">
+                <h4>Örnek Aramalar:</h4>
+                <div class="query-tags">
+                    <span class="query-tag" onclick="searchExample('hamile için rahat pijama')">Hamile pijaması</span>
+                    <span class="query-tag" onclick="searchExample('siyah dantelli gecelik')">Siyah gecelik</span>
+                    <span class="query-tag" onclick="searchExample('ekonomik takım')">Ekonomik ürünler</span>
+                    <span class="query-tag" onclick="searchExample('premium sabahlık')">Premium sabahlık</span>
+                    <span class="query-tag" onclick="searchExample('düğmeli pijama')">Düğmeli pijama</span>
+                </div>
+            </div>
+        </div>
+
+        <div id="searchResults" style="display: none;">
+            <div id="searchInfo" class="search-info"></div>
+            <div id="productsContainer" class="products-grid"></div>
+        </div>
+
+        <div id="loadingIndicator" class="loading" style="display: none;">
+            Aranıyor...
+        </div>
+
+        <div class="stats-section">
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <div class="stat-number" id="totalProducts">-</div>
+                    <div class="stat-label">Toplam Ürün</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number" id="totalColors">-</div>
+                    <div class="stat-label">Renk Çeşidi</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number" id="semanticStatus">-</div>
+                    <div class="stat-label">Akıllı Arama</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number" id="avgPrice">-</div>
+                    <div class="stat-label">Ortalama Fiyat</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // DOM elements
+        const searchInput = document.getElementById('searchInput');
+        const searchBtn = document.getElementById('searchBtn');
+        const searchResults = document.getElementById('searchResults');
+        const searchInfo = document.getElementById('searchInfo');
+        const productsContainer = document.getElementById('productsContainer');
+        const loadingIndicator = document.getElementById('loadingIndicator');
+
+        // Event listeners
+        searchBtn.addEventListener('click', performSearch);
+        searchInput.addEventListener('keypress', function(e) {
+            if (e.key === 'Enter') {
+                performSearch();
+            }
+        });
+
+        // Search function
+        async function performSearch() {
+            const query = searchInput.value.trim();
+            if (!query) {
+                alert('Lütfen arama terimi girin.');
+                return;
+            }
+
+            // Show loading
+            loadingIndicator.style.display = 'block';
+            searchResults.style.display = 'none';
+            searchBtn.disabled = true;
+            searchBtn.textContent = 'Aranıyor...';
+
+            try {
+                const response = await fetch('/search', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify({ query: query, limit: 20 })
+                });
+
+                const data = await response.json();
+
+                if (data.success) {
+                    displayResults(data);
+                } else {
+                    throw new Error(data.message || 'Arama hatası');
+                }
+
+            } catch (error) {
+                console.error('Search error:', error);
+                alert('Arama sırasında bir hata oluştu: ' + error.message);
+            } finally {
+                // Hide loading
+                loadingIndicator.style.display = 'none';
+                searchBtn.disabled = false;
+                searchBtn.textContent = 'Ara';
+            }
+        }
+
+        // Display search results
+        function displayResults(data) {
+            // Show search info
+            const searchTypeClass = data.search_type || 'keyword';
+            const searchTypeText = {
+                'semantic': 'Akıllı Arama',
+                'keyword': 'Anahtar Kelime',
+                'price_low': 'Ekonomik',
+                'price_high': 'Premium',
+                'color': 'Renk Filtresi'
+            }[searchTypeClass] || 'Genel';
+
+            searchInfo.innerHTML = `
+                <div class="search-message">
+                    ${data.message}
+                    <span class="search-type ${searchTypeClass}">${searchTypeText}</span>
+                </div>
+                <div class="search-meta">
+                    ${data.processing_time}s • ${data.total_results} sonuç
+                </div>
+            `;
+
+            // Show products
+            if (data.products && data.products.length > 0) {
+                productsContainer.innerHTML = data.products.map(product => `
+                    <div class="product-card">
+                        <div class="product-name">${product.name}</div>
+                        <div class="product-details">
+                            <span class="product-color">${product.color}</span>
+                            <div class="product-price">
+                                ${product.price !== product.final_price ? 
+                                    `<span class="product-original-price">${product.price.toFixed(2)} TL</span>` : ''
+                                }
+                                ${product.final_price.toFixed(2)} TL
+                            </div>
+                        </div>
+                        <div class="product-meta">
+                            <span>Stok: ${product.stock}</span>
+                            ${product.similarity ? 
+                                `<span class="similarity-score">%${(product.similarity * 100).toFixed(0)} benzer</span>` : ''
+                            }
+                        </div>
+                    </div>
+                `).join('');
+            } else {
+                productsContainer.innerHTML = `
+                    <div class="no-results">
+                        <h3>Sonuç bulunamadı</h3>
+                        <p>Farklı anahtar kelimeler deneyebilirsiniz.</p>
+                    </div>
+                `;
+            }
+
+            searchResults.style.display = 'block';
+        }
+
+        // Example search function
+        function searchExample(query) {
+            searchInput.value = query;
+            performSearch();
+        }
+
+        // Load statistics
+        async function loadStats() {
+            try {
+                const response = await fetch('/stats');
+                const data = await response.json();
+
+                document.getElementById('totalProducts').textContent = data.total_products || 0;
+                document.getElementById('totalColors').textContent = data.total_colors || 0;
+                document.getElementById('semanticStatus').textContent = data.semantic_search_available ? '✅' : '❌';
+                
+                // Calculate average price
+                if (data.price_distribution) {
+                    const total = Object.values(data.price_distribution).reduce((a, b) => a + b, 0);
+                    const avgPrice = (
+                        (data.price_distribution['0-1000'] * 500) +
+                        (data.price_distribution['1000-2000'] * 1500) +
+                        (data.price_distribution['2000+'] * 2500)
+                    ) / total;
+                    document.getElementById('avgPrice').textContent = avgPrice.toFixed(0) + ' TL';
+                }
+
+            } catch (error) {
+                console.error('Stats error:', error);
+            }
+        }
+
+        // Load stats on page load
+        loadStats();
+    </script>
+</body>
+</html>

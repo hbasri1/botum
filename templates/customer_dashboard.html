@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ business.name }} - Dashboard</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: #f8fafc;
+            color: #334155;
+        }
+        
+        .header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 2rem;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        
+        .header-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+        
+        .business-info h1 {
+            font-size: 2rem;
+            margin-bottom: 0.5rem;
+        }
+        
+        .business-info p {
+            opacity: 0.9;
+            font-size: 1.1rem;
+        }
+        
+        .header-actions {
+            display: flex;
+            gap: 1rem;
+            flex-wrap: wrap;
+        }
+        
+        .btn {
+            background: rgba(255, 255, 255, 0.2);
+            color: white;
+            border: none;
+            padding: 0.75rem 1.5rem;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 0.9rem;
+            font-weight: 500;
+            transition: all 0.2s;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+        
+        .btn:hover {
+            background: rgba(255, 255, 255, 0.3);
+            transform: translateY(-1px);
+        }
+        
+        .btn-primary {
+            background: white;
+            color: #667eea;
+        }
+        
+        .btn-primary:hover {
+            background: #f8f9fa;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 2rem auto;
+            padding: 0 2rem;
+        }
+        
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+            margin-bottom: 2rem;
+        }
+        
+        .stat-card {
+            background: white;
+            border-radius: 12px;
+            padding: 1.5rem;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            border-left: 4px solid #3b82f6;
+        }
+        
+        .stat-card.success {
+            border-left-color: #10b981;
+        }
+        
+        .stat-card.warning {
+            border-left-color: #f59e0b;
+        }
+        
+        .stat-card.info {
+            border-left-color: #8b5cf6;
+        }
+        
+        .stat-number {
+            font-size: 2.5rem;
+            font-weight: bold;
+            margin-bottom: 0.5rem;
+        }
+        
+        .stat-label {
+            color: #64748b;
+            font-size: 0.9rem;
+        }
+        
+        .card {
+            background: white;
+            border-radius: 12px;
+            padding: 2rem;
+            margin-bottom: 2rem;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        
+        .card h2 {
+            margin-bottom: 1.5rem;
+            color: #1e293b;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+        
+        .quick-actions {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1rem;
+        }
+        
+        .action-card {
+            background: #f8fafc;
+            border: 2px solid #e2e8f0;
+            border-radius: 12px;
+            padding: 1.5rem;
+            text-align: center;
+            cursor: pointer;
+            transition: all 0.2s;
+            text-decoration: none;
+            color: inherit;
+        }
+        
+        .action-card:hover {
+            border-color: #3b82f6;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        }
+        
+        .action-card .icon {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+        
+        .action-card h3 {
+            margin-bottom: 0.5rem;
+            color: #1e293b;
+        }
+        
+        .action-card p {
+            color: #64748b;
+            font-size: 0.9rem;
+        }
+        
+        .widget-code {
+            background: #1e293b;
+            color: #e2e8f0;
+            padding: 1rem;
+            border-radius: 8px;
+            font-family: 'Monaco', 'Menlo', monospace;
+            font-size: 0.8rem;
+            overflow-x: auto;
+            margin: 1rem 0;
+        }
+        
+        .copy-btn {
+            background: #10b981;
+            color: white;
+            border: none;
+            padding: 0.5rem 1rem;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 0.8rem;
+            margin-top: 0.5rem;
+        }
+        
+        .copy-btn:hover {
+            background: #059669;
+        }
+        
+        .status-badge {
+            display: inline-block;
+            padding: 0.25rem 0.75rem;
+            border-radius: 20px;
+            font-size: 0.75rem;
+            font-weight: 600;
+            text-transform: uppercase;
+        }
+        
+        .status-active {
+            background: #dcfce7;
+            color: #166534;
+        }
+        
+        .status-trial {
+            background: #fef3c7;
+            color: #92400e;
+        }
+        
+        .feature-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1rem;
+            margin: 1rem 0;
+        }
+        
+        .feature-item {
+            background: #f8fafc;
+            padding: 1rem;
+            border-radius: 8px;
+            border-left: 3px solid #3b82f6;
+        }
+        
+        .feature-item h4 {
+            color: #1e293b;
+            margin-bottom: 0.5rem;
+        }
+        
+        .feature-item p {
+            color: #64748b;
+            font-size: 0.9rem;
+        }
+        
+        .alert {
+            padding: 1rem;
+            border-radius: 8px;
+            margin-bottom: 1rem;
+            border-left: 4px solid;
+        }
+        
+        .alert-info {
+            background: #dbeafe;
+            color: #1e40af;
+            border-left-color: #3b82f6;
+        }
+        
+        .alert-warning {
+            background: #fef3c7;
+            color: #92400e;
+            border-left-color: #f59e0b;
+        }
+        
+        @media (max-width: 768px) {
+            .header-content {
+                flex-direction: column;
+                text-align: center;
+            }
+            
+            .container {
+                padding: 0 1rem;
+            }
+            
+            .stats-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .quick-actions {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="header-content">
+            <div class="business-info">
+                <h1>🏪 {{ business.name }}</h1>
+                <p>İşletme ID: {{ business.business_id }} | 
+                   <span class="status-badge status-{{ business.status }}">{{ business.status.upper() }}</span>
+                </p>
+            </div>
+            <div class="header-actions">
+                <a href="http://localhost:5004" class="btn" target="_blank">
+                    💬 Chatbot Test
+                </a>
+                <a href="http://localhost:5006" class="btn" target="_blank">
+                    🔧 Admin Panel
+                </a>
+                <a href="/" class="btn btn-primary">
+                    🏠 Ana Sayfa
+                </a>
+            </div>
+        </div>
+    </div>
+    
+    <div class="container">
+        <!-- System Stats -->
+        <div class="stats-grid">
+            <div class="stat-card">
+                <div class="stat-number" style="color: #3b82f6;">{{ stats.product_count or 0 }}</div>
+                <div class="stat-label">📦 Toplam Ürün</div>
+            </div>
+            <div class="stat-card success">
+                <div class="stat-number" style="color: #10b981;">{{ stats.categories|length or 0 }}</div>
+                <div class="stat-label">🏷️ Kategori Sayısı</div>
+            </div>
+            <div class="stat-card warning">
+                <div class="stat-number" style="color: #f59e0b;">{{ stats.colors|length or 0 }}</div>
+                <div class="stat-label">🎨 Renk Çeşidi</div>
+            </div>
+            <div class="stat-card info">
+                <div class="stat-number" style="color: #8b5cf6;">AI</div>
+                <div class="stat-label">🤖 Chatbot Durumu</div>
+            </div>
+        </div>
+        
+        <!-- Product Status Alert -->
+        {% if stats.product_count == 0 %}
+        <div class="alert alert-warning">
+            <strong>⚠️ Ürün Ekleme Gerekli:</strong> 
+            Chatbot'unuzun çalışması için ürünlerinizi eklemeniz gerekiyor. 
+            Admin panelinden dosya yükleyebilir veya manuel olarak ekleyebilirsiniz.
+        </div>
+        {% else %}
+        <div class="alert alert-info">
+            <strong>✅ Sisteminiz Hazır:</strong> 
+            {{ stats.product_count }} ürününüz sisteme yüklendi. Chatbot müşterilerinize hizmet vermeye hazır!
+        </div>
+        {% endif %}
+        
+        <!-- Quick Actions -->
+        <div class="card">
+            <h2>⚡ Hızlı İşlemler</h2>
+            <div class="quick-actions">
+                <a href="http://localhost:5006" class="action-card" target="_blank">
+                    <div class="icon">📁</div>
+                    <h3>Ürün Yükle</h3>
+                    <p>Excel, CSV veya JSON dosyası yükleyin</p>
+                </a>
+                
+                <a href="http://localhost:5004" class="action-card" target="_blank">
+                    <div class="icon">🧪</div>
+                    <h3>Chatbot Test</h3>
+                    <p>Chatbot'unuzu test edin</p>
+                </a>
+                
+                <a href="#widget-code" class="action-card">
+                    <div class="icon">🔗</div>
+                    <h3>Widget Kodu</h3>
+                    <p>Sitenize chat widget ekleyin</p>
+                </a>
+                
+                <a href="http://localhost:5007/webhook/status" class="action-card" target="_blank">
+                    <div class="icon">📱</div>
+                    <h3>WhatsApp Durumu</h3>
+                    <p>Webhook durumunu kontrol edin</p>
+                </a>
+            </div>
+        </div>
+        
+        <!-- Business Details -->
+        <div class="card">
+            <h2>📊 İşletme Detayları</h2>
+            <div class="feature-list">
+                <div class="feature-item">
+                    <h4>📧 İletişim</h4>
+                    <p><strong>Email:</strong> {{ business.email }}<br>
+                       <strong>Telefon:</strong> {{ business.phone }}</p>
+                </div>
+                
+                <div class="feature-item">
+                    <h4>🌐 Online Varlık</h4>
+                    <p><strong>Website:</strong> {{ business.website or 'Belirtilmemiş' }}<br>
+                       <strong>Instagram:</strong> {{ business.instagram_handle or 'Bağlanmamış' }}</p>
+                </div>
+                
+                <div class="feature-item">
+                    <h4>🏷️ Sektör</h4>
+                    <p><strong>Kategori:</strong> {{ business.sector or 'Genel' }}<br>
+                       <strong>Kayıt Tarihi:</strong> {{ business.created_at[:10] if business.created_at else 'Bilinmiyor' }}</p>
+                </div>
+                
+                <div class="feature-item">
+                    <h4>🤖 AI Özellikleri</h4>
+                    <p><strong>Model:</strong> Gemini 2.0 Flash Lite<br>
+                       <strong>Dil:</strong> Türkçe Optimized</p>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Product Statistics -->
+        {% if stats.product_count > 0 %}
+        <div class="card">
+            <h2>📈 Ürün İstatistikleri</h2>
+            <div class="feature-list">
+                <div class="feature-item">
+                    <h4>🏷️ Kategoriler</h4>
+                    <p>{{ stats.categories|join(', ') if stats.categories else 'Kategori yok' }}</p>
+                </div>
+                
+                <div class="feature-item">
+                    <h4>🎨 Renkler</h4>
+                    <p>{{ stats.colors|join(', ') if stats.colors else 'Renk bilgisi yok' }}</p>
+                </div>
+                
+                <div class="feature-item">
+                    <h4>💰 Fiyat Aralığı</h4>
+                    <p>{{ "%.2f"|format(stats.price_range.min) }} - {{ "%.2f"|format(stats.price_range.max) }} TL</p>
+                </div>
+                
+                <div class="feature-item">
+                    <h4>📊 Durum</h4>
+                    <p><strong>Aktif Ürün:</strong> {{ stats.product_count }}<br>
+                       <strong>Son Güncelleme:</strong> Bugün</p>
+                </div>
+            </div>
+        </div>
+        {% endif %}
+        
+        <!-- Chat Widget Code -->
+        <div class="card" id="widget-code">
+            <h2>🔗 Chat Widget Kodu</h2>
+            <p>Bu kodu sitenizin HTML'ine ekleyerek chat widget'ını aktifleştirebilirsiniz:</p>
+            
+            <div class="widget-code" id="widgetCodeText">
+&lt;!-- Chatbot Widget --&gt;
+&lt;div id="chatbot-widget-{{ business.business_id }}"&gt;&lt;/div&gt;
+&lt;script&gt;
+(function() {
+    var script = document.createElement('script');
+    script.src = 'http://localhost:5004/widget.js';
+    script.onload = function() {
+        ChatbotWidget.init({
+            businessId: '{{ business.business_id }}',
+            apiUrl: 'http://localhost:5004',
+            theme: {
+                primaryColor: '#3b82f6',
+                position: 'bottom-right'
+            }
+        });
+    };
+    document.head.appendChild(script);
+})();
+&lt;/script&gt;
+            </div>
+            
+            <button class="copy-btn" onclick="copyWidgetCode()">
+                📋 Kodu Kopyala
+            </button>
+        </div>
+        
+        <!-- System Features -->
+        <div class="card">
+            <h2>🚀 Sistem Özellikleri</h2>
+            <div class="feature-list">
+                <div class="feature-item">
+                    <h4>🤖 AI Chatbot</h4>
+                    <p>Gemini AI ile akıllı müşteri hizmeti</p>
+                </div>
+                
+                <div class="feature-item">
+                    <h4>📱 Instagram Integration</h4>
+                    <p>Otomatik DM yanıtları</p>
+                </div>
+                
+                <div class="feature-item">
+                    <h4>💬 WhatsApp Business</h4>
+                    <p>WhatsApp üzerinden otomatik yanıtlar</p>
+                </div>
+                
+                <div class="feature-item">
+                    <h4>📊 Analytics</h4>
+                    <p>Detaylı konuşma ve performans raporları</p>
+                </div>
+                
+                <div class="feature-item">
+                    <h4>🔧 Admin Panel</h4>
+                    <p>Kolay ürün yönetimi ve sistem kontrolü</p>
+                </div>
+                
+                <div class="feature-item">
+                    <h4>🌐 Web Widget</h4>
+                    <p>Sitenize entegre edilebilir chat widget</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script>
+        function copyWidgetCode() {
+            const codeText = document.getElementById('widgetCodeText').textContent;
+            
+            // Create temporary textarea
+            const textarea = document.createElement('textarea');
+            textarea.value = codeText;
+            document.body.appendChild(textarea);
+            
+            // Select and copy
+            textarea.select();
+            document.execCommand('copy');
+            
+            // Remove textarea
+            document.body.removeChild(textarea);
+            
+            // Show feedback
+            const btn = event.target;
+            const originalText = btn.textContent;
+            btn.textContent = '✅ Kopyalandı!';
+            btn.style.background = '#10b981';
+            
+            setTimeout(() => {
+                btn.textContent = originalText;
+                btn.style.background = '#10b981';
+            }, 2000);
+        }
+        
+        // Auto-refresh stats every 30 seconds
+        setInterval(() => {
+            // You can add AJAX call here to refresh stats
+            console.log('Stats refresh (implement if needed)');
+        }, 30000);
+        
+        // Check if products are loaded
+        const productCount = {{ stats.product_count or 0 }};
+        if (productCount === 0) {
+            // Show reminder notification
+            setTimeout(() => {
+                if (confirm('Ürünlerinizi henüz yüklemediniz. Admin paneline gitmek ister misiniz?')) {
+                    window.open('http://localhost:5006', '_blank');
+                }
+            }, 5000);
+        }
+    </script>
+</body>
+</html>

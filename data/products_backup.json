@@ -1,0 +1,6230 @@
+[
+  {
+    "name": "Sırtı Dekolteli Tüllü ve Dantelli Pijama Takımı",
+    "color": "SİYAH",
+    "price": 2601.9,
+    "discount": 30.0,
+    "final_price": 1821.33,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Dekolteli Yakası ve Kolu Dantelli Sabahlık Takımı",
+    "color": "SİYAH",
+    "price": 3061.9,
+    "discount": 30.0,
+    "final_price": 2143.33,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Kolu Omzu ve Yakası Dantelli Önü Düğmeli Gecelik",
+    "color": "EKRU",
+    "price": 2021.9,
+    "discount": 30.0,
+    "final_price": 1415.33,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Yakası ve Omzu Dantelli Önü Boydan Düğmeli Pijama Takımı",
+    "color": "EKRU",
+    "price": 2731.9,
+    "discount": 30.0,
+    "final_price": 1912.33,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Dantelli Önü Düğmeli Hamile Lohusa Sabahlık Takımı",
+    "color": "EKRU",
+    "price": 3621.9,
+    "discount": 30.0,
+    "final_price": 2535.33,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Dantelli Önü Düğmeli Hamile Lohusa 3'lü Pijama Takımı",
+    "color": "EKRU",
+    "price": 3855.9,
+    "discount": 30.0,
+    "final_price": 2699.13,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Kolu Omzu ve Yakası Dantelli Önü Düğmeli Gecelik",
+    "color": "LACİVERT",
+    "price": 2021.9,
+    "discount": 30.0,
+    "final_price": 1415.33,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Yakası ve Omzu Dantelli Önü Boydan Düğmeli Pijama Takımı",
+    "color": "LACİVERT",
+    "price": 2731.9,
+    "discount": 30.0,
+    "final_price": 1912.33,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Dantelli Önü Düğmeli Hamile Lohusa Sabahlık Takımı",
+    "color": "LACİVERT",
+    "price": 3621.9,
+    "discount": 30.0,
+    "final_price": 2535.33,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Dantelli Önü Düğmeli Hamile Lohusa 3'lü Pijama Takımı",
+    "color": "LACİVERT",
+    "price": 3855.9,
+    "discount": 30.0,
+    "final_price": 2699.13,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Yakası Kolu ve Omzu Dantelli Önü Düğmeli Pijama Takımı",
+    "color": "LACİVERT",
+    "price": 2527.9,
+    "discount": 30.0,
+    "final_price": 1769.53,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Yakası Kolu ve Omzu Dantelli Önü Düğmeli Pijama Takımı",
+    "color": "EKRU",
+    "price": 2527.9,
+    "discount": 30.0,
+    "final_price": 1769.53,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Dantelli Önü Düğmeli Hamile Lohusa Gecelik",
+    "color": "EKRU",
+    "price": 2331.9,
+    "discount": 30.0,
+    "final_price": 1632.33,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Dantelli Önü Düğmeli Hamile Lohusa Gecelik",
+    "color": "LACİVERT",
+    "price": 2331.9,
+    "discount": 30.0,
+    "final_price": 1632.33,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Dantelli Önü Düğmeli Hamile Lohusa Pijama Takımı",
+    "color": "EKRU",
+    "price": 2719.9,
+    "discount": 30.0,
+    "final_price": 1903.93,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Dantelli Önü Düğmeli Hamile Lohusa Pijama Takımı",
+    "color": "LACİVERT",
+    "price": 2719.9,
+    "discount": 30.0,
+    "final_price": 1903.93,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Kolu Omzu ve Yakası Dantelli Önü Düğmeli Gecelik",
+    "color": "BORDO",
+    "price": 2123.9,
+    "discount": 30.0,
+    "final_price": 1486.73,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Kolu Omzu ve Yakası Dantelli Önü Düğmeli Gecelik",
+    "color": "LACİVERT",
+    "price": 2123.9,
+    "discount": 30.0,
+    "final_price": 1486.73,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Kolu Omzu ve Yakası Dantelli Önü Düğmeli Gecelik",
+    "color": "SİYAH",
+    "price": 2123.9,
+    "discount": 30.0,
+    "final_price": 1486.73,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Kolu Omzu ve Yakası Dantelli Önü Düğmeli Gecelik",
+    "color": "EKRU",
+    "price": 2123.9,
+    "discount": 30.0,
+    "final_price": 1486.73,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Göğüs ve Sırt Dekolteli Dantelli Yırtmaçlı Askılı Gecelik",
+    "color": "LACİVERT",
+    "price": 2121.9,
+    "discount": 30.0,
+    "final_price": 1485.33,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Yakası Kolu ve Omzu Dantelli Önü Düğmeli Pijama Takımı",
+    "color": "BORDO",
+    "price": 2527.9,
+    "discount": 30.0,
+    "final_price": 1769.53,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Yakası ve Omzu Dantelli Önü Düğmeli Pijama Takımı",
+    "color": "SİYAH",
+    "price": 2527.9,
+    "discount": 30.0,
+    "final_price": 1769.53,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Yakası ve Omzu Dantelli Önü Düğmeli Pijama Takımı",
+    "color": "SİYAH",
+    "price": 2731.9,
+    "discount": 30.0,
+    "final_price": 1912.33,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Kolu Omzu ve Yakası Dantelli Önü Düğmeli Gecelik",
+    "color": "SİYAH",
+    "price": 2021.9,
+    "discount": 30.0,
+    "final_price": 1415.33,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Dantelli Hamile Lohusa Sabahlık Takımı",
+    "color": "LACİVERT",
+    "price": 3583.9,
+    "discount": 30.0,
+    "final_price": 2508.73,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Dantelli Hamile Lohusa Sabahlık Takımı",
+    "color": "EKRU",
+    "price": 3583.9,
+    "discount": 30.0,
+    "final_price": 2508.73,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Dantelli Hamile Lohusa Sabahlık Takımı",
+    "color": "VİZON",
+    "price": 3583.9,
+    "discount": 30.0,
+    "final_price": 2508.73,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Dantelli Hamile Lohusa 3'lü Pijama Takımı",
+    "color": "VİZON",
+    "price": 3883.9,
+    "discount": 30.0,
+    "final_price": 2718.73,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Dantelli Hamile Lohusa 3'lü Pijama Takımı",
+    "color": "LACİVERT",
+    "price": 3883.9,
+    "discount": 30.0,
+    "final_price": 2718.73,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Dantelli Hamile Lohusa 3'lü Pijama Takımı",
+    "color": "EKRU",
+    "price": 3883.9,
+    "discount": 30.0,
+    "final_price": 2718.73,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Yakası Kolu ve Omzu Dantelli Boydan Düğmeli Pijama Takımı",
+    "color": "VİZON",
+    "price": 2731.9,
+    "discount": 30.0,
+    "final_price": 1912.33,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Kolu Omzu ve Yakası Dantelli Önü Düğmeli Gecelik",
+    "color": "VİZON",
+    "price": 2021.9,
+    "discount": 30.0,
+    "final_price": 1415.33,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Kolu Omzu ve Yakası Dantelli Önü Düğmeli Gecelik",
+    "color": "VİZON",
+    "price": 2123.9,
+    "discount": 30.0,
+    "final_price": 1486.73,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Yakası Kolu ve Omzu Dantelli Önü Düğmeli Pijama Takımı",
+    "color": "VİZON",
+    "price": 2527.9,
+    "discount": 30.0,
+    "final_price": 1769.53,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Dantelli Önü Düğmeli Hamile Lohusa Sabahlık Takımı",
+    "color": "VİZON",
+    "price": 3621.9,
+    "discount": 30.0,
+    "final_price": 2535.33,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Dantelli Önü Düğmeli Hamile Lohusa Gecelik",
+    "color": "VİZON",
+    "price": 2331.9,
+    "discount": 30.0,
+    "final_price": 1632.33,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Dantelli Önü Düğmeli Hamile Lohusa Pijama Takımı",
+    "color": "VİZON",
+    "price": 2719.9,
+    "discount": 30.0,
+    "final_price": 1903.93,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Dantelli Önü Düğmeli Hamile Lohusa 3'lü Pijama Takımı",
+    "color": "VİZON",
+    "price": 3855.9,
+    "discount": 30.0,
+    "final_price": 2699.13,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Göğsü ve Sırtı Dekolteli Dantelli Yırtmaçlı Gecelik",
+    "color": "VİZON",
+    "price": 2121.9,
+    "discount": 30.0,
+    "final_price": 1485.33,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Kolu Omzu ve Yakası Dantelli Önü Düğmeli Büyük Beden Gecelik",
+    "color": "LACİVERT",
+    "price": 2229.9,
+    "discount": 30.0,
+    "final_price": 1560.93,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Kolu Omzu ve Yakası Dantelli Önü Düğmeli Büyük Beden Gecelik",
+    "color": "EKRU",
+    "price": 2229.9,
+    "discount": 30.0,
+    "final_price": 1560.93,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Kolu Omzu ve Yakası Dantelli Önü Düğmeli Büyük Beden Gecelik",
+    "color": "VİZON",
+    "price": 2229.9,
+    "discount": 30.0,
+    "final_price": 1560.93,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Kolu Omzu ve Yakası Dantelli Önü Düğmeli Büyük Beden Gecelik",
+    "color": "SİYAH",
+    "price": 2229.9,
+    "discount": 30.0,
+    "final_price": 1560.93,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Kolu Omzu ve Yakası Dantelli Önü Düğmeli Büyük Beden Gecelik",
+    "color": "BORDO",
+    "price": 2229.9,
+    "discount": 30.0,
+    "final_price": 1560.93,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Dekolteli Yakası ve Kolu Dantelli Sabahlık Takımı",
+    "color": "EKRU",
+    "price": 3061.9,
+    "discount": 30.0,
+    "final_price": 2143.33,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Göğüs ve Sırt Dekolteli Dantelli Yırtmaçlı Gecelik",
+    "color": "EKRU",
+    "price": 2003.9,
+    "discount": 30.0,
+    "final_price": 1402.73,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Göğüs ve Sırt Dekolteli Dantelli Yırtmaçlı Gecelik",
+    "color": "SİYAH",
+    "price": 2003.9,
+    "discount": 30.0,
+    "final_price": 1402.73,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Kolu Omzu ve Yakası Dantelli Önü Düğmeli Gecelik",
+    "color": "AÇIK YEŞİL",
+    "price": 2021.9,
+    "discount": 30.0,
+    "final_price": 1415.33,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Kolu Omzu ve Yakası Dantelli Önü Düğmeli Gecelik",
+    "color": "AÇIK YEŞİL",
+    "price": 2123.9,
+    "discount": 30.0,
+    "final_price": 1486.73,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Göğüs ve Sırt Dekolteli Dantelli Yırtmaçlı Askılı Gecelik",
+    "color": "AÇIK YEŞİL",
+    "price": 2121.9,
+    "discount": 30.0,
+    "final_price": 1485.33,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Kısa Kollu V Yakalı Dantelli Pijama Takımı",
+    "color": "AÇIK YEŞİL",
+    "price": 2473.9,
+    "discount": 30.0,
+    "final_price": 1731.73,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Dantelli Önü Düğmeli Hamile Lohusa Sabahlık Takımı",
+    "color": "AÇIK YEŞİL",
+    "price": 3621.9,
+    "discount": 30.0,
+    "final_price": 2535.33,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Dantelli Önü Düğmeli Hamile Lohusa 3'lü Pijama Takımı",
+    "color": "AÇIK YEŞİL",
+    "price": 3855.9,
+    "discount": 30.0,
+    "final_price": 2699.13,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Dantelli Hamile Lohusa 3'lü Pijama Takımı",
+    "color": "AÇIK YEŞİL",
+    "price": 3883.9,
+    "discount": 30.0,
+    "final_price": 2718.73,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Dantelli Hamile Lohusa Sabahlık Takımı",
+    "color": "AÇIK YEŞİL",
+    "price": 3583.9,
+    "discount": 30.0,
+    "final_price": 2508.73,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Kolu Omzu ve Yakası Dantelli Önü Düğmeli Gecelik",
+    "color": "KIRMIZI",
+    "price": 2021.9,
+    "discount": 30.0,
+    "final_price": 1415.33,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Kolu Omzu ve Yakası Dantelli Önü Düğmeli Gecelik",
+    "color": "KIRMIZI",
+    "price": 2123.9,
+    "discount": 30.0,
+    "final_price": 1486.73,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Göğüs ve Sırt Dekolteli Dantelli Yırtmaçlı Askılı Gecelik",
+    "color": "KIRMIZI",
+    "price": 2121.9,
+    "discount": 30.0,
+    "final_price": 1485.33,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Kısa Kollu V Yakalı Dantelli Pijama Takımı",
+    "color": "LACİVERT",
+    "price": 2473.9,
+    "discount": 30.0,
+    "final_price": 1731.73,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Göğüs ve Sırt Dekoteli Brode Dantelli Yırtmaçlı Gecelik",
+    "color": "HAKİ",
+    "price": 2121.9,
+    "discount": 30.0,
+    "final_price": 1485.33,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Kısa Kollu V Yakalı Dantelli Pijama Takımı",
+    "color": "VİZON",
+    "price": 2473.9,
+    "discount": 30.0,
+    "final_price": 1731.73,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Yakası Kolu ve Omzu Dantelli Önü Düğmeli Gecelik",
+    "color": "HAKİ",
+    "price": 2123.9,
+    "discount": 30.0,
+    "final_price": 1486.73,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Kısa Kollu V Yakalı Dantelli Pijama Takımı",
+    "color": "HAKİ",
+    "price": 2473.9,
+    "discount": 30.0,
+    "final_price": 1731.73,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Göğüs ve Sırt Dekolteli Dantelli Yırtmaçlı Gecelik",
+    "color": "KIRMIZI",
+    "price": 2319.9,
+    "discount": 30.0,
+    "final_price": 1623.93,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Göğüs ve Sırt Dekolteli Dantelli Yırtmaçlı Gecelik",
+    "color": "SİYAH",
+    "price": 2319.9,
+    "discount": 30.0,
+    "final_price": 1623.93,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Göğüs ve Sırt Dekolteli Dantelli Yırtmaçlı Gecelik",
+    "color": "HAKİ",
+    "price": 2319.9,
+    "discount": 30.0,
+    "final_price": 1623.93,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Kısa Kollu V Yakalı Dantelli Pijama Takımı",
+    "color": "SİYAH",
+    "price": 2473.9,
+    "discount": 30.0,
+    "final_price": 1731.73,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Kısa Kollu V Yakalı Dantelli Pijama Takımı",
+    "color": "KIRMIZI",
+    "price": 2473.9,
+    "discount": 30.0,
+    "final_price": 1731.73,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Dekolteli Yakası ve Kolu Dantelli Sabahlık Takımı",
+    "color": "SİYAH",
+    "price": 3325.9,
+    "discount": 30.0,
+    "final_price": 2328.13,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Göğüs ve Sırt Dekoteli Brode Dantelli Yırtmaçlı Gecelik",
+    "color": "KAHVE",
+    "price": 2121.9,
+    "discount": 30.0,
+    "final_price": 1485.33,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Yakası Kolu ve Omzu Dantelli Önü Düğmeli Pijama Takımı",
+    "color": "KAHVE",
+    "price": 2527.9,
+    "discount": 30.0,
+    "final_price": 1769.53,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Yakası Kolu ve Omzu Dantelli Önü Düğmeli Gecelik",
+    "color": "KAHVE",
+    "price": 2021.9,
+    "discount": 30.0,
+    "final_price": 1415.33,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Yakası Kolu ve Omzu Dantelli Önü Düğmeli Gecelik",
+    "color": "KAHVE",
+    "price": 2123.9,
+    "discount": 30.0,
+    "final_price": 1486.73,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Kısa Kollu V Yakalı Dantelli Pijama Takımı",
+    "color": "KAHVE",
+    "price": 2473.9,
+    "discount": 30.0,
+    "final_price": 1731.73,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Kısa Kollu V Yakalı Dantelli Pijama Takımı",
+    "color": "EKRU",
+    "price": 2473.9,
+    "discount": 30.0,
+    "final_price": 1731.73,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Dekolteli Yakası ve Kolu Dantelli Sabahlık Takımı",
+    "color": "EKRU",
+    "price": 3325.9,
+    "discount": 30.0,
+    "final_price": 2328.13,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Dekolteli Yakası ve Kolu Dantelli Sabahlık Takımı",
+    "color": "KIRMIZI",
+    "price": 3325.9,
+    "discount": 30.0,
+    "final_price": 2328.13,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Dantelli Hamile Lohusa Sabahlık Takımı",
+    "color": "YEŞİL",
+    "price": 3583.9,
+    "discount": 30.0,
+    "final_price": 2508.73,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Dantelli Hamile Lohusa 3'lü Pijama Takımı",
+    "color": "YEŞİL",
+    "price": 3883.9,
+    "discount": 30.0,
+    "final_price": 2718.73,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Kolu Omzu ve Yakası Dantelli Önü Düğmeli Gecelik",
+    "color": "HAKİ",
+    "price": 2021.9,
+    "discount": 30.0,
+    "final_price": 1415.33,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Göğüs ve Sırt Dekoteli Brode Dantelli Yırtmaçlı Gecelik",
+    "color": "EKRU",
+    "price": 2121.9,
+    "discount": 30.0,
+    "final_price": 1485.33,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Dantelli Önü Düğmeli Hamile Lohusa Sabahlık Takımı",
+    "color": "YEŞİL",
+    "price": 3621.9,
+    "discount": 30.0,
+    "final_price": 2535.33,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Dantelli Önü Düğmeli Hamile Lohusa 3'lü Pijama Takımı",
+    "color": "YEŞİL",
+    "price": 3855.9,
+    "discount": 30.0,
+    "final_price": 2699.13,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Dantelli Önü Düğmeli Hamile Lohusa Gecelik",
+    "color": "YEŞİL",
+    "price": 2331.9,
+    "discount": 30.0,
+    "final_price": 1632.33,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Yakası Omzu ve Paçası Dantelli Boydan Düğmeli Pijama Takımı",
+    "color": "YEŞİL",
+    "price": 2731.9,
+    "discount": 30.0,
+    "final_price": 1912.33,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Kolu Omzu ve Yakası Dantelli Önü Düğmeli Gecelik",
+    "color": "YEŞİL",
+    "price": 2123.9,
+    "discount": 30.0,
+    "final_price": 1486.73,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Yakası ve Sırtı Dekolteli Dantelli Yırtmaçlı Gecelik",
+    "color": "YEŞİL",
+    "price": 2121.9,
+    "discount": 30.0,
+    "final_price": 1485.33,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Yakası Kolu ve Omzu Dantelli Önü Düğmeli Pijama Takımı",
+    "color": "YEŞİL",
+    "price": 2527.9,
+    "discount": 30.0,
+    "final_price": 1769.53,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Kısa Kollu V Yakalı Dantelli Pijama Takımı",
+    "color": "YEŞİL",
+    "price": 2473.9,
+    "discount": 30.0,
+    "final_price": 1731.73,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Kolu Omzu ve Yakası Dantelli Önü Düğmeli Gecelik",
+    "color": "YEŞİL",
+    "price": 2021.9,
+    "discount": 30.0,
+    "final_price": 1415.33,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Kolu Omzu ve Yakası Dantelli Önü Düğmeli Büyük Beden Gecelik",
+    "color": "YEŞİL",
+    "price": 2229.9,
+    "discount": 30.0,
+    "final_price": 1560.93,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Göğüs ve Sırt Dekolteli Dantelli Yırtmaçlı Gecelik",
+    "color": "YEŞİL",
+    "price": 2319.9,
+    "discount": 30.0,
+    "final_price": 1623.93,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Dekolteli Yakası ve Kolu Dantelli Sabahlık Takımı",
+    "color": "YEŞİL",
+    "price": 3061.9,
+    "discount": 30.0,
+    "final_price": 2143.33,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Dantelli ve Kuşaklı Sabahlık",
+    "color": "YEŞİL",
+    "price": 2417.9,
+    "discount": 30.0,
+    "final_price": 1692.53,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Dekolteli Yakası ve Kolu Dantelli Sabahlık Takımı",
+    "color": "LACİVERT",
+    "price": 3325.9,
+    "discount": 30.0,
+    "final_price": 2328.13,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Dekolteli Yakası ve Kolu Dantelli Sabahlık Takımı",
+    "color": "LACİVERT",
+    "price": 3061.9,
+    "discount": 30.0,
+    "final_price": 2143.33,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Dantelli ve Kuşaklı Sabahlık",
+    "color": "LACİVERT",
+    "price": 2417.9,
+    "discount": 30.0,
+    "final_price": 1692.53,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Dekolteli Yakası ve Kolu Dantelli Sabahlık Takımı",
+    "color": "KAHVE",
+    "price": 3325.9,
+    "discount": 30.0,
+    "final_price": 2328.13,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Dekolteli Yakası ve Kolu Dantelli Sabahlık Takımı",
+    "color": "KAHVE",
+    "price": 3061.9,
+    "discount": 30.0,
+    "final_price": 2143.33,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Dantelli ve Kuşaklı Sabahlık",
+    "color": "KAHVE",
+    "price": 2417.9,
+    "discount": 30.0,
+    "final_price": 1692.53,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Dantelli ve Kuşaklı Sabahlık",
+    "color": "EKRU",
+    "price": 2417.9,
+    "discount": 30.0,
+    "final_price": 1692.53,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Dantelli ve Kuşaklı Sabahlık",
+    "color": "KIRMIZI",
+    "price": 2417.9,
+    "discount": 30.0,
+    "final_price": 1692.53,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Dantelli ve Kuşaklı Sabahlık",
+    "color": "SİYAH",
+    "price": 2417.9,
+    "discount": 30.0,
+    "final_price": 1692.53,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Dekolteli Yakası ve Kolu Dantelli Sabahlık Takımı",
+    "color": "YEŞİL",
+    "price": 3325.9,
+    "discount": 30.0,
+    "final_price": 2328.13,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Dekolteli Yakası ve Kolu Dantelli Sabahlık Takımı",
+    "color": "KIRMIZI",
+    "price": 3061.9,
+    "discount": 30.0,
+    "final_price": 2143.33,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Yakası ve Sırtı Dekolteli Dantelli Yırtmaçlı Gecelik",
+    "color": "LİLA",
+    "price": 2121.9,
+    "discount": 30.0,
+    "final_price": 1485.33,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Göğüs ve Sırt Dekolteli Dantelli Yırtmaçlı Gecelik",
+    "color": "LİLA",
+    "price": 2319.9,
+    "discount": 30.0,
+    "final_price": 1623.93,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Kısa Kollu V Yakalı Dantelli Pijama Takımı",
+    "color": "LİLA",
+    "price": 2473.9,
+    "discount": 30.0,
+    "final_price": 1731.73,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Yakası Dantelli Kısa Kollu Gecelik",
+    "color": "LİLA",
+    "price": 2151.9,
+    "discount": 30.0,
+    "final_price": 1506.33,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Kısa Kollu Dantelli V Yaka Şort Takımı",
+    "color": "LİLA",
+    "price": 2205.9,
+    "discount": 30.0,
+    "final_price": 1544.13,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Dekolteli Yakası ve Kolu Dantelli Sabahlık Takımı",
+    "color": "LİLA",
+    "price": 3061.9,
+    "discount": 30.0,
+    "final_price": 2143.33,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Dekolteli Yakası ve Kolu Dantelli Sabahlık Takımı",
+    "color": "LİLA",
+    "price": 3325.9,
+    "discount": 30.0,
+    "final_price": 2328.13,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Kolu Omzu ve Yakası Dantelli Önü Düğmeli Gecelik",
+    "color": "LİLA",
+    "price": 2123.9,
+    "discount": 30.0,
+    "final_price": 1486.73,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Kolu Omzu ve Yakası Dantelli Önü Düğmeli Gecelik",
+    "color": "LİLA",
+    "price": 2021.9,
+    "discount": 30.0,
+    "final_price": 1415.33,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Yakası ve Sırtı Dekolteli Dantelli Yırtmaçlı Gecelik",
+    "color": "MOR",
+    "price": 2121.9,
+    "discount": 30.0,
+    "final_price": 1485.33,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Göğüs ve Sırt Dekolteli Dantelli Yırtmaçlı Gecelik",
+    "color": "MOR",
+    "price": 2319.9,
+    "discount": 30.0,
+    "final_price": 1623.93,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Kısa Kollu V Yakalı Dantelli Pijama Takımı",
+    "color": "MOR",
+    "price": 2473.9,
+    "discount": 30.0,
+    "final_price": 1731.73,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Yakası Dantelli Kısa Kollu Gecelik",
+    "color": "MOR",
+    "price": 2151.9,
+    "discount": 30.0,
+    "final_price": 1506.33,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Kısa Kollu Dantelli V Yaka Şort Takımı",
+    "color": "MOR",
+    "price": 2205.9,
+    "discount": 30.0,
+    "final_price": 1544.13,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Dekolteli Yakası ve Kolu Dantelli Sabahlık Takımı",
+    "color": "MOR",
+    "price": 3061.9,
+    "discount": 30.0,
+    "final_price": 2143.33,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Dekolteli Yakası ve Kolu Dantelli Sabahlık Takımı",
+    "color": "MOR",
+    "price": 3325.9,
+    "discount": 30.0,
+    "final_price": 2328.13,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Kolu Omzu ve Yakası Dantelli Önü Düğmeli Gecelik",
+    "color": "MOR",
+    "price": 2123.9,
+    "discount": 30.0,
+    "final_price": 1486.73,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Kolu Omzu ve Yakası Dantelli Önü Düğmeli Gecelik",
+    "color": "MOR",
+    "price": 2021.9,
+    "discount": 30.0,
+    "final_price": 1415.33,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Yakası Dantelli Kısa Kollu Gecelik",
+    "color": "YEŞİL",
+    "price": 2151.9,
+    "discount": 30.0,
+    "final_price": 1506.33,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Kısa Kollu Dantelli V Yaka Şort Takımı",
+    "color": "YEŞİL",
+    "price": 2205.9,
+    "discount": 30.0,
+    "final_price": 1544.13,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Yakası Dantelli Kısa Kollu Gecelik",
+    "color": "SİYAH",
+    "price": 2151.9,
+    "discount": 30.0,
+    "final_price": 1506.33,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Kısa Kollu Dantelli V Yaka Şort Takımı",
+    "color": "SİYAH",
+    "price": 2205.9,
+    "discount": 30.0,
+    "final_price": 1544.13,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Yakası Dantelli Kısa Kollu Gecelik",
+    "color": "VİZON",
+    "price": 2151.9,
+    "discount": 30.0,
+    "final_price": 1506.33,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Kısa Kollu Dantelli V Yaka Şort Takımı",
+    "color": "VİZON",
+    "price": 2205.9,
+    "discount": 30.0,
+    "final_price": 1544.13,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Yakası Dantelli Kısa Kollu Gecelik",
+    "color": "BORDO",
+    "price": 2151.9,
+    "discount": 30.0,
+    "final_price": 1506.33,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Kısa Kollu Dantelli V Yaka Şort Takımı",
+    "color": "BORDO",
+    "price": 2205.9,
+    "discount": 30.0,
+    "final_price": 1544.13,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Kısa Kollu V Yakalı Dantelli Pijama Takımı",
+    "color": "BORDO",
+    "price": 2473.9,
+    "discount": 30.0,
+    "final_price": 1731.73,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Yakası Dantelli Kısa Kollu Gecelik",
+    "color": "LACİVERT",
+    "price": 2151.9,
+    "discount": 30.0,
+    "final_price": 1506.33,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Kısa Kollu Dantelli V Yaka Şort Takımı",
+    "color": "LACİVERT",
+    "price": 2205.9,
+    "discount": 30.0,
+    "final_price": 1544.13,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Yakası Dantelli Kısa Kollu Gecelik",
+    "color": "KAHVE",
+    "price": 2151.9,
+    "discount": 30.0,
+    "final_price": 1506.33,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Kısa Kollu Dantelli V Yaka Şort Takımı",
+    "color": "KAHVE",
+    "price": 2205.9,
+    "discount": 30.0,
+    "final_price": 1544.13,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Yakası Dantelli Kısa Kollu Gecelik",
+    "color": "AÇIK YEŞİL",
+    "price": 2151.9,
+    "discount": 30.0,
+    "final_price": 1506.33,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Kısa Kollu Dantelli V Yaka Şort Takımı",
+    "color": "AÇIK YEŞİL",
+    "price": 2205.9,
+    "discount": 30.0,
+    "final_price": 1544.13,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Yakası Dantelli Kısa Kollu Gecelik",
+    "color": "HAKİ",
+    "price": 2151.9,
+    "discount": 30.0,
+    "final_price": 1506.33,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Kısa Kollu Dantelli V Yaka Şort Takımı",
+    "color": "HAKİ",
+    "price": 2205.9,
+    "discount": 30.0,
+    "final_price": 1544.13,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Yakası Dantelli Kısa Kollu Gecelik",
+    "color": "KIRMIZI",
+    "price": 2151.9,
+    "discount": 30.0,
+    "final_price": 1506.33,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Kısa Kollu Dantelli V Yaka Şort Takımı",
+    "color": "KIRMIZI",
+    "price": 2205.9,
+    "discount": 30.0,
+    "final_price": 1544.13,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Dantelli Önü Düğmeli Hamile Lohusa Gecelik",
+    "color": "YEŞİL",
+    "price": 2253.9,
+    "discount": 30.0,
+    "final_price": 1577.73,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Dantelli Önü Düğmeli Hamile Lohusa Gecelik",
+    "color": "LACİVERT",
+    "price": 2253.9,
+    "discount": 30.0,
+    "final_price": 1577.73,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Dantelli Önü Düğmeli Hamile Lohusa Gecelik",
+    "color": "VİZON",
+    "price": 2253.9,
+    "discount": 30.0,
+    "final_price": 1577.73,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Dantelli Önü Düğmeli Hamile Lohusa Gecelik",
+    "color": "AÇIK YEŞİL",
+    "price": 2253.9,
+    "discount": 30.0,
+    "final_price": 1577.73,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Yakası Dantelli Kısa Kollu Gecelik",
+    "color": "EKRU",
+    "price": 2151.9,
+    "discount": 30.0,
+    "final_price": 1506.33,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Kısa Kollu Dantelli V Yaka Şort Takımı",
+    "color": "EKRU",
+    "price": 2205.9,
+    "discount": 30.0,
+    "final_price": 1544.13,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Dantelli Önü Düğmeli Hamile Lohusa Gecelik",
+    "color": "EKRU",
+    "price": 2253.9,
+    "discount": 30.0,
+    "final_price": 1577.73,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Dantel Detaylı Kısa Kollu ve Önü Düğmeli Gecelik",
+    "color": "VİZON",
+    "price": 2115.9,
+    "discount": 30.0,
+    "final_price": 1481.13,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Yakası Kolu Omzu ve Etek Ağzı Dantelli Önü Düğmeli Gecelik",
+    "color": "VİZON",
+    "price": 2115.9,
+    "discount": 30.0,
+    "final_price": 1481.13,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Dantel Detaylı Kısa Kollu ve Önü Düğmeli Gecelik",
+    "color": "KAHVE",
+    "price": 2115.9,
+    "discount": 30.0,
+    "final_price": 1481.13,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Yakası Kolu Omzu ve Eteği Dantelli Önü Düğmeli Gecelik",
+    "color": "KAHVE",
+    "price": 2115.9,
+    "discount": 30.0,
+    "final_price": 1481.13,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Dantel Detaylı Kısa Kollu ve Önü Düğmeli Gecelik",
+    "color": "GRİ",
+    "price": 2115.9,
+    "discount": 30.0,
+    "final_price": 1481.13,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Yakası Kolu ve Omzu ve Eteği Dantelli Önü Düğmeli Gecelik",
+    "color": "GRİ",
+    "price": 2115.9,
+    "discount": 30.0,
+    "final_price": 1481.13,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Yakası Kolu ve Omzu Dantelli Boydan Düğmeli Pijama Takımı",
+    "color": "GRİ",
+    "price": 2731.9,
+    "discount": 30.0,
+    "final_price": 1912.33,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Kolu Omzu ve Yakası Dantelli Önü Düğmeli Gecelik",
+    "color": "GRİ",
+    "price": 2123.9,
+    "discount": 30.0,
+    "final_price": 1486.73,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Yakası Kolu ve Omzu Dantelli Önü Düğmeli Pijama Takımı",
+    "color": "GRİ",
+    "price": 2527.9,
+    "discount": 30.0,
+    "final_price": 1769.53,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Kısa Kollu V Yakalı Dantelli Pijama Takımı",
+    "color": "GRİ",
+    "price": 2473.9,
+    "discount": 30.0,
+    "final_price": 1731.73,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Kolu Omzu ve Yakası Dantelli Önü Düğmeli Gecelik",
+    "color": "GRİ",
+    "price": 2021.9,
+    "discount": 30.0,
+    "final_price": 1415.33,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Yakası Dantelli Kısa Kollu Gecelik",
+    "color": "GRİ",
+    "price": 2151.9,
+    "discount": 30.0,
+    "final_price": 1506.33,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Kısa Kollu Dantelli V Yaka Şort Takımı",
+    "color": "GRİ",
+    "price": 2205.9,
+    "discount": 30.0,
+    "final_price": 1544.13,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Dantelli Önü Düğmeli Hamile Lohusa Gecelik",
+    "color": "GRİ",
+    "price": 2253.9,
+    "discount": 30.0,
+    "final_price": 1577.73,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Dantelli Önü Düğmeli Hamile Lohusa 3'lü Pijama Takımı",
+    "color": "GRİ",
+    "price": 3855.9,
+    "discount": 30.0,
+    "final_price": 2699.13,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Dantelli Önü Düğmeli Hamile Lohusa Sabahlık Takımı",
+    "color": "GRİ",
+    "price": 3621.9,
+    "discount": 30.0,
+    "final_price": 2535.33,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Dantelli Hamile Lohusa 3'lü Pijama Takımı",
+    "color": "GRİ",
+    "price": 3883.9,
+    "discount": 30.0,
+    "final_price": 2718.73,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Dantelli Hamile Lohusa Sabahlık Takımı",
+    "color": "GRİ",
+    "price": 3583.9,
+    "discount": 30.0,
+    "final_price": 2508.73,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Dekolteli Brode Dantelli Sabahlık Takımı",
+    "color": "EKRU",
+    "price": 3943.9,
+    "discount": 30.0,
+    "final_price": 2760.73,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Dekolteli Brode Dantelli Şort Takımı",
+    "color": "EKRU",
+    "price": 2433.9,
+    "discount": 30.0,
+    "final_price": 1703.73,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Önü Düğmeli Brode Dantelli Pijama Takımı",
+    "color": "EKRU",
+    "price": 3015.9,
+    "discount": 30.0,
+    "final_price": 2111.13,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Önü Düğmeli Brode Dantelli Büyük Beden Pijama Takımı",
+    "color": "EKRU",
+    "price": 1443.9,
+    "discount": 30.0,
+    "final_price": 1010.73,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Önü Düğmeli Brode Dantelli Kısa Kollu Gecelik",
+    "color": "EKRU",
+    "price": 2783.9,
+    "discount": 30.0,
+    "final_price": 1948.73,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Önü Düğmeli Brode Dantelli Kısa Kollu Büyük Beden Gecelik",
+    "color": "EKRU",
+    "price": 1305.9,
+    "discount": 30.0,
+    "final_price": 914.13,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Önü Düğmeli Brode Dantelli Kapri Takımı",
+    "color": "EKRU",
+    "price": 1689.9,
+    "discount": 30.0,
+    "final_price": 1182.93,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Önü Düğmeli Brode Dantelli Büyük Beden Kapri Takımı",
+    "color": "EKRU",
+    "price": 1815.9,
+    "discount": 30.0,
+    "final_price": 1271.13,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Göğüs ve Sırt Dekolteli Brode Dantelli Şort Takımı",
+    "color": "EKRU",
+    "price": 2263.9,
+    "discount": 30.0,
+    "final_price": 1584.73,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Göğüs ve Sırt Dekolteli Brode Dantelli Yırtmaçlı Gecelik",
+    "color": "EKRU",
+    "price": 2227.9,
+    "discount": 30.0,
+    "final_price": 1559.53,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Dekolteli Yırtmaçlı Brode Dantelli Sabahlık Takımı",
+    "color": "SİYAH",
+    "price": 3819.9,
+    "discount": 30.0,
+    "final_price": 2673.93,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Dekolteli Brode Dantelli Askılı Şort Takımı",
+    "color": "SİYAH",
+    "price": 2173.9,
+    "discount": 30.0,
+    "final_price": 1521.73,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Yakası ve Sırtı Dekolteli Brode Dantelli Yırtmaçlı Gecelik",
+    "color": "SİYAH",
+    "price": 2429.9,
+    "discount": 30.0,
+    "final_price": 1700.93,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Yakası Detaylı Brode Dantelli Pijama Takımı",
+    "color": "SİYAH",
+    "price": 2895.9,
+    "discount": 30.0,
+    "final_price": 2027.13,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Yakası Detaylı Brode Dantelli Yırtmaçlı Gecelik",
+    "color": "SİYAH",
+    "price": 2423.9,
+    "discount": 30.0,
+    "final_price": 1696.73,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Dekolteli Brode Dantelli Yırtmaçlı Gecelik",
+    "color": "SİYAH",
+    "price": 2709.9,
+    "discount": 30.0,
+    "final_price": 1896.93,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Yakası ve Sırtı Dekolteli Dantelli Yırtmaçlı Gecelik",
+    "color": "BORDO",
+    "price": 2121.9,
+    "discount": 30.0,
+    "final_price": 1485.33,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Yakası ve Omzu Dantelli Önü Düğmeli Gecelik",
+    "color": "BORDO",
+    "price": 2021.9,
+    "discount": 30.0,
+    "final_price": 1415.33,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Yakası Omzu ve Paçası Dantelli Boydan Düğmeli Pijama Takımı",
+    "color": "BORDO",
+    "price": 2731.9,
+    "discount": 30.0,
+    "final_price": 1912.33,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Dekolteli Yırtmaçlı Brode Dantelli Sabahlık Takımı",
+    "color": "YEŞİL",
+    "price": 3789.9,
+    "discount": 30.0,
+    "final_price": 2652.93,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Göğüs ve Sırt Dekolteli Brode Dantelli Yırtmaçlı Gecelik",
+    "color": "YEŞİL",
+    "price": 2513.9,
+    "discount": 30.0,
+    "final_price": 1759.73,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Dekolteli Brode Dantelli Askılı Şort Takımı",
+    "color": "YEŞİL",
+    "price": 2257.9,
+    "discount": 30.0,
+    "final_price": 1580.53,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Yakası Kolu ve Omzu Brode Dantelli Önü Düğmeli Gecelik",
+    "color": "YEŞİL",
+    "price": 2401.9,
+    "discount": 30.0,
+    "final_price": 1681.33,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Yakası Kolu ve Omzu Dantelli Önü Düğmeli Pijama Takımı",
+    "color": "YEŞİL",
+    "price": 2897.9,
+    "discount": 30.0,
+    "final_price": 2028.53,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Kolu Omzu ve Yakası Dantelli Önü Düğmeli Gecelik",
+    "color": "YEŞİL",
+    "price": 2455.9,
+    "discount": 30.0,
+    "final_price": 1719.13,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Göğüs ve Sırt Dekolteli Brode Dantelli Yırtmaçlı Gecelik",
+    "color": "YEŞİL",
+    "price": 2627.9,
+    "discount": 30.0,
+    "final_price": 1839.53,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Yakası ve Omzu Dantelli Önü Düğmeli Gecelik",
+    "color": "YEŞİL",
+    "price": 1953.9,
+    "discount": 30.0,
+    "final_price": 1367.73,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Yakası ve Omzu Dantelli Önü Boydan Düğmeli Pijama Takımı",
+    "color": "YEŞİL",
+    "price": 2931.9,
+    "discount": 30.0,
+    "final_price": 2052.33,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Göğüs ve Sırt Dekolteli Dantelli Şort Takımı",
+    "color": "SİYAH",
+    "price": 2263.9,
+    "discount": 30.0,
+    "final_price": 1584.73,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Göğüs ve Sırt Dekolteli Dantelli Yırtmaçlı Gecelik",
+    "color": "SİYAH",
+    "price": 2227.9,
+    "discount": 30.0,
+    "final_price": 1559.53,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Göğüs ve Sırt Dekolteli Dantelli Yırtmaçlı Gecelik",
+    "color": "SİYAH",
+    "price": 2121.9,
+    "discount": 30.0,
+    "final_price": 1485.33,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Çiçek ve Yaprak Desenli Dekolteli Gecelik",
+    "color": "RENKLİ",
+    "price": 703.9,
+    "discount": 35.0,
+    "final_price": 457.54,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Beli Ayarlanabilir Kısa Kollu Gecelik",
+    "color": "ANTRASİT",
+    "price": 702.9,
+    "discount": 35.0,
+    "final_price": 456.89,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Kirpi ve Baykuş Desenli Önü Düğmeli Gecelik",
+    "color": "KAR MELANJ",
+    "price": 714.9,
+    "discount": 35.0,
+    "final_price": 464.69,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Koala Desenli ve Baskılı Sabahlık Takımı",
+    "color": "MAVİ",
+    "price": 1006.9,
+    "discount": 35.0,
+    "final_price": 654.49,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Çiçek Desenli Tüllü Dekolteli Sabahlık Takımı",
+    "color": "BORDO",
+    "price": 917.9,
+    "discount": 35.0,
+    "final_price": 596.64,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Çiçek Desenli Dantelli Dekolteli Sabahlık Takımı",
+    "color": "YEŞİL",
+    "price": 924.9,
+    "discount": 35.0,
+    "final_price": 601.19,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Dantelli Hamile Lohusa 3'lü Pijama Takımı",
+    "color": "VİZON",
+    "price": 1604.9,
+    "discount": 35.0,
+    "final_price": 1043.19,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Yakası Kolu ve Omzu Dantelli Önü Düğmeli Gecelik",
+    "color": "VİZON",
+    "price": 793.9,
+    "discount": 35.0,
+    "final_price": 516.04,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Çiçek Desenli Gömlek Yakalı Önü Boydan Düğmeli Pijama Takımı",
+    "color": "MOR",
+    "price": 1215.9,
+    "discount": 35.0,
+    "final_price": 790.34,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Kolu Omzu ve Yakası Dantelli Önü Düğmeli Gecelik",
+    "color": "PEMBE",
+    "price": 1375.9,
+    "discount": 35.0,
+    "final_price": 894.34,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Kolu Omzu ve Yakası Dantelli Önü Düğmeli Gecelik",
+    "color": "PEMBE",
+    "price": 1433.9,
+    "discount": 35.0,
+    "final_price": 932.04,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Yakası Kolu ve Omzu Dantelli Önü Düğmeli Pijama Takımı",
+    "color": "PEMBE",
+    "price": 1682.9,
+    "discount": 35.0,
+    "final_price": 1093.89,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Dantelli Önü Düğmeli Hamile Lohusa Gecelik",
+    "color": "LACİVERT",
+    "price": 1727.9,
+    "discount": 30.0,
+    "final_price": 1209.53,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Dantelli Önü Düğmeli Hamile Lohusa Gecelik",
+    "color": "VİZON",
+    "price": 1727.9,
+    "discount": 30.0,
+    "final_price": 1209.53,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Dantelli Önü Düğmeli Hamile Lohusa Gecelik",
+    "color": "EKRU",
+    "price": 1727.9,
+    "discount": 30.0,
+    "final_price": 1209.53,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Dantelli Hamile Lohusa Gecelik",
+    "color": "LACİVERT",
+    "price": 1817.9,
+    "discount": 30.0,
+    "final_price": 1272.53,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Önü Düğmeli Dantelli Hamile Lohusa Gecelik",
+    "color": "AÇIK YEŞİL",
+    "price": 1727.9,
+    "discount": 30.0,
+    "final_price": 1209.53,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Kısa Kollu V Yakalı Dantelli Pijama Takımı",
+    "color": "PETROL MAVİSİ",
+    "price": 1635.9,
+    "discount": 35.0,
+    "final_price": 1063.34,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Önü Düğmeli Dantelli Hamile Lohusa Gecelik",
+    "color": "PETROL MAVİSİ",
+    "price": 1393.9,
+    "discount": 35.0,
+    "final_price": 906.04,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Dantelli Hamile Lohusa Gecelik",
+    "color": "EKRU",
+    "price": 1817.9,
+    "discount": 30.0,
+    "final_price": 1272.53,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Dantelli Hamile Lohusa Gecelik",
+    "color": "VİZON",
+    "price": 1817.9,
+    "discount": 30.0,
+    "final_price": 1272.53,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Kısa Kollu Dantelli V Yaka Şort Takımı",
+    "color": "SİYAH",
+    "price": 1791.9,
+    "discount": 30.0,
+    "final_price": 1254.33,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Yakası Dantelli Kısa Kollu Gecelik",
+    "color": "SİYAH",
+    "price": 1673.9,
+    "discount": 30.0,
+    "final_price": 1171.73,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Kısa Kollu Dantelli V Yaka Şort Takımı",
+    "color": "BORDO",
+    "price": 1791.9,
+    "discount": 30.0,
+    "final_price": 1254.33,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Yakası Dantelli Kısa Kollu Gecelik",
+    "color": "BORDO",
+    "price": 1673.9,
+    "discount": 30.0,
+    "final_price": 1171.73,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Kısa Kollu Dantelli V Yaka Şort Takımı",
+    "color": "LACİVERT",
+    "price": 1791.9,
+    "discount": 30.0,
+    "final_price": 1254.33,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Yakası Dantelli Kısa Kollu Gecelik",
+    "color": "LACİVERT",
+    "price": 1673.9,
+    "discount": 30.0,
+    "final_price": 1171.73,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Yakası Dantelli Kısa Kollu Gecelik",
+    "color": "VİZON",
+    "price": 1673.9,
+    "discount": 30.0,
+    "final_price": 1171.73,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Kısa Kollu Dantelli V Yaka Şort Takımı",
+    "color": "VİZON",
+    "price": 1791.9,
+    "discount": 30.0,
+    "final_price": 1254.33,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Kısa Kollu Dantelli V Yaka Şort Takımı",
+    "color": "AÇIK YEŞİL",
+    "price": 1791.9,
+    "discount": 30.0,
+    "final_price": 1254.33,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Kısa Kollu Dantelli V Yaka Şort Takımı",
+    "color": "KIRMIZI",
+    "price": 1791.9,
+    "discount": 30.0,
+    "final_price": 1254.33,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Yakası Dantelli Kısa Kollu Gecelik",
+    "color": "AÇIK YEŞİL",
+    "price": 1673.9,
+    "discount": 30.0,
+    "final_price": 1171.73,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Yakası Dantelli Kısa Kollu Gecelik",
+    "color": "KIRMIZI",
+    "price": 1673.9,
+    "discount": 30.0,
+    "final_price": 1171.73,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Önü Düğmeli Dantelli Hamile Lohusa Gecelik",
+    "color": "YEŞİL",
+    "price": 1727.9,
+    "discount": 30.0,
+    "final_price": 1209.53,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Göğüs ve Sırt Dekolteli Dantelli ve Yırtmaçlı Saten Gecelik",
+    "color": "SİYAH",
+    "price": 2633.9,
+    "discount": 30.0,
+    "final_price": 1843.73,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Dantelli Tüllü ve Dekolteli Saten Sabahlık Takımı",
+    "color": "SİYAH",
+    "price": 3325.9,
+    "discount": 30.0,
+    "final_price": 2328.13,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Dantelli ve Dekolteli Saten Şort Takımı",
+    "color": "SİYAH",
+    "price": 2543.9,
+    "discount": 30.0,
+    "final_price": 1780.73,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Dantelli ve Dekolteli Saten Sabahlık Takımı",
+    "color": "SİYAH",
+    "price": 4545.9,
+    "discount": 30.0,
+    "final_price": 3182.13,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Dantelli ve Dekolteli Saten Pijama Takımı",
+    "color": "SİYAH",
+    "price": 3231.9,
+    "discount": 30.0,
+    "final_price": 2262.33,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Uzun Kollu Dantelli ve Kuşaklı Sabahlık",
+    "color": "SİYAH",
+    "price": 2805.9,
+    "discount": 30.0,
+    "final_price": 1964.13,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Uzun Kollu Önü Düğmeli Gömlek Yaka Pijama Takımı",
+    "color": "SİYAH",
+    "price": 2989.9,
+    "discount": 30.0,
+    "final_price": 2092.93,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Uzun Kollu Dantelli ve Dekolteli Pijama Takımı",
+    "color": "SİYAH",
+    "price": 2241.9,
+    "discount": 30.0,
+    "final_price": 1569.33,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Dantelli Dekolteli ve Yırtmaçlı Gecelik",
+    "color": "SİYAH",
+    "price": 1879.9,
+    "discount": 30.0,
+    "final_price": 1315.93,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Kısa Kollu ve Dantelli V Yaka Pijama Takımı",
+    "color": "SİYAH",
+    "price": 2185.9,
+    "discount": 30.0,
+    "final_price": 1530.13,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Kısa Kollu ve Dantelli V Yaka Gecelik",
+    "color": "SİYAH",
+    "price": 1813.9,
+    "discount": 30.0,
+    "final_price": 1269.73,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Göğüs ve Sırt Dekolteli Dantelli Sabahlık Takımı",
+    "color": "SİYAH",
+    "price": 3041.9,
+    "discount": 30.0,
+    "final_price": 2129.33,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Göğüs ve Sırt Dekolteli Dantelli Şort Takımı",
+    "color": "SİYAH",
+    "price": 1989.9,
+    "discount": 30.0,
+    "final_price": 1392.93,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Dantelli ve Dekolteli Yırtmaçlı Gecelik",
+    "color": "SİYAH",
+    "price": 1947.9,
+    "discount": 30.0,
+    "final_price": 1363.53,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Dantelli Tüllü ve Dekolteli Saten Sabahlık Takımı",
+    "color": "SİYAH",
+    "price": 4665.9,
+    "discount": 30.0,
+    "final_price": 3266.13,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Dantelli Tüllü ve Dekolteli Saten Şort Takımı",
+    "color": "SİYAH",
+    "price": 2455.9,
+    "discount": 30.0,
+    "final_price": 1719.13,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Dantelli ve Tüllü Uzun Kollu Önü Düğmeli Saten Pijama Takımı",
+    "color": "SİYAH",
+    "price": 3811.9,
+    "discount": 30.0,
+    "final_price": 2668.33,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Göğüs ve Sırt Dekolteli Dantelli ve Yırtmaçlı Gecelik",
+    "color": "SİYAH",
+    "price": 1961.9,
+    "discount": 30.0,
+    "final_price": 1373.33,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Dantelli ve Dekolteli Yırtmaçlı Gecelik",
+    "color": "SİYAH",
+    "price": 1899.9,
+    "discount": 30.0,
+    "final_price": 1329.93,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Dantelli ve Dekolteli Yırtmaçlı Gecelik",
+    "color": "BEYAZ",
+    "price": 1899.9,
+    "discount": 30.0,
+    "final_price": 1329.93,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Dantelli ve Dekolteli Yırtmaçlı Gecelik",
+    "color": "BEYAZ",
+    "price": 1989.9,
+    "discount": 30.0,
+    "final_price": 1392.93,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Uzun Kollu Önü Düğmeli Gömlek Yaka Pijama Takımı",
+    "color": "BEYAZ",
+    "price": 2989.9,
+    "discount": 30.0,
+    "final_price": 2092.93,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Dantelli ve Dekolteli Saten Şort Takımı",
+    "color": "BEYAZ",
+    "price": 2543.9,
+    "discount": 30.0,
+    "final_price": 1780.73,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Dantelli ve Dekolteli Saten Sabahlık Takımı",
+    "color": "BEYAZ",
+    "price": 4545.9,
+    "discount": 30.0,
+    "final_price": 3182.13,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Dantelli ve Dekolteli Saten Pijama Takımı",
+    "color": "BEYAZ",
+    "price": 3231.9,
+    "discount": 30.0,
+    "final_price": 2262.33,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Uzun Kollu Dantelli ve Kuşaklı Sabahlık",
+    "color": "BEYAZ",
+    "price": 2805.9,
+    "discount": 30.0,
+    "final_price": 1964.13,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Göğüs ve Sırt Dekolteli Dantelli ve Yırtmaçlı Saten Gecelik",
+    "color": "BEYAZ",
+    "price": 2633.9,
+    "discount": 30.0,
+    "final_price": 1843.73,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Dantelli Tüllü ve Dekolteli Saten Sabahlık Takımı",
+    "color": "BEYAZ",
+    "price": 3325.9,
+    "discount": 30.0,
+    "final_price": 2328.13,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Göğüs ve Sırt Dekolteli Dantelli Saten Gecelik",
+    "color": "BEYAZ",
+    "price": 2699.9,
+    "discount": 30.0,
+    "final_price": 1889.93,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Dantelli Tüllü ve Dekolteli Saten Sabahlık Takımı",
+    "color": "BEYAZ",
+    "price": 4665.9,
+    "discount": 30.0,
+    "final_price": 3266.13,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Dantelli Tüllü ve Dekolteli Saten Şort Takımı",
+    "color": "BEYAZ",
+    "price": 2455.9,
+    "discount": 30.0,
+    "final_price": 1719.13,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Dantelli ve Tüllü Uzun Kollu Önü Düğmeli Saten Pijama Takımı",
+    "color": "BEYAZ",
+    "price": 3811.9,
+    "discount": 30.0,
+    "final_price": 2668.33,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Yaprak ve Kuş Desenli Önü Boydan Düğmeli Alt Üst Takım",
+    "color": "YEŞİL",
+    "price": 1254.9,
+    "discount": 35.0,
+    "final_price": 815.69,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Çizgi Desenli Askılı Şort Takımı",
+    "color": "MAVİ",
+    "price": 802.9,
+    "discount": 35.0,
+    "final_price": 521.89,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Puantiye Desenli Püsküllü Kısa Kollu Kimono",
+    "color": "BEYAZ",
+    "price": 1317.9,
+    "discount": 35.0,
+    "final_price": 856.64,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Dekolteli Brode Dantelli Büyük Beden Gecelik",
+    "color": "PUDRA",
+    "price": 1222.9,
+    "discount": 35.0,
+    "final_price": 794.89,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Dekolteli Brode Dantelli Büyük Beden Kapri Takımı",
+    "color": "PUDRA",
+    "price": 1270.9,
+    "discount": 35.0,
+    "final_price": 826.09,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Dekolteli Brode Dantelli Sabahlık Takımı",
+    "color": "GRİ",
+    "price": 1099.9,
+    "discount": 35.0,
+    "final_price": 714.94,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Dekolteli Brode Dantelli Askılı Şort Takımı",
+    "color": "GRİ",
+    "price": 1072.9,
+    "discount": 35.0,
+    "final_price": 697.39,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Önü Düğmeli Brode Dantelli Pijama Takımı",
+    "color": "GRİ",
+    "price": 1208.9,
+    "discount": 35.0,
+    "final_price": 785.79,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Göğüs ve Sırt Dekolteli Brode Dantelli Yırtmaçlı Gecelik",
+    "color": "EKRU",
+    "price": 1398.9,
+    "discount": 35.0,
+    "final_price": 909.29,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Brode Dantelli Önü Düğmeli Şort Takımı",
+    "color": "EKRU",
+    "price": 1013.9,
+    "discount": 35.0,
+    "final_price": 659.04,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Göğüs ve Sırt Dekolteli Brode Dantelli Sabahlık Takımı",
+    "color": "PUDRA",
+    "price": 1350.9,
+    "discount": 35.0,
+    "final_price": 878.09,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Göğüs ve Sırt Dekolteli Brode Dantelli Şort Takımı",
+    "color": "PUDRA",
+    "price": 1080.9,
+    "discount": 35.0,
+    "final_price": 702.59,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Önü Düğmeli Brode Dantelli Kısa Kollu Gecelik",
+    "color": "PUDRA",
+    "price": 1038.9,
+    "discount": 35.0,
+    "final_price": 675.29,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Önü Düğmeli Brode Dantelli Pijama Takımı",
+    "color": "PUDRA",
+    "price": 1189.9,
+    "discount": 35.0,
+    "final_price": 773.44,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Önü Düğmeli Brode Dantelli Pijama Takımı",
+    "color": "SİYAH",
+    "price": 899.9,
+    "discount": 35.0,
+    "final_price": 584.94,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Önü Düğmeli Brode Dantelli Yırtmaçlı Kapri Takımı",
+    "color": "SİYAH",
+    "price": 1204.9,
+    "discount": 35.0,
+    "final_price": 783.19,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Yakası Detaylı Brode Dantelli Büyük Beden Gecelik",
+    "color": "VİZON",
+    "price": 1123.9,
+    "discount": 35.0,
+    "final_price": 730.54,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Yakası Detaylı Brode Dantelli Kapri Takımı",
+    "color": "VİZON",
+    "price": 1189.9,
+    "discount": 35.0,
+    "final_price": 773.44,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Yakası Detaylı Brode Dantelli Büyük Beden Kapri Takımı",
+    "color": "VİZON",
+    "price": 1263.9,
+    "discount": 35.0,
+    "final_price": 821.54,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Dekolteli Brode Dantelli Yırtmaç Detaylı Şort Takımı",
+    "color": "GRİ",
+    "price": 1029.9,
+    "discount": 35.0,
+    "final_price": 669.44,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Dekoteli Yakası Brode Dantelli Gecelik",
+    "color": "EKRU",
+    "price": 963.9,
+    "discount": 35.0,
+    "final_price": 626.54,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Dekolteli Brode Dantelli Yırtmaç Detaylı Şort Takımı",
+    "color": "EKRU",
+    "price": 1097.9,
+    "discount": 35.0,
+    "final_price": 713.64,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Dekolteli Brode Dantelli Yırtmaç Detaylı Şort Takımı",
+    "color": "VİZON",
+    "price": 994.9,
+    "discount": 35.0,
+    "final_price": 646.69,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Yakası ve Omzu Dantelli Önü Düğmeli Büyük Beden Gecelik",
+    "color": "PEMBE",
+    "price": 772.9,
+    "discount": 35.0,
+    "final_price": 502.39,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Yakası ve Omzu Dantelli Önü Düğmeli Pijama Takımı",
+    "color": "PEMBE",
+    "price": 1166.9,
+    "discount": 35.0,
+    "final_price": 758.49,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Önü Düğmeli Dantelli Büyük Beden Gecelik",
+    "color": "BORDO",
+    "price": 778.9,
+    "discount": 35.0,
+    "final_price": 506.29,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Brode Dantelli Önü Düğmeli Pijama Takımı",
+    "color": "VİZON",
+    "price": 1186.9,
+    "discount": 35.0,
+    "final_price": 771.49,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Dekolteli Brode Dantelli Askılı Şort Takımı",
+    "color": "PARLEMENT MAVİSİ",
+    "price": 991.9,
+    "discount": 35.0,
+    "final_price": 644.74,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Yakası Kolu ve Omzu Brode Dantelli Önü Düğmeli Gecelik",
+    "color": "PARLEMENT MAVİSİ",
+    "price": 1071.9,
+    "discount": 35.0,
+    "final_price": 696.74,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Brode Dantelli Önü Düğmeli Hamile Lohusa Pijama Takımı",
+    "color": "PARLEMENT MAVİSİ",
+    "price": 1317.9,
+    "discount": 35.0,
+    "final_price": 856.64,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Dekolteli Brode Dantelli Askılı Şort Takımı",
+    "color": "KAHVE",
+    "price": 1300.9,
+    "discount": 35.0,
+    "final_price": 845.59,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Yakası Kolu ve Omzu Brode Dantelli Önü Düğmeli Gecelik",
+    "color": "KAHVE",
+    "price": 1609.9,
+    "discount": 35.0,
+    "final_price": 1046.44,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Yakası Kolu ve Omzu Brode Dantelli Önü Düğmeli Gecelik",
+    "color": "KAHVE",
+    "price": 1629.9,
+    "discount": 35.0,
+    "final_price": 1059.44,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Göğüs ve Sırt Dekolteli Brode Dantelli Yırtmaçlı Gecelik",
+    "color": "KAHVE",
+    "price": 1507.9,
+    "discount": 35.0,
+    "final_price": 980.14,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Yakası ve Omzu Dantelli Önü Düğmeli Gecelik",
+    "color": "KAHVE",
+    "price": 1953.9,
+    "discount": 30.0,
+    "final_price": 1367.73,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Yakası Damla Detaylı Dantelli Gecelik",
+    "color": "SİYAH",
+    "price": 772.9,
+    "discount": 35.0,
+    "final_price": 502.39,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Yaprak Desenli Önü Düğmeli Hamile Lohusa Gecelik",
+    "color": "SİYAH",
+    "price": 812.9,
+    "discount": 35.0,
+    "final_price": 528.39,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Koala Desenli ve Baskılı \"Donut Panic\" Şort Takımı",
+    "color": "PEMBE",
+    "price": 789.9,
+    "discount": 35.0,
+    "final_price": 513.44,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Çiçek Desenli Dantelli Önü Düğmeli Şort Takımı",
+    "color": "SİYAH",
+    "price": 801.9,
+    "discount": 35.0,
+    "final_price": 521.24,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Kuş-Yaprak Desenli ve Baskılı \"Little\" Sabahlık Takımı",
+    "color": "YEŞİL",
+    "price": 863.9,
+    "discount": 35.0,
+    "final_price": 561.54,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Çizgi Desenli Yırtmaçlı Önü Fermuarlı Elbise",
+    "color": "SİYAH-BEYAZ",
+    "price": 755.9,
+    "discount": 35.0,
+    "final_price": 491.34,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Balıkçı Yaka Lotus Çiçeği Nakışlı Alt Üst Takım",
+    "color": "VİZON",
+    "price": 960.9,
+    "discount": 35.0,
+    "final_price": 624.59,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Uzun Kollu Dantel Detaylı ve Önü Düğmeli Gecelik",
+    "color": "VİZON",
+    "price": 845.9,
+    "discount": 35.0,
+    "final_price": 549.84,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Balıkçı Yaka Lotus Çiçeği ve Çizgi Desenli Alt Üst Takım",
+    "color": "YEŞİL",
+    "price": 894.9,
+    "discount": 35.0,
+    "final_price": 581.69,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Çiçek ve Yaprak Desenli Düğmeli Gömlek Yakalı Saten Pijama Takımı",
+    "color": "ANTRASİT",
+    "price": 1131.9,
+    "discount": 35.0,
+    "final_price": 735.74,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Balıkçı Yaka Çizgi Desenli Alt Üst Takım",
+    "color": "KİREMİT",
+    "price": 979.9,
+    "discount": 35.0,
+    "final_price": 636.94,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Çiçek ve Yaprak Desenli Gömlek Yakalı Boydan Düğmeli Gecelik",
+    "color": "YEŞİL",
+    "price": 889.9,
+    "discount": 35.0,
+    "final_price": 578.44,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Yazı Baskılı \"We Are Happy\" Pijama Takımı",
+    "color": "TARÇIN",
+    "price": 1140.9,
+    "discount": 35.0,
+    "final_price": 741.59,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Desenli ve Baskılı Önü Düğmeli \"Hello Cold Days\" Gecelik",
+    "color": "YEŞİL",
+    "price": 827.9,
+    "discount": 35.0,
+    "final_price": 538.14,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Hayvan Ve Yazı Desenli \"So Cute Smile Cool\" Gecelik",
+    "color": "BORDO",
+    "price": 904.9,
+    "discount": 35.0,
+    "final_price": 588.19,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Ayıcık Baskılı Çizgili Puantiye Desenli \"Sleep Time\" Gecelik",
+    "color": "BEJ",
+    "price": 835.9,
+    "discount": 35.0,
+    "final_price": 543.34,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Fermuarlı Kapüşonlu \"New York Touch\" Baskılı Eşofman Takımı",
+    "color": "GRİ",
+    "price": 1295.9,
+    "discount": 35.0,
+    "final_price": 842.34,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Önü Düğmeli Geyik Baykuş Penguen Tilki Desenli G",
+    "color": "LACİVERT",
+    "price": 821.9,
+    "discount": 35.0,
+    "final_price": 534.24,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Etnik Desenli Derin Yakalı Dökümlü Elbise",
+    "color": "BORDO",
+    "price": 922.9,
+    "discount": 35.0,
+    "final_price": 599.89,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Etnik Desenli V Yakalı Dökümlü Elbise",
+    "color": "BORDO",
+    "price": 929.9,
+    "discount": 35.0,
+    "final_price": 604.44,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Kuş ve Yaprak Desenli Önü Düğmeli Elbise",
+    "color": "PETROL MAVİSİ",
+    "price": 911.9,
+    "discount": 35.0,
+    "final_price": 592.74,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Kuş ve Yaprak Desenli Omzu Açık Parçalı Elbise",
+    "color": "PETROL MAVİSİ",
+    "price": 925.9,
+    "discount": 35.0,
+    "final_price": 601.84,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Yaprak Desenli Önü Boydan Düğmeli Parçalı Saten Elbise",
+    "color": "VİŞNE",
+    "price": 960.9,
+    "discount": 35.0,
+    "final_price": 624.59,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Yaprak Desenli Kolu Fırfırlı Saten Alt Üst Takım",
+    "color": "VİŞNE",
+    "price": 951.9,
+    "discount": 35.0,
+    "final_price": 618.74,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Yaprak Desenli Önü Boydan Düğmeli Saten Alt Üst Takım",
+    "color": "VİŞNE",
+    "price": 1128.9,
+    "discount": 35.0,
+    "final_price": 733.79,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Yaprak Desenli Gömlek Yakalı Boydan Düğmeli Pijama Takımı",
+    "color": "SİYAH",
+    "price": 1595.9,
+    "discount": 35.0,
+    "final_price": 1037.34,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Yakası Dantelli Nakışlı Pijama Takımı",
+    "color": "TARÇIN",
+    "price": 1234.9,
+    "discount": 35.0,
+    "final_price": 802.69,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Çiçek Baskılı \"Dream It Wish It!\" Pijama Takımı",
+    "color": "TARÇIN",
+    "price": 1202.9,
+    "discount": 35.0,
+    "final_price": 781.89,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Etnik Desenli Gömlek Yakalı Önü Boydan Düğmeli Pijama Takımı",
+    "color": "LACİVERT",
+    "price": 1613.9,
+    "discount": 35.0,
+    "final_price": 1049.04,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Çiçek ve Yaprak Desenli Düğmeli Gömlek Yakalı Pijama Takımı",
+    "color": "LACİVERT",
+    "price": 1377.9,
+    "discount": 35.0,
+    "final_price": 895.64,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Dantelli ve Bağcık Detaylı Pijama Takımı",
+    "color": "LACİVERT",
+    "price": 1225.9,
+    "discount": 35.0,
+    "final_price": 796.84,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Çiçek ve Yaprak Desenli Uzun Kollu Elbise",
+    "color": "LACİVERT",
+    "price": 1220.9,
+    "discount": 35.0,
+    "final_price": 793.59,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Çiçek ve Yaprak Desenli Kuşaklı Sabahlık",
+    "color": "LACİVERT",
+    "price": 1368.9,
+    "discount": 35.0,
+    "final_price": 889.79,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Çiçek ve Etnik Desenli Yakası Dantelli Önü Düğmeli Elbise",
+    "color": "SİYAH",
+    "price": 1016.9,
+    "discount": 35.0,
+    "final_price": 660.99,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Çiçek ve Yaprak Desenli Elbise",
+    "color": "YEŞİL",
+    "price": 1027.9,
+    "discount": 35.0,
+    "final_price": 668.14,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Desenli Puantiyeli Gömlek Yakalı Elbise",
+    "color": "SİYAH-BEYAZ",
+    "price": 1353.9,
+    "discount": 35.0,
+    "final_price": 880.04,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Desenli Puantiyeli Gömlek Yakalı Pijama Takımı",
+    "color": "SİYAH-BEYAZ",
+    "price": 1363.9,
+    "discount": 35.0,
+    "final_price": 886.54,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Puantiye Desenli V Yakalı Elbise",
+    "color": "SİYAH-BEYAZ",
+    "price": 1120.9,
+    "discount": 35.0,
+    "final_price": 728.59,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Kuşak ve Dantel Detaylı Elbise",
+    "color": "SİYAH",
+    "price": 1220.9,
+    "discount": 35.0,
+    "final_price": 793.59,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Puantiye Desenli Kolsuz Alt Üst Takım",
+    "color": "SİYAH-BEYAZ",
+    "price": 984.9,
+    "discount": 35.0,
+    "final_price": 640.19,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Desenli Puantiyeli Yırtmaç Detaylı Sabahlık",
+    "color": "SİYAH-BEYAZ",
+    "price": 1296.9,
+    "discount": 35.0,
+    "final_price": 842.99,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Çiçek ve Yaprak Desenli Sırt Dekolteli Elbise",
+    "color": "TURUNCU",
+    "price": 1177.9,
+    "discount": 35.0,
+    "final_price": 765.64,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Çiçek ve Yaprak Desenli Uzun Kollu Elbise",
+    "color": "SİYAH",
+    "price": 1177.9,
+    "discount": 35.0,
+    "final_price": 765.64,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Çiçek ve Yaprak Desenli Önü Düğmeli Elbise",
+    "color": "SİYAH",
+    "price": 1093.9,
+    "discount": 35.0,
+    "final_price": 711.04,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Çiçek ve Yaprak Desenli Önü Düğmeli Gecelik",
+    "color": "SİYAH",
+    "price": 908.9,
+    "discount": 35.0,
+    "final_price": 590.79,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Kapüşonlu Create Your New World Alt Üst Takım",
+    "color": "YEŞİL",
+    "price": 1239.9,
+    "discount": 35.0,
+    "final_price": 805.94,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Kısa Kollu Nothing Changes Alt Üst Takım",
+    "color": "EKRU",
+    "price": 1061.9,
+    "discount": 35.0,
+    "final_price": 690.24,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Kapüşonlu We All Need Change 3'lü Alt Üst Takım",
+    "color": "MOR",
+    "price": 1279.9,
+    "discount": 35.0,
+    "final_price": 831.94,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Afrika Etnik Baskılı Dantelli \"Africa Style\" Gecelik",
+    "color": "BEJ",
+    "price": 869.9,
+    "discount": 35.0,
+    "final_price": 565.44,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Afrika Etnik Desenli Dantelli \"Africa Style\" Şort Takımı",
+    "color": "BEJ",
+    "price": 901.9,
+    "discount": 35.0,
+    "final_price": 586.24,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Kedi ve Kalp Desenli \"Let's Make Happen\" Baskılı Şort Takımı",
+    "color": "SOMON",
+    "price": 865.9,
+    "discount": 35.0,
+    "final_price": 562.84,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Kiraz Baskılı ve Desenli Sırt Dekolteli \"Cherry\" Şort Takımı",
+    "color": "SOMON",
+    "price": 890.9,
+    "discount": 35.0,
+    "final_price": 579.09,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Çiçek ve Yaprak Desenli Saten Etek Takımı",
+    "color": "SİYAH",
+    "price": 1119.9,
+    "discount": 35.0,
+    "final_price": 727.94,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Çiçek ve Yaprak Desenli Önü Boydan Düğmeli Saten Elbise",
+    "color": "SİYAH",
+    "price": 1372.9,
+    "discount": 35.0,
+    "final_price": 892.39,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Yazı, Güneş ve Palmiye Baskılı \"Long Beach\" Pijama Takımı",
+    "color": "BEYAZ",
+    "price": 1061.9,
+    "discount": 35.0,
+    "final_price": 690.24,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Etnik Desenli Önü Düğmeli Alt Üst Takım",
+    "color": "MOR",
+    "price": 2343.9,
+    "discount": 30.0,
+    "final_price": 1640.73,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Etnik Desenli Sabahlık Takımı",
+    "color": "MOR",
+    "price": 2859.9,
+    "discount": 30.0,
+    "final_price": 2001.93,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Etnik Desenli 3'lü Pijama Takımı",
+    "color": "MOR",
+    "price": 2999.9,
+    "discount": 30.0,
+    "final_price": 2099.93,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Etnik Desenli Uzun Kollu Alt Üst Takım",
+    "color": "MOR",
+    "price": 2058.9,
+    "discount": 30.0,
+    "final_price": 1441.23,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Uzun Kollu Önü Düğmeli Kadife Alt Üst Takım",
+    "color": "SİYAH",
+    "price": 1965.9,
+    "discount": 30.0,
+    "final_price": 1376.13,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Uzun Kollu Yırtmaç Detaylı Kadife Elbise",
+    "color": "SİYAH",
+    "price": 1227.9,
+    "discount": 30.0,
+    "final_price": 859.53,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Uzun Kollu Kemer Detaylı Kadife Tulum",
+    "color": "SİYAH",
+    "price": 1757.9,
+    "discount": 30.0,
+    "final_price": 1230.53,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Desenli Sabahlık Takımı",
+    "color": "SİYAH",
+    "price": 3139.9,
+    "discount": 30.0,
+    "final_price": 2197.93,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Desenli Truvakar Kollu Saten Elbise",
+    "color": "SİYAH",
+    "price": 2315.9,
+    "discount": 30.0,
+    "final_price": 1621.13,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Uzun Kollu Saten Elbise",
+    "color": "SİYAH",
+    "price": 2243.9,
+    "discount": 30.0,
+    "final_price": 1570.73,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Desenli Uzun Kollu Saten Elbise",
+    "color": "SİYAH",
+    "price": 2065.9,
+    "discount": 30.0,
+    "final_price": 1446.13,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Desenli Uzun Kollu Düğmeli Saten Etek Takımı",
+    "color": "SİYAH",
+    "price": 2331.9,
+    "discount": 30.0,
+    "final_price": 1632.33,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Çiçek Desenli Dantelli ve Dekolteli Saten Sabahlık Takımı",
+    "color": "YEŞİL",
+    "price": 3299.9,
+    "discount": 30.0,
+    "final_price": 2309.93,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Çiçek Desenli 3'lü Saten Pijama Takımı",
+    "color": "YEŞİL",
+    "price": 3379.9,
+    "discount": 30.0,
+    "final_price": 2365.93,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Çiçek Desenli Truvakar Kollu Saten Elbise",
+    "color": "YEŞİL",
+    "price": 2186.9,
+    "discount": 30.0,
+    "final_price": 1530.83,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Çiçek Desenli Uzun Kollu Saten Alt Üst Takım",
+    "color": "YEŞİL",
+    "price": 2257.9,
+    "discount": 30.0,
+    "final_price": 1580.53,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Dantelli ve Dekolteli Kadife Sabahlık Takımı",
+    "color": "BORDO",
+    "price": 2445.9,
+    "discount": 30.0,
+    "final_price": 1712.13,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Çiçek ve Yaprak Desenli Önü Düğmeli Pijama Takımı",
+    "color": "BORDO",
+    "price": 1754.9,
+    "discount": 30.0,
+    "final_price": 1228.43,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Çiçek ve Yaprak Desenli \"I'm Living In a Dreamland\" Pijama Takımı",
+    "color": "BORDO",
+    "price": 1389.9,
+    "discount": 30.0,
+    "final_price": 972.93,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Yaprak Desenli 3'lü Alt Üst Takım",
+    "color": "YEŞİL",
+    "price": 2599.9,
+    "discount": 30.0,
+    "final_price": 1819.93,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Yaprak Desenli Uzun Kollu Alt Üst Takım",
+    "color": "YEŞİL",
+    "price": 1988.9,
+    "discount": 30.0,
+    "final_price": 1392.23,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Desenli Önü Düğmeli Uzun Kollu 3'lü Alt Üst Takım",
+    "color": "SİYAH",
+    "price": 1947.9,
+    "discount": 30.0,
+    "final_price": 1363.53,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Desenli Uzun Kollu Alt Üst Takım",
+    "color": "SİYAH",
+    "price": 1699.9,
+    "discount": 30.0,
+    "final_price": 1189.93,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Desenli Uzun Kollu Elbise",
+    "color": "SİYAH",
+    "price": 1566.9,
+    "discount": 30.0,
+    "final_price": 1096.83,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Desenli Uzun Kollu Alt Üst Takım",
+    "color": "TABA",
+    "price": 1736.9,
+    "discount": 30.0,
+    "final_price": 1215.83,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Desenli 3'lü Alt Üst Takım",
+    "color": "TABA",
+    "price": 2082.9,
+    "discount": 30.0,
+    "final_price": 1458.03,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Kruvaze Yaka Kadife Pijama Takımı",
+    "color": "YEŞİL",
+    "price": 2179.9,
+    "discount": 30.0,
+    "final_price": 1525.93,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "A star is born! Kadife Pijama Takımı",
+    "color": "YEŞİL",
+    "price": 1836.9,
+    "discount": 30.0,
+    "final_price": 1285.83,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Etnik Desenli Dantelli Sabahlık Takımı",
+    "color": "MÜRDÜM",
+    "price": 2129.9,
+    "discount": 30.0,
+    "final_price": 1490.93,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Yaprak Desenli Dantelli ve Dekolteli Sabahlık Takımı",
+    "color": "LACİVERT",
+    "price": 1770.9,
+    "discount": 30.0,
+    "final_price": 1239.63,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Yaprak Desenli \"Romantic Life\" Sabahlık Takımı",
+    "color": "LACİVERT",
+    "price": 1900.9,
+    "discount": 30.0,
+    "final_price": 1330.63,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Yaprak Desenli \"Romantic Life\" Pijama Takımı",
+    "color": "LACİVERT",
+    "price": 1558.9,
+    "discount": 30.0,
+    "final_price": 1091.23,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Yaprak Desenli Dantelli ve Dekolteli Sabahlık Takımı",
+    "color": "SİYAH",
+    "price": 1751.9,
+    "discount": 30.0,
+    "final_price": 1226.33,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Yaprak Desenli \"Natural Vibes\" Pijama Takımı",
+    "color": "SİYAH",
+    "price": 1512.9,
+    "discount": 30.0,
+    "final_price": 1059.03,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Yaprak Desenli \"Natural Vibes\" Şort Takımı",
+    "color": "SİYAH",
+    "price": 1290.9,
+    "discount": 30.0,
+    "final_price": 903.63,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Etnik Desenli Dantelli ve Dekolteli Sabahlık Takımı",
+    "color": "MÜRDÜM",
+    "price": 1826.9,
+    "discount": 30.0,
+    "final_price": 1278.83,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Etnik Desenli Dantelli Pijama Takımı",
+    "color": "MÜRDÜM",
+    "price": 1506.9,
+    "discount": 30.0,
+    "final_price": 1054.83,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Etnik Desenli Dantelli Şort Takımı",
+    "color": "MÜRDÜM",
+    "price": 1293.9,
+    "discount": 30.0,
+    "final_price": 905.73,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Çiçek ve Yaprak Desenli Saten Sabahlık Takımı",
+    "color": "PEMBE",
+    "price": 2719.9,
+    "discount": 35.0,
+    "final_price": 1767.94,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Çiçek ve Yaprak Desenli Saten Pijama Takımı",
+    "color": "PEMBE",
+    "price": 2331.9,
+    "discount": 35.0,
+    "final_price": 1515.74,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Çiçek Yaprak ve Etnik* Desenli Saten Etek Takımı",
+    "color": "PEMBE",
+    "price": 1898.9,
+    "discount": 35.0,
+    "final_price": 1234.29,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Çiçek Yaprak ve Etnik Desenli Önü Düğmeli Saten Alt Üst Takım",
+    "color": "PEMBE",
+    "price": 2026.9,
+    "discount": 35.0,
+    "final_price": 1317.49,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Etnik Desenli Saten Alt Üst Takım",
+    "color": "RENKLİ GEOMETRİK",
+    "price": 2132.9,
+    "discount": 35.0,
+    "final_price": 1386.39,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Etnik Desenli Saten Tulum",
+    "color": "RENKLİ GEOMETRİK",
+    "price": 1962.9,
+    "discount": 35.0,
+    "final_price": 1275.89,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Etnik Desenli Saten Etek Takımı",
+    "color": "RENKLİ GEOMETRİK",
+    "price": 1752.9,
+    "discount": 35.0,
+    "final_price": 1139.39,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Etnik Desenli Saten Alt Üst Takım",
+    "color": "RENKLİ GEOMETRİK",
+    "price": 1888.9,
+    "discount": 35.0,
+    "final_price": 1227.79,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Yaprak Desenli Kısa Kollu Elbise",
+    "color": "YEŞİL",
+    "price": 1557.9,
+    "discount": 35.0,
+    "final_price": 1012.64,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Yaprak Desenli Kısa Kollu Alt Üst Takım",
+    "color": "YEŞİL",
+    "price": 1604.9,
+    "discount": 35.0,
+    "final_price": 1043.19,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Etnik Desenli Alt Üst Takım",
+    "color": "LACİVERT",
+    "price": 1959.9,
+    "discount": 35.0,
+    "final_price": 1273.94,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Etnik Desenli Truvakar Kollu Elbise",
+    "color": "LACİVERT",
+    "price": 1770.9,
+    "discount": 35.0,
+    "final_price": 1151.09,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Etnik Desenli Truvakar Kollu Alt Üst Takım",
+    "color": "LACİVERT",
+    "price": 1545.9,
+    "discount": 35.0,
+    "final_price": 1004.84,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Çiçek Desenli Elbise",
+    "color": "LACİVERT",
+    "price": 1780.9,
+    "discount": 35.0,
+    "final_price": 1157.59,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Çiçek Desenli Truvakar Kollu Elbise",
+    "color": "LACİVERT",
+    "price": 1618.9,
+    "discount": 35.0,
+    "final_price": 1052.29,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Çiçek Desenli Truvakar Kollu Elbise",
+    "color": "LACİVERT",
+    "price": 1502.9,
+    "discount": 35.0,
+    "final_price": 976.89,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Çiçek Desenli Elbise",
+    "color": "SİYAH",
+    "price": 1579.9,
+    "discount": 35.0,
+    "final_price": 1026.94,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Çiçek Desenli Yırtmaç Detaylı Alt Üst Takım",
+    "color": "SİYAH",
+    "price": 1956.9,
+    "discount": 35.0,
+    "final_price": 1271.99,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Gömlek Yakalı Kısa Kollu Elbise",
+    "color": "SİYAH",
+    "price": 2087.9,
+    "discount": 35.0,
+    "final_price": 1357.14,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Dantelli Dekolteli ve Yırtmaçlı Sabahlık Takımı",
+    "color": "SİYAH",
+    "price": 2144.9,
+    "discount": 35.0,
+    "final_price": 1394.19,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Çiçek Desenli Gömlek Yakalı Elbise",
+    "color": "SİYAH",
+    "price": 2064.9,
+    "discount": 35.0,
+    "final_price": 1342.19,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Yaprak Desenli Uzun Kollu Saten Elbise",
+    "color": "LACİVERT",
+    "price": 1696.9,
+    "discount": 35.0,
+    "final_price": 1102.99,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Yaprak Desenli Saten Etek Takımı",
+    "color": "LACİVERT",
+    "price": 1494.9,
+    "discount": 35.0,
+    "final_price": 971.69,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Kısa Kollu Yrtmaç Detaylı Saten Elbise",
+    "color": "LACİVERT",
+    "price": 1179.9,
+    "discount": 35.0,
+    "final_price": 766.94,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Yaprak Desenli Kısa Kollu Saten Elbise",
+    "color": "LACİVERT",
+    "price": 1382.9,
+    "discount": 35.0,
+    "final_price": 898.89,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Dantelli Dekolteli Yaprak Desenli Saten Sabahlık Takımı",
+    "color": "LACİVERT",
+    "price": 2249.9,
+    "discount": 35.0,
+    "final_price": 1462.44,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Yaprak Desenli Kuşak Detaylı Saten Alt Üst Takım",
+    "color": "LACİVERT",
+    "price": 1832.9,
+    "discount": 35.0,
+    "final_price": 1191.39,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Yaprak Desenli Sıfır Kol Saten Alt Üst Takım",
+    "color": "LACİVERT",
+    "price": 1252.9,
+    "discount": 35.0,
+    "final_price": 814.39,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Yaprak Desenli Yırtmaçlı Saten Sabahlık",
+    "color": "LACİVERT",
+    "price": 1609.9,
+    "discount": 35.0,
+    "final_price": 1046.44,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Etnik Desenli 3'lü Alt Üst Takım",
+    "color": "SİYAH",
+    "price": 2064.9,
+    "discount": 35.0,
+    "final_price": 1342.19,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Etnik Desenli Elbise",
+    "color": "SİYAH",
+    "price": 1797.9,
+    "discount": 35.0,
+    "final_price": 1168.64,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Etnik Desenli Bağcık Detaylı Tulum",
+    "color": "SİYAH",
+    "price": 1130.9,
+    "discount": 35.0,
+    "final_price": 735.09,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Etnik Desenli Gömlek Yakalı Önü Düğmeli Elbise",
+    "color": "İNDİGO",
+    "price": 2061.9,
+    "discount": 35.0,
+    "final_price": 1340.24,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Etnik Desenli Gömlek Yakalı Önü Düğmeli Alt Üst Takım",
+    "color": "İNDİGO",
+    "price": 1751.9,
+    "discount": 35.0,
+    "final_price": 1138.74,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Etnik Desenli Truvakar Kollu Elbise",
+    "color": "MOR",
+    "price": 1798.9,
+    "discount": 35.0,
+    "final_price": 1169.29,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Etnik Desenli Sıfır Kol 3'lü Alt Üst Takım",
+    "color": "MOR",
+    "price": 2261.9,
+    "discount": 35.0,
+    "final_price": 1470.24,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Etnik Desenli İp Askılı Tulum",
+    "color": "MOR",
+    "price": 1388.9,
+    "discount": 35.0,
+    "final_price": 902.79,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Etnik Desenli Sıfır Kol Alt Üst Takım",
+    "color": "MOR",
+    "price": 1232.9,
+    "discount": 35.0,
+    "final_price": 801.39,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Çiçek Desenli Kısa Kollu Alt Üst Takım",
+    "color": "SİYAH",
+    "price": 1482.9,
+    "discount": 35.0,
+    "final_price": 963.89,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Çiçek Desenli Yırtmaçlı Etek Takımı",
+    "color": "SİYAH",
+    "price": 1379.9,
+    "discount": 35.0,
+    "final_price": 896.94,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Etnik Desenli 3'lü Alt Üst Takım",
+    "color": "LACİVERT",
+    "price": 1994.9,
+    "discount": 35.0,
+    "final_price": 1296.69,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Etnik Desenli Truvakar Kollu V Yaka Elbise",
+    "color": "LACİVERT",
+    "price": 1627.9,
+    "discount": 35.0,
+    "final_price": 1058.14,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Etnik Desenli Tulum",
+    "color": "LACİVERT",
+    "price": 1724.9,
+    "discount": 35.0,
+    "final_price": 1121.19,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Etnik Desenli Kısa Kollu Yırtmaçlı Elbise",
+    "color": "LACİVERT",
+    "price": 1545.9,
+    "discount": 35.0,
+    "final_price": 1004.84,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Çiçek Desenli Kare Yaka Askılı Elbise",
+    "color": "MOR",
+    "price": 1816.9,
+    "discount": 35.0,
+    "final_price": 1180.99,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Çiçek Desenli Kalın Askılı Etek Takımı",
+    "color": "MOR",
+    "price": 1356.9,
+    "discount": 35.0,
+    "final_price": 881.99,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Çiçek Desenli V Yaka Alt Üst Takım",
+    "color": "MOR",
+    "price": 1454.9,
+    "discount": 35.0,
+    "final_price": 945.69,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Çiçek Desenli Kısa Kollu Elbise",
+    "color": "MOR",
+    "price": 1689.9,
+    "discount": 35.0,
+    "final_price": 1098.44,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Kısa Kollu V Yaka Elbise",
+    "color": "SİYAH",
+    "price": 2402.9,
+    "discount": 35.0,
+    "final_price": 1561.89,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Truvakar Kollu V Yaka Elbise",
+    "color": "SİYAH",
+    "price": 1956.9,
+    "discount": 35.0,
+    "final_price": 1271.99,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Truvakar Kollu V Yaka Elbise",
+    "color": "SİYAH",
+    "price": 1877.9,
+    "discount": 35.0,
+    "final_price": 1220.64,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Truvakar Kollu V Yaka Elbise",
+    "color": "BEYAZ",
+    "price": 2951.9,
+    "discount": 35.0,
+    "final_price": 1918.74,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Kayık Yakalı Elbise",
+    "color": "BEYAZ",
+    "price": 2288.9,
+    "discount": 35.0,
+    "final_price": 1487.79,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Truvakar Kollu Önü Düğmeli Elbise",
+    "color": "BEYAZ",
+    "price": 1893.9,
+    "discount": 35.0,
+    "final_price": 1231.04,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Çiçek Desenli Kısa Kollu Elbise",
+    "color": "TURUNCU",
+    "price": 1857.9,
+    "discount": 35.0,
+    "final_price": 1207.64,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Çiçek Desenli Kısa Kollu Elbise",
+    "color": "TURUNCU",
+    "price": 1613.9,
+    "discount": 35.0,
+    "final_price": 1049.04,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Kısa Kollu Stay Strong 3'lü Crop Alt Üst Takım",
+    "color": "YEŞİL",
+    "price": 1384.9,
+    "discount": 35.0,
+    "final_price": 900.19,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Kısa Kollu \"Stay Strong\" Eşofman Takımı",
+    "color": "YEŞİL",
+    "price": 1856.9,
+    "discount": 35.0,
+    "final_price": 1206.99,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Kısa Kollu \"Stay Strong\" Crop Eşofman Takımı",
+    "color": "YEŞİL",
+    "price": 1619.9,
+    "discount": 35.0,
+    "final_price": 1052.94,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Kısa Kollu \"Calm Down\" Eşofman Takımı",
+    "color": "PEMBE",
+    "price": 1621.9,
+    "discount": 35.0,
+    "final_price": 1054.24,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Kısa Kollu Calm Down 3'lü Crop Alt Üst Takım",
+    "color": "PEMBE",
+    "price": 1476.9,
+    "discount": 35.0,
+    "final_price": 959.99,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Kapüşonlu \"Calm Down\" Eşofman Takımı",
+    "color": "PEMBE",
+    "price": 1805.9,
+    "discount": 35.0,
+    "final_price": 1173.84,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Kısa Kollu \"Never Give Up\" 3'lü Crop Eşofman Takımı",
+    "color": "MAVİ",
+    "price": 1800.9,
+    "discount": 35.0,
+    "final_price": 1170.59,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Kapüşonlu 3'lü Crop Alt Üst Takım",
+    "color": "MAVİ",
+    "price": 1697.9,
+    "discount": 35.0,
+    "final_price": 1103.64,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Kısa Kollu \"Never Give Up\" Eşofman Takımı",
+    "color": "MAVİ",
+    "price": 1219.9,
+    "discount": 35.0,
+    "final_price": 792.94,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Çizgi Desenli \"Fearless\" Pijama Takımı",
+    "color": "SİYAH-BEYAZ",
+    "price": 1558.9,
+    "discount": 35.0,
+    "final_price": 1013.29,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Kapüşonlu \"Never Give Up\" Eşofman Takımı",
+    "color": "SİYAH",
+    "price": 1789.9,
+    "discount": 35.0,
+    "final_price": 1163.44,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Kısa Kollu Baskılı Alt Üst Takım",
+    "color": "SİYAH",
+    "price": 1249.9,
+    "discount": 35.0,
+    "final_price": 812.44,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Çiçek ve Yaprak Baskılı \"Summer Vocation\" Pijama Takımı",
+    "color": "LACİVERT",
+    "price": 1314.9,
+    "discount": 35.0,
+    "final_price": 854.69,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Çiçek ve Yaprak Baskılı \"A Beautiful Summer Vocation\" Şort Takımı",
+    "color": "LACİVERT",
+    "price": 1203.9,
+    "discount": 35.0,
+    "final_price": 782.54,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Çiçek ve Yaprak Baskılı \"Summer Vocation\" Gecelik",
+    "color": "LACİVERT",
+    "price": 1104.9,
+    "discount": 35.0,
+    "final_price": 718.19,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Çiçek ve Yaprak Desenli ve Baskılı \"A Beautiful Summer Vocation\" Kapri Takımı",
+    "color": "LACİVERT",
+    "price": 1254.9,
+    "discount": 35.0,
+    "final_price": 815.69,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Desenli ve Dantelli Sabahlık Takımı",
+    "color": "ANTRASİT",
+    "price": 1569.9,
+    "discount": 35.0,
+    "final_price": 1020.44,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Desenli Kısa Kollu \"Less Mondey More Coffee\" Pijama Takımı",
+    "color": "ANTRASİT",
+    "price": 1361.9,
+    "discount": 35.0,
+    "final_price": 885.24,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Kısa Kollu Önü Düğmeli Gecelik",
+    "color": "ANTRASİT",
+    "price": 1139.9,
+    "discount": 35.0,
+    "final_price": 740.94,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Kısa Kollu Desenli Gecelik",
+    "color": "SARI",
+    "price": 1042.9,
+    "discount": 35.0,
+    "final_price": 677.89,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Yaprak Desenli Dantelli ve Dekolteli Sabahlık Takımı",
+    "color": "LACİVERT",
+    "price": 3717.9,
+    "discount": 30.0,
+    "final_price": 2602.53,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Yaprak Desenli Uzun Kollu V Yaka Pijama Takımı",
+    "color": "LACİVERT",
+    "price": 2823.9,
+    "discount": 30.0,
+    "final_price": 1976.73,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Dantelli ve Dekolteli Kadife Sabahlık Takımı",
+    "color": "LACİVERT",
+    "price": 3417.9,
+    "discount": 30.0,
+    "final_price": 2392.53,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Yaprak Desenli ve Dantelli 3'lü Pijama Takımı",
+    "color": "LACİVERT",
+    "price": 4271.9,
+    "discount": 30.0,
+    "final_price": 2990.33,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Çiçek Yaprak ve Etnik Desenli Pijama Takımı",
+    "color": "SİYAH",
+    "price": 3773.9,
+    "discount": 30.0,
+    "final_price": 2641.73,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Çiçek Yaprak ve Etnik Desenli Dantelli ve Dekolteli Sabahlık Takımı",
+    "color": "SİYAH",
+    "price": 3685.9,
+    "discount": 30.0,
+    "final_price": 2580.13,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Çiçek Yaprak ve Etnik Desenli Dantelli 3'lü Pijama Takımı",
+    "color": "SİYAH",
+    "price": 3997.9,
+    "discount": 30.0,
+    "final_price": 2798.53,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Çiçek Yaprak ve Etnik Desenli Uzun Kollu Pijama Takımı",
+    "color": "SİYAH",
+    "price": 3081.9,
+    "discount": 30.0,
+    "final_price": 2157.33,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Uzun Kollu V Yaka Pijama Takımı",
+    "color": "SİYAH",
+    "price": 2363.9,
+    "discount": 30.0,
+    "final_price": 1654.73,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Uzun Kollu Önü Düğmeli V Yaka Pijama Takımı",
+    "color": "YEŞİL",
+    "price": 2471.9,
+    "discount": 30.0,
+    "final_price": 1730.33,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Uzun Kollu V Yaka Pijama Takımı",
+    "color": "YEŞİL",
+    "price": 2371.9,
+    "discount": 30.0,
+    "final_price": 1660.33,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Uzun Kollu ve Dantelli Pijama Takımı",
+    "color": "MÜRDÜM",
+    "price": 2410.9,
+    "discount": 30.0,
+    "final_price": 1687.63,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Çiçek ve Yaprak Desenli Dantelli ve Dekolteli Sabahlık Takımı",
+    "color": "YEŞİL",
+    "price": 3085.9,
+    "discount": 30.0,
+    "final_price": 2160.13,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Çiçek ve Yaprak Desenli Önü Düğmeli Pijama Takımı",
+    "color": "YEŞİL",
+    "price": 2510.9,
+    "discount": 30.0,
+    "final_price": 1757.63,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Çiçek ve Yaprak Desenli Dantelli Hamile Lohusa Sabahlık Takımı",
+    "color": "YEŞİL",
+    "price": 3100.9,
+    "discount": 30.0,
+    "final_price": 2170.63,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Çiçek ve Yaprak Desenli Dantelli Hamile Lohusa 3'lü Pijama Takımı",
+    "color": "YEŞİL",
+    "price": 3226.9,
+    "discount": 30.0,
+    "final_price": 2258.83,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Yaprak Desenli Yırtmaçlı Dantelli ve Dekolteli Sabahlık Takımı",
+    "color": "SOMON",
+    "price": 3125.9,
+    "discount": 30.0,
+    "final_price": 2188.13,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Yaprak Desenli Yırtmaçlı Dantelli ve Dekolteli Büyük Beden Sabahlık Takımı",
+    "color": "SOMON",
+    "price": 3368.9,
+    "discount": 30.0,
+    "final_price": 2358.23,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Yaprak Desenli Dantelli V Yaka Pijama Takımı",
+    "color": "SOMON",
+    "price": 2554.9,
+    "discount": 30.0,
+    "final_price": 1788.43,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Yaprak Desenli Dantelli V Yaka Büyük Beden Pijama Takımı",
+    "color": "SOMON",
+    "price": 2770.9,
+    "discount": 30.0,
+    "final_price": 1939.63,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Çiçek ve Yaprak Desenli Dantelli ve Dekolteli Sabahlık Takımı",
+    "color": "YEŞİL",
+    "price": 3102.9,
+    "discount": 30.0,
+    "final_price": 2172.03,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Çiçek ve Yaprak Desenli Dantelli ve Dekolteli Büyük Beden Sabahlık Takımı",
+    "color": "YEŞİL",
+    "price": 3368.9,
+    "discount": 30.0,
+    "final_price": 2358.23,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Çiçek ve Yaprak Desenli Dantelli Büyük Beden Pijama Takımı",
+    "color": "YEŞİL",
+    "price": 2734.9,
+    "discount": 30.0,
+    "final_price": 1914.43,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Çiçek ve Yaprak Desenli V Yaka Büyük Beden Kapri Takımı",
+    "color": "YEŞİL",
+    "price": 2458.9,
+    "discount": 30.0,
+    "final_price": 1721.23,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Etnik Desenli 3'lü Alt Üst Takım",
+    "color": "SİYAH",
+    "price": 3275.9,
+    "discount": 30.0,
+    "final_price": 2293.13,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Etnik Desenli Kuşaklı Elbise",
+    "color": "SİYAH",
+    "price": 3552.9,
+    "discount": 30.0,
+    "final_price": 2487.03,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Etnik Desenli Önü Düğmeli Alt Üst Takım",
+    "color": "SİYAH",
+    "price": 2494.9,
+    "discount": 30.0,
+    "final_price": 1746.43,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Çiçek ve Yaprak Desenli Truvakar Kollu Elbise",
+    "color": "MOR",
+    "price": 2910.9,
+    "discount": 30.0,
+    "final_price": 2037.63,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Çiçek ve Yaprak Desenli Elbise",
+    "color": "MOR",
+    "price": 2416.9,
+    "discount": 30.0,
+    "final_price": 1691.83,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Çiçek ve Yaprak Desenli İp Askılı Tulum",
+    "color": "MOR",
+    "price": 2550.9,
+    "discount": 30.0,
+    "final_price": 1785.63,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Çiçek ve Yaprak Desenli 3'lü Alt Üst Takım",
+    "color": "MOR",
+    "price": 3044.9,
+    "discount": 30.0,
+    "final_price": 2131.43,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Çiçek ve Yaprak Desenli Kısa Kollu Elbise",
+    "color": "YEŞİL",
+    "price": 3057.9,
+    "discount": 30.0,
+    "final_price": 2140.53,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Çiçek ve Yaprak Desenli Alt Üst Takım",
+    "color": "YEŞİL",
+    "price": 2044.9,
+    "discount": 30.0,
+    "final_price": 1431.43,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Çiçek ve Yaprak Desenli 3'lü Alt Üst Takım",
+    "color": "YEŞİL",
+    "price": 3622.9,
+    "discount": 30.0,
+    "final_price": 2536.03,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Çiçek ve Yaprak Desenli Alt Üst Takım",
+    "color": "YEŞİL",
+    "price": 2373.9,
+    "discount": 30.0,
+    "final_price": 1661.73,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Çiçek ve Yaprak Desenli Önü Düğmeli Elbise",
+    "color": "SİYAH",
+    "price": 2674.9,
+    "discount": 30.0,
+    "final_price": 1872.43,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Çiçek ve Yaprak Desenli Truvakar Kollu Elbise",
+    "color": "SİYAH",
+    "price": 2787.9,
+    "discount": 30.0,
+    "final_price": 1951.53,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Çiçek ve Yaprak Desenli Etek Takımı",
+    "color": "SİYAH",
+    "price": 2329.9,
+    "discount": 30.0,
+    "final_price": 1630.93,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Çiçek ve Yaprak Desenli Önü Düğmeli Elbise",
+    "color": "SİYAH",
+    "price": 2336.9,
+    "discount": 30.0,
+    "final_price": 1635.83,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Çiçekve Yaprak Deseni V Yaka Alt Üst Takım",
+    "color": "SİYAH",
+    "price": 2013.9,
+    "discount": 30.0,
+    "final_price": 1409.73,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Yaprak Desenli Önü Düğmeli Gömlek Yaka Alt Üst Takım",
+    "color": "LACİVERT",
+    "price": 2512.9,
+    "discount": 30.0,
+    "final_price": 1759.03,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Çiçek ve Yaprak Desenli Kuşaklı Elbise",
+    "color": "SARI",
+    "price": 2420.9,
+    "discount": 30.0,
+    "final_price": 1694.63,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Çiçek ve Yaprak Desenli Önü Düğmeli Alt Üst Takım",
+    "color": "SARI",
+    "price": 2516.9,
+    "discount": 30.0,
+    "final_price": 1761.83,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Desenli 3'lü Alt Üst Takım",
+    "color": "TARÇIN",
+    "price": 3266.9,
+    "discount": 30.0,
+    "final_price": 2286.83,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Kısa Kollu Bisiklet Yaka Alt Üst Takım",
+    "color": "TARÇIN",
+    "price": 2675.9,
+    "discount": 30.0,
+    "final_price": 1873.13,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Kısa Kollu Bisiklet Yaka Alt Üst Takım",
+    "color": "TARÇIN",
+    "price": 2364.9,
+    "discount": 30.0,
+    "final_price": 1655.43,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Yaprak Desenli Dantelli ve Dekolteli Saten Sabahlık Takımı",
+    "color": "MOR",
+    "price": 3171.9,
+    "discount": 30.0,
+    "final_price": 2220.33,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Yaprak Desenli ve Dantelli Saten Şort Takımı",
+    "color": "MOR",
+    "price": 1963.9,
+    "discount": 30.0,
+    "final_price": 1374.73,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Çiçek ve Yaprak Desenli Önü Düğmeli Alt Üst Takım",
+    "color": "SARI",
+    "price": 2373.9,
+    "discount": 30.0,
+    "final_price": 1661.73,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Çiçek ve Yaprak Desenli ve Baskılı \"You Are Beautiful\" Sabahlık Takımı",
+    "color": "SARI",
+    "price": 2545.9,
+    "discount": 30.0,
+    "final_price": 1782.13,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Çiçek ve Yaprak Desenli Dantelli ve Dekolteli Sabahlık Takımı",
+    "color": "SİYAH",
+    "price": 3057.9,
+    "discount": 30.0,
+    "final_price": 2140.53,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Çiçek ve Yaprak Desenli Önü Düğmeli Elbise",
+    "color": "SİYAH",
+    "price": 2316.9,
+    "discount": 30.0,
+    "final_price": 1621.83,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Kısa Kollu Bisiklet Yaka Alt Üst Takım",
+    "color": "YEŞİL",
+    "price": 2692.9,
+    "discount": 30.0,
+    "final_price": 1885.03,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Kısa Kollu Bisiklet Yaka Alt Üst Takım",
+    "color": "KAHVE",
+    "price": 2418.9,
+    "discount": 30.0,
+    "final_price": 1693.23,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Kısa Kollu Bisiklet Yaka Alt Üst Takım",
+    "color": "ANTRASİT",
+    "price": 2418.9,
+    "discount": 30.0,
+    "final_price": 1693.23,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Kısa Kollu V Yaka Alt Üst Takım",
+    "color": "İNDİGO",
+    "price": 2364.9,
+    "discount": 30.0,
+    "final_price": 1655.43,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Kısa Kollu Oyuk Yaka Alt Üst Takım",
+    "color": "YEŞİL",
+    "price": 2289.9,
+    "discount": 30.0,
+    "final_price": 1602.93,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Etnik Desenli ve Dantelli Sabahlık Takımı",
+    "color": "YEŞİL",
+    "price": 2332.9,
+    "discount": 30.0,
+    "final_price": 1633.03,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Etnik Desenli ve Dantelli Büyük Beden Sabahlık Takımı",
+    "color": "YEŞİL",
+    "price": 2906.9,
+    "discount": 30.0,
+    "final_price": 2034.83,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Dantelli Önü Düğmeli Hamile Lohusa Gecelik",
+    "color": "YEŞİL",
+    "price": 1868.9,
+    "discount": 30.0,
+    "final_price": 1308.23,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Çiçek ve Yaprak Desenli Dantelli Hamile Lohusa Sabahlık Takımı",
+    "color": "YEŞİL",
+    "price": 2516.9,
+    "discount": 30.0,
+    "final_price": 1761.83,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Çiçek Desenli ve Dantelli Sabahlık Takımı",
+    "color": "PEMBE",
+    "price": 2156.9,
+    "discount": 30.0,
+    "final_price": 1509.83,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Çiçek Desenli ve Baskılı \"You are Awesome\" Şort Takımı",
+    "color": "PEMBE",
+    "price": 1737.9,
+    "discount": 30.0,
+    "final_price": 1216.53,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Çiçek Desenli ve Baskılı \"You are Awesome\" Kapri Takımı",
+    "color": "PEMBE",
+    "price": 1961.9,
+    "discount": 30.0,
+    "final_price": 1373.33,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Dantelli Önü Düğmeli Hamile Lohusa Gecelik",
+    "color": "PEMBE",
+    "price": 1868.9,
+    "discount": 30.0,
+    "final_price": 1308.23,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Çiçek Desenli Önü Düğmeli Sabahlık Takımı",
+    "color": "KAHVE",
+    "price": 2228.9,
+    "discount": 30.0,
+    "final_price": 1560.23,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Çiçek Deseni V Yaka Şort Takımı",
+    "color": "KAHVE",
+    "price": 1736.9,
+    "discount": 30.0,
+    "final_price": 1215.83,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Çiçek Deseni V Yaka Pijama Takımı",
+    "color": "KAHVE",
+    "price": 2016.9,
+    "discount": 30.0,
+    "final_price": 1411.83,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Etnik Deseni ve Dantelli Sabahlık Takımı",
+    "color": "YEŞİL",
+    "price": 2231.9,
+    "discount": 30.0,
+    "final_price": 1562.33,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Etnik Desenli Sabahlık Takımı",
+    "color": "YEŞİL",
+    "price": 2113.9,
+    "discount": 30.0,
+    "final_price": 1479.73,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Etnik Desenli Kısa Kollu Şort Takımı",
+    "color": "YEŞİL",
+    "price": 1790.9,
+    "discount": 30.0,
+    "final_price": 1253.63,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Yaprak Desenli Kısa Kollu Şort Takımı",
+    "color": "AÇIK YEŞİL",
+    "price": 1796.9,
+    "discount": 30.0,
+    "final_price": 1257.83,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Çiçek ve Yaprak Desenli Dantelli Kapri Takımı",
+    "color": "AÇIK YEŞİL",
+    "price": 1972.9,
+    "discount": 30.0,
+    "final_price": 1381.03,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Yaprak Desenli Dantelli Hamile Lohusa 3'lü Pijama Takımı",
+    "color": "AÇIK YEŞİL",
+    "price": 2742.9,
+    "discount": 30.0,
+    "final_price": 1920.03,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Yaprak Desenli Dantelli Hamile Lohusa Sabahlık Takımı",
+    "color": "AÇIK YEŞİL",
+    "price": 2590.9,
+    "discount": 30.0,
+    "final_price": 1813.63,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Yaprak Desenli Dantelli ve Dekolteli Sabahlık Takımı",
+    "color": "SİYAH",
+    "price": 2157.9,
+    "discount": 30.0,
+    "final_price": 1510.53,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Yaprak Desenli ve Baskılı Önü Düğmeli Pijama Takımı",
+    "color": "SİYAH",
+    "price": 2151.9,
+    "discount": 30.0,
+    "final_price": 1506.33,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Yaprak Desenli ve Baskılı \"o Segredo e se Permitir Florescer\" Şort Takımı",
+    "color": "SİYAH",
+    "price": 1783.9,
+    "discount": 30.0,
+    "final_price": 1248.73,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Yaprak Baskılı \"o Segredo e se Permitir Florescer\" Gecelik",
+    "color": "SİYAH",
+    "price": 1572.9,
+    "discount": 30.0,
+    "final_price": 1101.03,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Yaprak Desenli ve Baskılı \"o Segredo e se Permitir Florescer\" Kapri Takımı",
+    "color": "SİYAH",
+    "price": 1927.9,
+    "discount": 30.0,
+    "final_price": 1349.53,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Çiçek ve Yaprak Desenli Dantelli ve Dekolteli Sabahlık Takımı",
+    "color": "YEŞİL",
+    "price": 2234.9,
+    "discount": 30.0,
+    "final_price": 1564.43,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Çiçek ve Yaprak Desenli Dantelli Şort Takımı",
+    "color": "YEŞİL",
+    "price": 1781.9,
+    "discount": 30.0,
+    "final_price": 1247.33,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Çiçek ve Yaprak Desenli ve Baskılı Pijama Takımı",
+    "color": "YEŞİL",
+    "price": 2000.9,
+    "discount": 30.0,
+    "final_price": 1400.63,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Çiçek ve Yaprak Desenli ve Baskılı Kapri Takımı",
+    "color": "YEŞİL",
+    "price": 1872.9,
+    "discount": 30.0,
+    "final_price": 1311.03,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Yaprak Desenli ve Baskılı \"Tropical Vibes\" Şort Takımı",
+    "color": "YEŞİL",
+    "price": 1742.9,
+    "discount": 30.0,
+    "final_price": 1220.03,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Yaprak Desenli ve Baskılı \"Love Your Self\" Şort Takımı",
+    "color": "SARI",
+    "price": 1749.9,
+    "discount": 30.0,
+    "final_price": 1224.93,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Yaprak Desenli ve Baskılı \"Love Your Self\" Kapri Takımı",
+    "color": "SARI",
+    "price": 1924.9,
+    "discount": 30.0,
+    "final_price": 1347.43,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Desenli ve Baskılı \"See the World\" Pijama Takımı",
+    "color": "YEŞİL",
+    "price": 2104.9,
+    "discount": 30.0,
+    "final_price": 1473.43,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Dantelli ve Baskılı \"See the World\" Gecelik",
+    "color": "YEŞİL",
+    "price": 1617.9,
+    "discount": 30.0,
+    "final_price": 1132.53,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Desenli ve Baskılı \"See the World\" Kapri Takımı",
+    "color": "YEŞİL",
+    "price": 2137.9,
+    "discount": 30.0,
+    "final_price": 1496.53,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Meyve ve Yaprak Baskılı Dantelli \"Feel Good\" Gecelik",
+    "color": "LACİVERT",
+    "price": 1596.9,
+    "discount": 30.0,
+    "final_price": 1117.83,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Meyve ve Yaprak Desenli ve Baskılı \"Feel Good\" Şort Takımı",
+    "color": "LACİVERT",
+    "price": 1786.9,
+    "discount": 30.0,
+    "final_price": 1250.83,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Desenli ve Baskılı \"Yoga Sport\" Pijama Takımı",
+    "color": "SARI",
+    "price": 2140.9,
+    "discount": 30.0,
+    "final_price": 1498.63,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Desenli ve Baskılı \"Yoga Sport\" Şort Takımı",
+    "color": "SARI",
+    "price": 1777.9,
+    "discount": 30.0,
+    "final_price": 1244.53,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Desenli ve Baskılı \"Yoga Sport\" Kapri Takımı",
+    "color": "SARI",
+    "price": 2060.9,
+    "discount": 30.0,
+    "final_price": 1442.63,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Deniz Yıldızı Desenli ve Baskılı Önü Düğmeli \"Listen the Song of the Sea\" Şort Takımı",
+    "color": "YAVRUAĞZI",
+    "price": 1831.9,
+    "discount": 30.0,
+    "final_price": 1282.33,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Deniz Yıldızı Desenli ve Baskılı Önü Düğmeli \"Listen the Song of the Sea\" Pijama Takımı",
+    "color": "YAVRUAĞZI",
+    "price": 2096.9,
+    "discount": 30.0,
+    "final_price": 1467.83,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Deniz Yıldızı Desenli ve Baskılı Önü Düğmeli \"Listen the Song of the Sea\" Kapri Takımı",
+    "color": "YAVRUAĞZI",
+    "price": 1959.9,
+    "discount": 30.0,
+    "final_price": 1371.93,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Çizgi ve Kedi Desenli ve Basklılı \"Sweet Dreams\" Pijama Takımı",
+    "color": "SİYAH",
+    "price": 2101.9,
+    "discount": 30.0,
+    "final_price": 1471.33,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Çizgi Desenli Kedi Basklılı \"Sweet Dreams\" Gecelik",
+    "color": "SİYAH",
+    "price": 1641.9,
+    "discount": 30.0,
+    "final_price": 1149.33,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Kedi Desenli ve Basklılı \"Sweet Dreams\" Şort Takımı",
+    "color": "SİYAH",
+    "price": 1730.9,
+    "discount": 30.0,
+    "final_price": 1211.63,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Kedi Basklılı \"Sweet Dreams\" Gecelik",
+    "color": "SİYAH",
+    "price": 1504.9,
+    "discount": 30.0,
+    "final_price": 1053.43,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Çiçek ve Yaprak Desenli Pijama Takımı",
+    "color": "YEŞİL",
+    "price": 2602.9,
+    "discount": 30.0,
+    "final_price": 1822.03,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Çiçek ve Yaprak Desenli Baskılı Pijama Takımı",
+    "color": "YEŞİL",
+    "price": 2322.9,
+    "discount": 30.0,
+    "final_price": 1626.03,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Etnik Desenli Kısa Kollu Önü Düğmeli V Yaka Elbise",
+    "color": "nan",
+    "price": 0.0,
+    "discount": 0.0,
+    "final_price": 0.0,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Etnik Desenli Önü Düğeli V Yaka Elbise",
+    "color": "nan",
+    "price": 0.0,
+    "discount": 0.0,
+    "final_price": 0.0,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Çizgi Desenli ve Dantelli 3'lü Alt Üst Takım",
+    "color": "nan",
+    "price": 0.0,
+    "discount": 0.0,
+    "final_price": 0.0,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Yaprak Desenli Dekolteli V Yaka 3'lü Alt Üst Takım",
+    "color": "nan",
+    "price": 0.0,
+    "discount": 0.0,
+    "final_price": 0.0,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Yaprak Desenli Önü Düğmeli Truvakar Kollu Elbise",
+    "color": "nan",
+    "price": 0.0,
+    "discount": 0.0,
+    "final_price": 0.0,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Yaprak Desenli Kısa Kollu Gömlek Yaka Alt Üst Takım",
+    "color": "nan",
+    "price": 0.0,
+    "discount": 0.0,
+    "final_price": 0.0,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Yaprak Desenli Önü Düğmeli Gömlek Yaka Alt Üst Takım",
+    "color": "nan",
+    "price": 0.0,
+    "discount": 0.0,
+    "final_price": 0.0,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Yaprak Desenli Uzun Kollu Gömlek Yaka Alt Üst Takım",
+    "color": "nan",
+    "price": 0.0,
+    "discount": 0.0,
+    "final_price": 0.0,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Desenli Önü Düğmeli Gömlek Yaka Alt Üst Takım",
+    "color": "nan",
+    "price": 0.0,
+    "discount": 0.0,
+    "final_price": 0.0,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Desenli Truvakar Kollu Gömlek Yaka Elbise",
+    "color": "nan",
+    "price": 0.0,
+    "discount": 0.0,
+    "final_price": 0.0,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Desenli V Yaka Askılı Alt Üst Takım",
+    "color": "nan",
+    "price": 0.0,
+    "discount": 0.0,
+    "final_price": 0.0,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Etnik Desenli Truvakar Kollu Yırtmaçlı V Yaka Elbise",
+    "color": "nan",
+    "price": 0.0,
+    "discount": 0.0,
+    "final_price": 0.0,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Etnik Desenli Önü Düğmeli Gömlek Yaka Alt Üst Takım",
+    "color": "nan",
+    "price": 0.0,
+    "discount": 0.0,
+    "final_price": 0.0,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Etnik Desenli Truvakar Kollu V Yaka Elbise",
+    "color": "nan",
+    "price": 0.0,
+    "discount": 0.0,
+    "final_price": 0.0,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Etnik Desenli Kısa Kollu Alt Üst Takım",
+    "color": "nan",
+    "price": 0.0,
+    "discount": 0.0,
+    "final_price": 0.0,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Etnik Desenli Kısa Kollu V Yaka Alt Üst Takım",
+    "color": "nan",
+    "price": 0.0,
+    "discount": 0.0,
+    "final_price": 0.0,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Etnik Desenli Yırtmaçlı V Yaka Askılı Alt Üst Takım",
+    "color": "nan",
+    "price": 0.0,
+    "discount": 0.0,
+    "final_price": 0.0,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Etnik Desenli Oyuk Yaka Askılı Alt Üst Takım",
+    "color": "nan",
+    "price": 0.0,
+    "discount": 0.0,
+    "final_price": 0.0,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Etnik Desenli Truvakar Kollu Önü Düğmeli V Yaka Elbise",
+    "color": "nan",
+    "price": 0.0,
+    "discount": 0.0,
+    "final_price": 0.0,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Balık Desenli ve Baskılı Askılı 3'lü Alt Üst Takım",
+    "color": "nan",
+    "price": 0.0,
+    "discount": 0.0,
+    "final_price": 0.0,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Balık Desenli Truvakar Kollu Gömlek Yaka Alt Üst Takım",
+    "color": "nan",
+    "price": 0.0,
+    "discount": 0.0,
+    "final_price": 0.0,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Desenli Truvakar Kollu Önü Düğmeli V Yaka Elbise",
+    "color": "nan",
+    "price": 0.0,
+    "discount": 0.0,
+    "final_price": 0.0,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Desenli Truvakar Kollu Önü Düğmeli V Yaka Alt Üst Takım",
+    "color": "nan",
+    "price": 0.0,
+    "discount": 0.0,
+    "final_price": 0.0,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Desenli Askılı 3'lü Alt Üst Takım",
+    "color": "nan",
+    "price": 0.0,
+    "discount": 0.0,
+    "final_price": 0.0,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Desenli Uzun Kollu Önü Düğmeli Gömlek Yaka Elbise",
+    "color": "nan",
+    "price": 0.0,
+    "discount": 0.0,
+    "final_price": 0.0,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Desenli ve Dantelli Kısa Kollu Alt Üst Takım",
+    "color": "nan",
+    "price": 0.0,
+    "discount": 0.0,
+    "final_price": 0.0,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Desenli Uzun Kollu Önü Düğmeli V Yaka Alt Üst Takım",
+    "color": "nan",
+    "price": 0.0,
+    "discount": 0.0,
+    "final_price": 0.0,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Desenli Truvakar Kollu Yırtmaçlı V Yaka Elbise",
+    "color": "nan",
+    "price": 0.0,
+    "discount": 0.0,
+    "final_price": 0.0,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Desenli Truvakar Kollu Önü Düğmeli V Yaka Elbise",
+    "color": "nan",
+    "price": 0.0,
+    "discount": 0.0,
+    "final_price": 0.0,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Desenli Truvakar Kollu V Yaka Alt Üst Takım",
+    "color": "nan",
+    "price": 0.0,
+    "discount": 0.0,
+    "final_price": 0.0,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Desenli ve Yırtmaçlı Uzun Kollu V Yaka Elbise",
+    "color": "nan",
+    "price": 0.0,
+    "discount": 0.0,
+    "final_price": 0.0,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Desenli Uzun Kollu Önü Düğmeli Gömlek Yaka Alt Üst Takım",
+    "color": "nan",
+    "price": 0.0,
+    "discount": 0.0,
+    "final_price": 0.0,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Desenli ve Yırtmaçlı Önü Düğmeli Gömlek Yaka Elbise",
+    "color": "nan",
+    "price": 0.0,
+    "discount": 0.0,
+    "final_price": 0.0,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Desenli Önü Düğmeli Kısa  Kollu V Yaka Elbise",
+    "color": "nan",
+    "price": 0.0,
+    "discount": 0.0,
+    "final_price": 0.0,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Desenli ve Dekolteli Dantelli Sabahlık Takımı",
+    "color": "nan",
+    "price": 0.0,
+    "discount": 0.0,
+    "final_price": 0.0,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Desenli Kısa Kollu V Yaka Alt Üst Takım",
+    "color": "nan",
+    "price": 0.0,
+    "discount": 0.0,
+    "final_price": 0.0,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Dantelli ve Desenli Kısa Kollu V Yaka Şort Takımı",
+    "color": "nan",
+    "price": 0.0,
+    "discount": 0.0,
+    "final_price": 0.0,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Desenli ve Dantelli Hamile Lohusa Sabahlık Takımı",
+    "color": "nan",
+    "price": 3730.9,
+    "discount": 30.0,
+    "final_price": 2611.63,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Desenli ve Dantelli Hamile Lohusa 3'lü Pijama Takımı",
+    "color": "nan",
+    "price": 3730.9,
+    "discount": 30.0,
+    "final_price": 2611.63,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Çiçek Desenli Yırtmaçlı Truvakar Kollu V Yaka Elbise",
+    "color": "nan",
+    "price": 0.0,
+    "discount": 0.0,
+    "final_price": 0.0,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Çiçek Desenli Askılı 3'lü Alt Üst Takım",
+    "color": "nan",
+    "price": 0.0,
+    "discount": 0.0,
+    "final_price": 0.0,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Ççiçek Desenli Yırtmaçlı Askılı V Yaka Alt Üst Takım",
+    "color": "nan",
+    "price": 0.0,
+    "discount": 0.0,
+    "final_price": 0.0,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Ççiçek Desenli Yırtmaçlı Önü Düğmeli Gömlek Yaka Elbise",
+    "color": "nan",
+    "price": 0.0,
+    "discount": 0.0,
+    "final_price": 0.0,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Desenli Önü Düğmeli Uzun Kollu Gömlek Yaka Elbise",
+    "color": "nan",
+    "price": 0.0,
+    "discount": 0.0,
+    "final_price": 0.0,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Desenli Önü Düğmeli Uzun Kollu Gömlek Yaka Alt Üst Takım",
+    "color": "nan",
+    "price": 0.0,
+    "discount": 0.0,
+    "final_price": 0.0,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Desenli Önü Düğmeli Kısa Kollu V Yaka Elbise",
+    "color": "nan",
+    "price": 0.0,
+    "discount": 0.0,
+    "final_price": 0.0,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Desenli Dantelli ve Dekolteli Sabahlık Takımı",
+    "color": "nan",
+    "price": 0.0,
+    "discount": 0.0,
+    "final_price": 0.0,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Kısa Kollu Dantelli V Yaka Pijama Takımı",
+    "color": "nan",
+    "price": 0.0,
+    "discount": 0.0,
+    "final_price": 0.0,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Dantelli ve Dekolteli Askılı V Yaka Şort Takımı",
+    "color": "nan",
+    "price": 0.0,
+    "discount": 0.0,
+    "final_price": 0.0,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Yaprak Desenli Dantelli ve Dekolteli Saten Sabahlık Takımı",
+    "color": "nan",
+    "price": 0.0,
+    "discount": 0.0,
+    "final_price": 0.0,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Yaprak Desenli Dantelli Askılı V Yaka Saten Şort Takımı",
+    "color": "nan",
+    "price": 0.0,
+    "discount": 0.0,
+    "final_price": 0.0,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Yaprak Desenli Dantelli Kısa Kollu V Yaka Saten Alt Üst Takım",
+    "color": "nan",
+    "price": 0.0,
+    "discount": 0.0,
+    "final_price": 0.0,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Kısa Kollu Bisiklet Yaka Alt Üst Takım",
+    "color": "nan",
+    "price": 0.0,
+    "discount": 0.0,
+    "final_price": 0.0,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Kısa Kollu Bisiklet Yaka Alt Üst Takım",
+    "color": "nan",
+    "price": 0.0,
+    "discount": 0.0,
+    "final_price": 0.0,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Kısa Kollu V Yaka Alt Üst Takım",
+    "color": "nan",
+    "price": 0.0,
+    "discount": 0.0,
+    "final_price": 0.0,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Kısa Kollu Bisiklet Yaka Alt Üst Takım",
+    "color": "nan",
+    "price": 0.0,
+    "discount": 0.0,
+    "final_price": 0.0,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Kısa Kollu V Yaka Alt Üst Takım",
+    "color": "nan",
+    "price": 0.0,
+    "discount": 0.0,
+    "final_price": 0.0,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Kısa Kollu Bisiklet Yaka Alt Üst Takım",
+    "color": "nan",
+    "price": 0.0,
+    "discount": 0.0,
+    "final_price": 0.0,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Kısa Kollu Bisiklet Yaka Alt Üst Takım",
+    "color": "nan",
+    "price": 0.0,
+    "discount": 0.0,
+    "final_price": 0.0,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Kısa Kollu Bisiklet Yaka Alt Üst Takım",
+    "color": "nan",
+    "price": 0.0,
+    "discount": 0.0,
+    "final_price": 0.0,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Kısa Kollu Bisiklet Yaka Alt Üst Takım",
+    "color": "nan",
+    "price": 0.0,
+    "discount": 0.0,
+    "final_price": 0.0,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Kısa Kollu Kalın Askılı Alt Üst Takım",
+    "color": "nan",
+    "price": 0.0,
+    "discount": 0.0,
+    "final_price": 0.0,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Kısa Kollu V Yaka Alt Üst Takım",
+    "color": "nan",
+    "price": 0.0,
+    "discount": 0.0,
+    "final_price": 0.0,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Kısa Kollu Bisiklet Yaka Alt Üst Takım",
+    "color": "nan",
+    "price": 0.0,
+    "discount": 0.0,
+    "final_price": 0.0,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Çiçek ve Yaprak Desenli Dantelli ve Dekolteli Sabahlık Takımı",
+    "color": "nan",
+    "price": 0.0,
+    "discount": 0.0,
+    "final_price": 0.0,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Çiçek ve Yaprak Desenli Dantelli ve Dekolteli Büyük Beden Sabahlık Takımı",
+    "color": "nan",
+    "price": 0.0,
+    "discount": 0.0,
+    "final_price": 0.0,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Çiçek ve Yaprak Desenli Kısa Kollu V Yaka Pijama Takımı",
+    "color": "nan",
+    "price": 0.0,
+    "discount": 0.0,
+    "final_price": 0.0,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Çiçek ve Yaprak Desenli Kısa Kollu V Yaka Büyük Beden Pijama Takımı",
+    "color": "nan",
+    "price": 0.0,
+    "discount": 0.0,
+    "final_price": 0.0,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Çiçek ve Yaprak Desenli Dantelli V Yaka Şort Takımı",
+    "color": "nan",
+    "price": 0.0,
+    "discount": 0.0,
+    "final_price": 0.0,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Çiçek ve Yaprak Desenli Dantelli V Yaka Kapri Takımı",
+    "color": "nan",
+    "price": 0.0,
+    "discount": 0.0,
+    "final_price": 0.0,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Çiçek ve Yaprak Desenli Dantelli V Yaka Büyük Beden Kapri Takımı",
+    "color": "nan",
+    "price": 0.0,
+    "discount": 0.0,
+    "final_price": 0.0,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Yaprak Desenli Dantelli ve Dekolteli Sabahlık Takımı",
+    "color": "nan",
+    "price": 0.0,
+    "discount": 0.0,
+    "final_price": 0.0,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Yaprak Desenli Dantelli Kısa Kollu V Yaka Büyük Beden Pijama Takımı",
+    "color": "nan",
+    "price": 0.0,
+    "discount": 0.0,
+    "final_price": 0.0,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Yaprak Desenli Dantelli Kısa Kollu Kapri Takımı",
+    "color": "nan",
+    "price": 0.0,
+    "discount": 0.0,
+    "final_price": 0.0,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Yaprak Desenli Dantelli Kısa Kollu Büyük Beden Kapri Takımı",
+    "color": "nan",
+    "price": 0.0,
+    "discount": 0.0,
+    "final_price": 0.0,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Yaprak Desenli ve Dantelli Hamile Lohusa Sabahlık Takımı",
+    "color": "nan",
+    "price": 2904.9,
+    "discount": 30.0,
+    "final_price": 2033.43,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Yaprak Desenli ve Dantelli Hamile Lohusa 3'lü Pijama Takımı",
+    "color": "nan",
+    "price": 3138.9,
+    "discount": 30.0,
+    "final_price": 2197.23,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Desenli ve Dantelli Kısa Kollu Pijama Takımı",
+    "color": "nan",
+    "price": 0.0,
+    "discount": 0.0,
+    "final_price": 0.0,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Desenli ve Dantelli Kısa Kollu V Yaka Kapri Takımı",
+    "color": "nan",
+    "price": 0.0,
+    "discount": 0.0,
+    "final_price": 0.0,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Desenli Kısa Kollu V Yaka Pijama Takımı",
+    "color": "nan",
+    "price": 0.0,
+    "discount": 0.0,
+    "final_price": 0.0,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Desenli Kısa Kollu V Yaka Şort Takımı",
+    "color": "nan",
+    "price": 0.0,
+    "discount": 0.0,
+    "final_price": 0.0,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Desenli Kısa Kollu Bisiklet Yaka Kapri Takımı",
+    "color": "nan",
+    "price": 0.0,
+    "discount": 0.0,
+    "final_price": 0.0,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Etnik Desenli Dantelli ve Dekolteli Sabahlık Takımı",
+    "color": "nan",
+    "price": 0.0,
+    "discount": 0.0,
+    "final_price": 0.0,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Etnik Desenli Kısa Kollu Önü Düğmeli Gömlek Yaka Alt Üst Takım",
+    "color": "nan",
+    "price": 0.0,
+    "discount": 0.0,
+    "final_price": 0.0,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Göğüs ve Sırt Dekolteli Dantelli Yırtmaçlı Askılı Gecelik",
+    "color": "nan",
+    "price": 0.0,
+    "discount": 0.0,
+    "final_price": 0.0,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Göğüs ve Sırt Dekolteli Dantelli Şort Takımı",
+    "color": "nan",
+    "price": 0.0,
+    "discount": 0.0,
+    "final_price": 0.0,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Dantelli Kısa Kollu V Yaka Pijama Takımı",
+    "color": "nan",
+    "price": 0.0,
+    "discount": 0.0,
+    "final_price": 0.0,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Etnik Desenli Dantelli Kısa Kollu V Yaka Pijama Takımı",
+    "color": "nan",
+    "price": 0.0,
+    "discount": 0.0,
+    "final_price": 0.0,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Etnik Desenli Dantelli Kısa Kollu V Yaka Kapri Takımı",
+    "color": "nan",
+    "price": 0.0,
+    "discount": 0.0,
+    "final_price": 0.0,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Etnik Desenli ve Dantelli Hamile Lohusa Sabahlık Takımı",
+    "color": "nan",
+    "price": 3090.9,
+    "discount": 30.0,
+    "final_price": 2163.63,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Etnik Desenli ve Dantelli Hamile Lohusa 3'lü Pijama Takımı",
+    "color": "nan",
+    "price": 3148.9,
+    "discount": 30.0,
+    "final_price": 2204.23,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Etnik Desenli Kısa Kollu Bisiklet Yaka Büyük Beden Pijama Takımı",
+    "color": "nan",
+    "price": 0.0,
+    "discount": 0.0,
+    "final_price": 0.0,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Etnik Desenli Kısa Kollu V Yaka Şort Takımı",
+    "color": "nan",
+    "price": 0.0,
+    "discount": 0.0,
+    "final_price": 0.0,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Etnik Desenli Kısa Kollu V Yaka Pijama Takımı",
+    "color": "nan",
+    "price": 0.0,
+    "discount": 0.0,
+    "final_price": 0.0,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Etnik Desenli Kısa Kollu Bisiklet Yaka Şort Takımı",
+    "color": "nan",
+    "price": 0.0,
+    "discount": 0.0,
+    "final_price": 0.0,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Etnik Desenli Kısa Kollu Bisiklet Yaka Kapri Takımı",
+    "color": "nan",
+    "price": 0.0,
+    "discount": 0.0,
+    "final_price": 0.0,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Etnik Desenli ve Dantelli Hamile Lohusa Sabahlık Takımı",
+    "color": "nan",
+    "price": 2990.9,
+    "discount": 30.0,
+    "final_price": 2093.63,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Etnik Desenli ve Dantelli Hamile Lohusa 3'lü Pijama Takımı",
+    "color": "nan",
+    "price": 3145.9,
+    "discount": 30.0,
+    "final_price": 2202.13,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Yaprak Desenli Kısa Kollu V Yaka Pijama Takımı",
+    "color": "nan",
+    "price": 0.0,
+    "discount": 0.0,
+    "final_price": 0.0,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Yaprak Desenli Kısa Kollu V Yaka Büyük Beden Pijama Takımı",
+    "color": "nan",
+    "price": 0.0,
+    "discount": 0.0,
+    "final_price": 0.0,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Yaprak Desenli Askılı Bisiklet Yaka Şort Takımı",
+    "color": "nan",
+    "price": 0.0,
+    "discount": 0.0,
+    "final_price": 0.0,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Yaprak Desenli Kısa Kollu V Yaka Kapri Takımı",
+    "color": "nan",
+    "price": 0.0,
+    "discount": 0.0,
+    "final_price": 0.0,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Yaprak Desenli Kısa Kollu V Yaka Büyük Beden Kapri Takımı",
+    "color": "nan",
+    "price": 0.0,
+    "discount": 0.0,
+    "final_price": 0.0,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Yaprak Desenli ve Dantelli Hamile Lohusa Sabahlık Takımı",
+    "color": "nan",
+    "price": 3056.9,
+    "discount": 30.0,
+    "final_price": 2139.83,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Yaprak Desenli ve Dantelli Hamile Lohusa 3'lü Pijama Takımı",
+    "color": "nan",
+    "price": 3229.9,
+    "discount": 30.0,
+    "final_price": 2260.93,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Desenli Kısa Kollu V Yaka Büyük Beden Pijama Takımı",
+    "color": "nan",
+    "price": 0.0,
+    "discount": 0.0,
+    "final_price": 0.0,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Desenli Kısa Kollu Bisiklet Yaka Şort Takımı",
+    "color": "nan",
+    "price": 0.0,
+    "discount": 0.0,
+    "final_price": 0.0,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Desenli Kısa Kollu V Yaka Kapri Takımı",
+    "color": "nan",
+    "price": 0.0,
+    "discount": 0.0,
+    "final_price": 0.0,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Desenli Kısa Kollu V Yaka Büyük Beden Kapri Takımı",
+    "color": "nan",
+    "price": 0.0,
+    "discount": 0.0,
+    "final_price": 0.0,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Çiçek ve Yaprak Desenli Önü Düğmeli Gömlek Yaka Şort Takımı",
+    "color": "nan",
+    "price": 0.0,
+    "discount": 0.0,
+    "final_price": 0.0,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Çiçek ve Yaprak Desenli Kısa Kollu Bisiklet Yaka Pijama Takımı",
+    "color": "nan",
+    "price": 0.0,
+    "discount": 0.0,
+    "final_price": 0.0,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Çiçek ve Yaprak Desenli Kısa Kollu Bisiklet Yaka Kapri Takımı",
+    "color": "nan",
+    "price": 0.0,
+    "discount": 0.0,
+    "final_price": 0.0,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Çiçek ve Yaprak Desenli Şort Takımı",
+    "color": "nan",
+    "price": 725.9,
+    "discount": 35.0,
+    "final_price": 471.84,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Desenli Dantelli Kelebek Nakışlı Şort Takımı",
+    "color": "nan",
+    "price": 721.9,
+    "discount": 35.0,
+    "final_price": 469.24,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Yakası ve Kol Ucu Dantelli Kurdele Detaylı Tek Sabahlık",
+    "color": "nan",
+    "price": 695.9,
+    "discount": 35.0,
+    "final_price": 452.34,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Çiçek Desenli Önü Düğmeli Gecelik",
+    "color": "nan",
+    "price": 709.9,
+    "discount": 35.0,
+    "final_price": 461.44,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Desenli Önü Düğmeli \"Crazy\" Gecelik",
+    "color": "nan",
+    "price": 739.9,
+    "discount": 35.0,
+    "final_price": 480.94,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Çift Renk Bisiklet Yakalı Kısa Kollu Kapri Takımı",
+    "color": "nan",
+    "price": 747.9,
+    "discount": 35.0,
+    "final_price": 486.14,
+    "category": "İç Giyim",
+    "stock": 10
+  },
+  {
+    "name": "Etnik Desenli Kalın Askılı Kuşaklı Gecelik",
+    "color": "nan",
+    "price": 703.9,
+    "discount": 35.0,
+    "final_price": 457.54,
+    "category": "İç Giyim",
+    "stock": 10
+  }
+]

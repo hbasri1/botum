@@ -1,0 +1,28 @@
+[
+  {
+    "product_id": "89e90462",
+    "business_id": "14821439",
+    "name": "Hamile Pijama Takımı",
+    "description": "Rahat hamile pijama takımı",
+    "price": 299.99,
+    "final_price": 299.99,
+    "discount": 0.0,
+    "color": "mavi",
+    "category": "hamile giyim",
+    "stock": 15,
+    "created_at": "2025-08-06T00:28:51.886523"
+  },
+  {
+    "product_id": "24b45a42",
+    "business_id": "14821439",
+    "name": "Dantelli Gecelik",
+    "description": "Şık dantelli gecelik",
+    "price": 199.99,
+    "final_price": 199.99,
+    "discount": 0.0,
+    "color": "siyah",
+    "category": "gecelik",
+    "stock": 8,
+    "created_at": "2025-08-06T00:28:51.890269"
+  }
+]
