@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KobiBot - AI Destekli İşletme Chatbot Sistemi</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        header {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            padding: 1rem 0;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 2rem;
+            font-weight: bold;
+            color: white;
+            text-decoration: none;
+        }
+
+        .nav-links {
+            display: flex;
+            list-style: none;
+            gap: 2rem;
+        }
+
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            transition: opacity 0.3s;
+        }
+
+        .nav-links a:hover {
+            opacity: 0.8;
+        }
+
+        .hero {
+            padding: 120px 0 80px;
+            text-align: center;
+            color: white;
+        }
+
+        .hero h1 {
+            font-size: 3.5rem;
+            margin-bottom: 1rem;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+
+        .hero p {
+            font-size: 1.3rem;
+            margin-bottom: 2rem;
+            opacity: 0.9;
+        }
+
+        .cta-buttons {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            padding: 15px 30px;
+            border: none;
+            border-radius: 50px;
+            font-size: 1.1rem;
+            font-weight: 600;
+            text-decoration: none;
+            transition: all 0.3s;
+            cursor: pointer;
+            display: inline-block;
+        }
+
+        .btn-primary {
+            background: #ff6b6b;
+            color: white;
+        }
+
+        .btn-secondary {
+            background: rgba(255, 255, 255, 0.2);
+            color: white;
+            border: 2px solid white;
+        }
+
+        .btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+        }
+
+        .features {
+            padding: 80px 0;
+            background: white;
+        }
+
+        .features h2 {
+            text-align: center;
+            font-size: 2.5rem;
+            margin-bottom: 3rem;
+            color: #333;
+        }
+
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        .feature-card {
+            background: #f8f9fa;
+            padding: 2rem;
+            border-radius: 15px;
+            text-align: center;
+            transition: transform 0.3s;
+        }
+
+        .feature-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .feature-icon {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+
+        .demo-section {
+            padding: 80px 0;
+            background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+            color: white;
+            text-align: center;
+        }
+
+        .demo-section h2 {
+            font-size: 2.5rem;
+            margin-bottom: 2rem;
+        }
+
+        .demo-container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            border-radius: 20px;
+            padding: 2rem;
+        }
+
+        .chat-demo {
+            background: white;
+            border-radius: 15px;
+            padding: 1rem;
+            margin: 2rem 0;
+            max-height: 400px;
+            overflow-y: auto;
+        }
+
+        .demo-input {
+            display: flex;
+            gap: 1rem;
+            margin-top: 1rem;
+        }
+
+        .demo-input input {
+            flex: 1;
+            padding: 15px;
+            border: none;
+            border-radius: 25px;
+            font-size: 1rem;
+        }
+
+        .demo-input button {
+            padding: 15px 25px;
+            background: #667eea;
+            color: white;
+            border: none;
+            border-radius: 25px;
+            cursor: pointer;
+            font-weight: 600;
+        }
+
+        .message {
+            margin: 1rem 0;
+            padding: 1rem;
+            border-radius: 15px;
+            max-width: 80%;
+        }
+
+        .user-message {
+            background: #667eea;
+            color: white;
+            margin-left: auto;
+            text-align: right;
+        }
+
+        .bot-message {
+            background: #f1f3f4;
+            color: #333;
+            margin-right: auto;
+        }
+
+        .stats {
+            padding: 80px 0;
+            background: #2c3e50;
+            color: white;
+            text-align: center;
+        }
+
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 2rem;
+        }
+
+        .stat-item h3 {
+            font-size: 3rem;
+            margin-bottom: 0.5rem;
+            color: #3498db;
+        }
+
+        footer {
+            background: #1a1a1a;
+            color: white;
+            text-align: center;
+            padding: 2rem 0;
+        }
+
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+            
+            .nav-links {
+                display: none;
+            }
+            
+            .cta-buttons {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="container">
+            <a href="/" class="logo">🤖 KobiBot</a>
+            <ul class="nav-links">
+                <li><a href="#features">Özellikler</a></li>
+                <li><a href="#demo">Demo</a></li>
+                <li><a href="/about">Hakkında</a></li>
+                <li><a href="https://admin.kobibot.com">Admin</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <h1>AI Destekli İşletme Chatbot'u</h1>
+            <p>İşletmeniz için özel tasarlanmış, akıllı müşteri hizmetleri chatbot sistemi</p>
+            <div class="cta-buttons">
+                <a href="#demo" class="btn btn-primary">Hemen Dene</a>
+                <a href="https://customer.kobibot.com" class="btn btn-secondary">Kayıt Ol</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="features" id="features">
+        <div class="container">
+            <h2>Neden KobiBot?</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">🧠</div>
+                    <h3>AI Destekli</h3>
+                    <p>Google Gemini ve AWS Bedrock ile güçlendirilmiş yapay zeka teknolojisi</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">📱</div>
+                    <h3>Multi-Platform</h3>
+                    <p>WhatsApp, Instagram ve web sitesi entegrasyonu</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🎯</div>
+                    <h3>Özelleştirilebilir</h3>
+                    <p>İşletmenizin ürünleri ve hizmetlerine özel eğitilmiş sistem</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">⚡</div>
+                    <h3>Hızlı Kurulum</h3>
+                    <p>5 dakikada kurulum, anında kullanıma hazır</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">📊</div>
+                    <h3>Analitik</h3>
+                    <p>Detaylı raporlama ve müşteri davranış analizi</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🔒</div>
+                    <h3>Güvenli</h3>
+                    <p>Enterprise seviye güvenlik ve veri koruması</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="demo-section" id="demo">
+        <div class="container">
+            <h2>Chatbot'u Hemen Deneyin</h2>
+            <p>Aşağıdaki demo ile KobiBot'un nasıl çalıştığını görebilirsiniz</p>
+            
+            <div class="demo-container">
+                <div class="chat-demo" id="chatDemo">
+                    <div class="message bot-message">
+                        Merhaba! Ben KobiBot, size nasıl yardımcı olabilirim? 🤖
+                    </div>
+                </div>
+                <div class="demo-input">
+                    <input type="text" id="demoInput" placeholder="Mesajınızı yazın..." onkeypress="handleKeyPress(event)">
+                    <button onclick="sendDemoMessage()">Gönder</button>
+                </div>
+                <p style="margin-top: 1rem; opacity: 0.8;">
+                    Örnek sorular: "Hamile pijama var mı?", "Fiyat listesi", "İletişim bilgileri"
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section class="stats">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <h3>500+</h3>
+                    <p>Ürün Çeşidi</p>
+                </div>
+                <div class="stat-item">
+                    <h3>24/7</h3>
+                    <p>Kesintisiz Hizmet</p>
+                </div>
+                <div class="stat-item">
+                    <h3>%95</h3>
+                    <p>Müşteri Memnuniyeti</p>
+                </div>
+                <div class="stat-item">
+                    <h3>3 Saniye</h3>
+                    <p>Ortalama Yanıt Süresi</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 KobiBot. Tüm hakları saklıdır.</p>
+            <p>AI destekli işletme chatbot sistemi</p>
+        </div>
+    </footer>
+
+    <script>
+        function handleKeyPress(event) {
+            if (event.key === 'Enter') {
+                sendDemoMessage();
+            }
+        }
+
+        function sendDemoMessage() {
+            const input = document.getElementById('demoInput');
+            const chatDemo = document.getElementById('chatDemo');
+            const message = input.value.trim();
+            
+            if (!message) return;
+
+            // Add user message
+            const userMessage = document.createElement('div');
+            userMessage.className = 'message user-message';
+            userMessage.textContent = message;
+            chatDemo.appendChild(userMessage);
+
+            // Clear input
+            input.value = '';
+
+            // Show typing indicator
+            const typingIndicator = document.createElement('div');
+            typingIndicator.className = 'message bot-message';
+            typingIndicator.innerHTML = 'KobiBot yazıyor... ⌨️';
+            typingIndicator.id = 'typing';
+            chatDemo.appendChild(typingIndicator);
+
+            // Scroll to bottom
+            chatDemo.scrollTop = chatDemo.scrollHeight;
+
+            // Send to actual chatbot
+            fetch('/chat', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify({ message: message })
+            })
+            .then(response => response.json())
+            .then(data => {
+                // Remove typing indicator
+                const typing = document.getElementById('typing');
+                if (typing) typing.remove();
+
+                // Add bot response
+                const botMessage = document.createElement('div');
+                botMessage.className = 'message bot-message';
+                botMessage.textContent = data.response || 'Üzgünüm, şu anda yanıt veremiyorum.';
+                chatDemo.appendChild(botMessage);
+
+                // Scroll to bottom
+                chatDemo.scrollTop = chatDemo.scrollHeight;
+            })
+            .catch(error => {
+                // Remove typing indicator
+                const typing = document.getElementById('typing');
+                if (typing) typing.remove();
+
+                // Add error message
+                const errorMessage = document.createElement('div');
+                errorMessage.className = 'message bot-message';
+                errorMessage.textContent = 'Bağlantı hatası. Lütfen tekrar deneyin.';
+                chatDemo.appendChild(errorMessage);
+
+                // Scroll to bottom
+                chatDemo.scrollTop = chatDemo.scrollHeight;
+            });
+        }
+
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>

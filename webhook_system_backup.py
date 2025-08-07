@@ -156,7 +156,7 @@ class WhatsAppWebhookHandler:
         if business_id not in self.business_chatbots:
             try:
                 # Create business-specific chatbot
-                chatbot = ImprovedFinalMVPChatbot()
+                chatbot = ImprovedFinalMVPChatbot(business_id=business_id)
                 self.business_chatbots[business_id] = chatbot
                 logger.info(f"✅ Created chatbot for business: {business_id}")
             except Exception as e:
@@ -300,7 +300,7 @@ class InstagramWebhookHandler:
         if business_id not in self.business_chatbots:
             try:
                 # Create business-specific chatbot
-                chatbot = ImprovedFinalMVPChatbot()
+                chatbot = ImprovedFinalMVPChatbot(business_id=business_id)
                 self.business_chatbots[business_id] = chatbot
                 logger.info(f"✅ Created Instagram chatbot for business: {business_id}")
             except Exception as e:
@@ -439,7 +439,7 @@ class InstagramWebhookHandler:
         if business_id not in self.business_chatbots:
             try:
                 # Create business-specific chatbot
-                chatbot = ImprovedFinalMVPChatbot()
+                chatbot = ImprovedFinalMVPChatbot(business_id=business_id)
                 self.business_chatbots[business_id] = chatbot
                 logger.info(f"✅ Created chatbot for business: {business_id}")
             except Exception as e:

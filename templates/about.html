@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hakkında - KobiBot</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        header {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            padding: 1rem 0;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 2rem;
+            font-weight: bold;
+            color: white;
+            text-decoration: none;
+        }
+
+        .nav-links {
+            display: flex;
+            list-style: none;
+            gap: 2rem;
+        }
+
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            transition: opacity 0.3s;
+        }
+
+        .nav-links a:hover {
+            opacity: 0.8;
+        }
+
+        .main-content {
+            padding: 120px 0 80px;
+            background: white;
+            margin-top: 80px;
+            border-radius: 20px 20px 0 0;
+        }
+
+        .hero-section {
+            text-align: center;
+            padding: 80px 0;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            margin-top: 80px;
+        }
+
+        .hero-section h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+
+        .content-section {
+            padding: 80px 0;
+        }
+
+        .content-section h2 {
+            font-size: 2.5rem;
+            margin-bottom: 2rem;
+            color: #333;
+            text-align: center;
+        }
+
+        .content-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 3rem;
+            margin-top: 3rem;
+        }
+
+        .content-card {
+            background: #f8f9fa;
+            padding: 2rem;
+            border-radius: 15px;
+            text-align: center;
+        }
+
+        .tech-stack {
+            background: #2c3e50;
+            color: white;
+            padding: 80px 0;
+        }
+
+        .tech-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        .tech-item {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 2rem;
+            border-radius: 15px;
+            text-align: center;
+        }
+
+        .tech-item h4 {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+            color: #3498db;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 15px 30px;
+            background: #667eea;
+            color: white;
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: 600;
+            transition: all 0.3s;
+            margin-top: 2rem;
+        }
+
+        .btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+        }
+
+        footer {
+            background: #1a1a1a;
+            color: white;
+            text-align: center;
+            padding: 2rem 0;
+        }
+
+        @media (max-width: 768px) {
+            .hero-section h1 {
+                font-size: 2rem;
+            }
+            
+            .nav-links {
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="container">
+            <a href="/" class="logo">🤖 KobiBot</a>
+            <ul class="nav-links">
+                <li><a href="/">Ana Sayfa</a></li>
+                <li><a href="/#features">Özellikler</a></li>
+                <li><a href="/#demo">Demo</a></li>
+                <li><a href="https://admin.kobibot.com">Admin</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero-section">
+        <div class="container">
+            <h1>KobiBot Hakkında</h1>
+            <p>Türkiye'nin en gelişmiş AI destekli işletme chatbot sistemi</p>
+        </div>
+    </section>
+
+    <section class="content-section">
+        <div class="container">
+            <h2>Misyonumuz</h2>
+            <p style="text-align: center; font-size: 1.2rem; max-width: 800px; margin: 0 auto;">
+                KobiBot, küçük ve orta ölçekli işletmelerin dijital dönüşümünde öncü rol oynayarak, 
+                AI teknolojisini herkes için erişilebilir kılmayı hedefler. Müşteri hizmetlerini 
+                otomatikleştirerek işletmelerin verimliliğini artırır ve müşteri memnuniyetini maksimize eder.
+            </p>
+
+            <div class="content-grid">
+                <div class="content-card">
+                    <h3>🎯 Vizyonumuz</h3>
+                    <p>Her işletmenin kendi AI asistanına sahip olduğu bir gelecek yaratmak</p>
+                </div>
+                <div class="content-card">
+                    <h3>💡 İnovasyon</h3>
+                    <p>En son AI teknolojilerini kullanarak sürekli gelişen çözümler sunmak</p>
+                </div>
+                <div class="content-card">
+                    <h3>🤝 Müşteri Odaklılık</h3>
+                    <p>Her işletmenin ihtiyaçlarına özel çözümler geliştirmek</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="tech-stack">
+        <div class="container">
+            <h2>Teknoloji Altyapımız</h2>
+            <p style="text-align: center; font-size: 1.2rem; margin-bottom: 2rem;">
+                KobiBot, en gelişmiş AI teknolojileri ile güçlendirilmiştir
+            </p>
+
+            <div class="tech-grid">
+                <div class="tech-item">
+                    <h4>🧠 Google Gemini</h4>
+                    <p>Gelişmiş dil modeli ile doğal konuşma</p>
+                </div>
+                <div class="tech-item">
+                    <h4>☁️ AWS Bedrock</h4>
+                    <p>Ölçeklenebilir AI altyapısı</p>
+                </div>
+                <div class="tech-item">
+                    <h4>🔍 RAG Teknolojisi</h4>
+                    <p>Akıllı ürün arama ve öneri sistemi</p>
+                </div>
+                <div class="tech-item">
+                    <h4>📱 Multi-Platform</h4>
+                    <p>WhatsApp, Instagram, Web entegrasyonu</p>
+                </div>
+                <div class="tech-item">
+                    <h4>🔒 Güvenlik</h4>
+                    <p>Enterprise seviye veri koruması</p>
+                </div>
+                <div class="tech-item">
+                    <h4>⚡ Performans</h4>
+                    <p>3 saniye altında yanıt süresi</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="content-section">
+        <div class="container">
+            <h2>Neden KobiBot?</h2>
+            
+            <div style="max-width: 800px; margin: 0 auto; text-align: left;">
+                <h3 style="color: #667eea; margin-bottom: 1rem;">🚀 Hızlı Kurulum</h3>
+                <p style="margin-bottom: 2rem;">
+                    Sadece 5 dakikada kurulum tamamlanır. Ürün listesini yükleyin, 
+                    ayarları yapın ve chatbot'unuz hemen kullanıma hazır.
+                </p>
+
+                <h3 style="color: #667eea; margin-bottom: 1rem;">🎯 Özelleştirilebilir</h3>
+                <p style="margin-bottom: 2rem;">
+                    Her işletmenin kendine özgü ihtiyaçları vardır. KobiBot, 
+                    işletmenizin ürünleri, hizmetleri ve müşteri profiline göre özelleştirilir.
+                </p>
+
+                <h3 style="color: #667eea; margin-bottom: 1rem;">📊 Analitik ve Raporlama</h3>
+                <p style="margin-bottom: 2rem;">
+                    Müşteri davranışlarını analiz edin, popüler ürünleri keşfedin, 
+                    satış trendlerini takip edin. Veri odaklı kararlar alın.
+                </p>
+
+                <h3 style="color: #667eea; margin-bottom: 1rem;">💰 Maliyet Etkin</h3>
+                <p style="margin-bottom: 2rem;">
+                    Geleneksel müşteri hizmetleri maliyetlerinin çok altında, 
+                    24/7 kesintisiz hizmet sunun.
+                </p>
+            </div>
+
+            <div style="text-align: center;">
+                <a href="https://customer.kobibot.com" class="btn">Hemen Başlayın</a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 KobiBot. Tüm hakları saklıdır.</p>
+            <p>AI destekli işletme chatbot sistemi</p>
+        </div>
+    </footer>
+</body>
+</html>

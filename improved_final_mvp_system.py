@@ -1300,7 +1300,7 @@ GÖREVLER:
                 has_product_pattern = any(pattern in message_lower for pattern in product_search_patterns)
                 
                 # Strong followup patterns that should ALWAYS stay as followup
-                strong_followup_patterns = ['numaralı.*fiyat', 'numaralı.*stok', 'numaralı.*detay', '\d+.*fiyat', '\d+.*stok']
+                strong_followup_patterns = ['numaralı.*fiyat', 'numaralı.*stok', 'numaralı.*detay', r'\d+.*fiyat', r'\d+.*stok']
                 has_strong_followup = any(
                     __import__('re').search(pattern, message_lower) 
                     for pattern in strong_followup_patterns

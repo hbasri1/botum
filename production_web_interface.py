@@ -34,13 +34,24 @@ except Exception as e:
 
 @app.route('/')
 def index():
-    """Main chat interface"""
+    """Main landing page with demo chat"""
+    return render_template('public_demo.html')
+
+@app.route('/demo')
+def demo_chat():
+    """Demo chat interface for public testing"""
     return render_template('chat.html')
+
+@app.route('/about')
+def about():
+    """About page"""
+    return render_template('about.html')
 
 @app.route('/admin')
 def admin_panel():
     """Admin panel redirect"""
-    return redirect('http://localhost:5005', code=302)
+    from flask import redirect
+    return redirect('https://admin.kobibot.com', code=302)
 
 @app.route('/chat', methods=['POST'])
 def chat():
