@@ -21,9 +21,9 @@ Tek `git push` ile server'a otomatik deploy sistemi kuruyoruz. Artık kod deği�
 
 #### 2.2 Webhook Ayarları
 ```
-Payload URL: http://3.74.156.223:9000/deploy
+Payload URL: http://YOUR_SERVER_IP:9000/deploy
 Content type: application/json
-Secret: kobibot-deploy-secret-2024
+Secret: your-github-webhook-secret
 Which events: Just the push event
 Active: ✅ (checked)
 ```
@@ -67,13 +67,13 @@ git push origin chatbot-optimization-jules
 ### Acil Durum Manuel Deploy
 ```bash
 # Eğer webhook çalışmazsa
-curl -X POST http://3.74.156.223:9000/deploy/manual
+curl -X POST http://YOUR_SERVER_IP:9000/deploy/manual
 ```
 
 ### Deploy Durumu Kontrol
 ```bash
 # Deploy sisteminin durumunu kontrol et
-curl http://3.74.156.223:9000/deploy/status
+curl http://YOUR_SERVER_IP:9000/deploy/status
 ```
 
 ## 📊 Deploy Süreci
@@ -91,22 +91,22 @@ Webhook tetiklendiğinde server'da şunlar olur:
 ### Deploy Logları
 ```bash
 # Server'da deploy loglarını izle
-ssh -i ~/Downloads/kobibot-key.pem ubuntu@3.74.156.223 "sudo journalctl -u kobibot-deploy -f"
+ssh -i ~/Downloads/kobibot-key.pem ubuntu@YOUR_SERVER_IP "sudo journalctl -u kobibot-deploy -f"
 ```
 
 ### Servis Durumları
 ```bash
 # Tüm servislerin durumunu kontrol et
-ssh -i ~/Downloads/kobibot-key.pem ubuntu@3.74.156.223 "sudo systemctl status kobibot-*"
+ssh -i ~/Downloads/kobibot-key.pem ubuntu@YOUR_SERVER_IP "sudo systemctl status kobibot-*"
 ```
 
 ### Health Check
 ```bash
 # Tüm endpoint'leri kontrol et
-curl http://3.74.156.223:5004/health      # API
-curl http://3.74.156.223:5006/api/system/health  # Admin
-curl http://3.74.156.223:5007/webhook/status     # Webhook
-curl http://3.74.156.223:5008/                   # Customer
+curl http://YOUR_SERVER_IP:5004/health      # API
+curl http://YOUR_SERVER_IP:5006/api/system/health  # Admin
+curl http://YOUR_SERVER_IP:5007/webhook/status     # Webhook
+curl http://YOUR_SERVER_IP:5008/                   # Customer
 ```
 
 ## 🛠️ Troubleshooting
@@ -114,25 +114,25 @@ curl http://3.74.156.223:5008/                   # Customer
 ### Webhook Çalışmıyor
 ```bash
 # Deploy servisini kontrol et
-ssh -i ~/Downloads/kobibot-key.pem ubuntu@3.74.156.223 "sudo systemctl status kobibot-deploy"
+ssh -i ~/Downloads/kobibot-key.pem ubuntu@YOUR_SERVER_IP "sudo systemctl status kobibot-deploy"
 
 # Port açık mı kontrol et
-ssh -i ~/Downloads/kobibot-key.pem ubuntu@3.74.156.223 "sudo ufw status | grep 9000"
+ssh -i ~/Downloads/kobibot-key.pem ubuntu@YOUR_SERVER_IP "sudo ufw status | grep 9000"
 ```
 
 ### Deploy Başarısız
 ```bash
 # Manuel deploy dene
-curl -X POST http://3.74.156.223:9000/deploy/manual
+curl -X POST http://YOUR_SERVER_IP:9000/deploy/manual
 
 # Logları kontrol et
-ssh -i ~/Downloads/kobibot-key.pem ubuntu@3.74.156.223 "sudo journalctl -u kobibot-deploy -n 50"
+ssh -i ~/Downloads/kobibot-key.pem ubuntu@YOUR_SERVER_IP "sudo journalctl -u kobibot-deploy -n 50"
 ```
 
 ### Servis Çalışmıyor
 ```bash
 # Servisleri manuel restart
-ssh -i ~/Downloads/kobibot-key.pem ubuntu@3.74.156.223 "
+ssh -i ~/Downloads/kobibot-key.pem ubuntu@YOUR_SERVER_IP "
 sudo systemctl restart kobibot-api
 sudo systemctl restart kobibot-admin  
 sudo systemctl restart kobibot-webhook

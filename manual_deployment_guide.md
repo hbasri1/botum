@@ -54,10 +54,10 @@ pip install flask flask-cors python-dotenv requests scikit-learn numpy pandas go
 # .env dosyası oluştur
 cat > .env << 'EOF'
 # Google Gemini API Key
-GEMINI_API_KEY=AIzaSyDNcOfDasPMbZdaZ_rkMDQ4u-OraAHbNcI
+GEMINI_API_KEY=your-gemini-api-key-here
 
 # AWS Bedrock API Key
-AWS_BEDROCK_API_KEY=ABSKQmVkcm9ja0FQSUtleS12OXUzLWF0LTczMDQ3MDA5MDM2MzoxdmVEV2hUZFlCSVJ0K25JWWlUdTgzYlJJajhYWG5jNXpHeStsZWV2SkxtbmZnQ3BQS1Uyd2VaTE9mST0=
+AWS_BEDROCK_API_KEY=your-aws-bedrock-api-key-here
 
 # Flask Configuration
 FLASK_ENV=production
@@ -348,12 +348,12 @@ Local makinenizden server'a dosyaları yüklemek için:
 
 ```bash
 # Tüm proje dosyalarını yükle
-scp -i ~/Downloads/kobibot-key.pem -r . ubuntu@3.74.156.223:/home/ubuntu/kobibot/
+scp -i ~/Downloads/kobibot-key.pem -r . ubuntu@YOUR_SERVER_IP:/home/ubuntu/kobibot/
 
 # Veya tek tek önemli dosyaları yükle
-scp -i ~/Downloads/kobibot-key.pem *.py ubuntu@3.74.156.223:/home/ubuntu/kobibot/
-scp -i ~/Downloads/kobibot-key.pem -r templates ubuntu@3.74.156.223:/home/ubuntu/kobibot/
-scp -i ~/Downloads/kobibot-key.pem -r data ubuntu@3.74.156.223:/home/ubuntu/kobibot/
+scp -i ~/Downloads/kobibot-key.pem *.py ubuntu@YOUR_SERVER_IP:/home/ubuntu/kobibot/
+scp -i ~/Downloads/kobibot-key.pem -r templates ubuntu@YOUR_SERVER_IP:/home/ubuntu/kobibot/
+scp -i ~/Downloads/kobibot-key.pem -r data ubuntu@YOUR_SERVER_IP:/home/ubuntu/kobibot/
 ```
 
 #### 3.9 Initialize Embeddings
@@ -388,12 +388,12 @@ sudo systemctl status kobibot-customer
 kobibot.com domain'i için DNS ayarları:
 
 ```
-A Record: kobibot.com → 3.74.156.223
-A Record: admin.kobibot.com → 3.74.156.223
-A Record: api.kobibot.com → 3.74.156.223
-A Record: webhook.kobibot.com → 3.74.156.223
-A Record: customer.kobibot.com → 3.74.156.223
-A Record: chat.kobibot.com → 3.74.156.223
+A Record: kobibot.com → YOUR_SERVER_IP
+A Record: admin.kobibot.com → YOUR_SERVER_IP
+A Record: api.kobibot.com → YOUR_SERVER_IP
+A Record: webhook.kobibot.com → YOUR_SERVER_IP
+A Record: customer.kobibot.com → YOUR_SERVER_IP
+A Record: chat.kobibot.com → YOUR_SERVER_IP
 ```
 
 ### 5. Test Deployment

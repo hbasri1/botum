@@ -1,0 +1,234 @@
+[
+  {
+    "file": "domain_config.py",
+    "line": 205,
+    "pattern": "aws_secret_key",
+    "match": "Environment=PATH=/home/ubuntu/kobibot/ve",
+    "context": "WorkingDirectory=/home/ubuntu/kobibot\nEnvironment=PATH=/home/ubuntu/kobibot/venv/bin\nExecStart=/home/ubuntu/kobibot/venv/bin/python admin_web_interface.py",
+    "severity": "HIGH"
+  },
+  {
+    "file": "domain_config.py",
+    "line": 206,
+    "pattern": "aws_secret_key",
+    "match": "ExecStart=/home/ubuntu/kobibot/venv/bin/",
+    "context": "Environment=PATH=/home/ubuntu/kobibot/venv/bin\nExecStart=/home/ubuntu/kobibot/venv/bin/python admin_web_interface.py\nRestart=always",
+    "severity": "HIGH"
+  },
+  {
+    "file": "domain_config.py",
+    "line": 223,
+    "pattern": "aws_secret_key",
+    "match": "Environment=PATH=/home/ubuntu/kobibot/ve",
+    "context": "WorkingDirectory=/home/ubuntu/kobibot\nEnvironment=PATH=/home/ubuntu/kobibot/venv/bin\nExecStart=/home/ubuntu/kobibot/venv/bin/python production_web_interface.py",
+    "severity": "HIGH"
+  },
+  {
+    "file": "domain_config.py",
+    "line": 224,
+    "pattern": "aws_secret_key",
+    "match": "ExecStart=/home/ubuntu/kobibot/venv/bin/",
+    "context": "Environment=PATH=/home/ubuntu/kobibot/venv/bin\nExecStart=/home/ubuntu/kobibot/venv/bin/python production_web_interface.py\nRestart=always",
+    "severity": "HIGH"
+  },
+  {
+    "file": "domain_config.py",
+    "line": 241,
+    "pattern": "aws_secret_key",
+    "match": "Environment=PATH=/home/ubuntu/kobibot/ve",
+    "context": "WorkingDirectory=/home/ubuntu/kobibot\nEnvironment=PATH=/home/ubuntu/kobibot/venv/bin\nExecStart=/home/ubuntu/kobibot/venv/bin/python webhook_system.py",
+    "severity": "HIGH"
+  },
+  {
+    "file": "domain_config.py",
+    "line": 242,
+    "pattern": "aws_secret_key",
+    "match": "ExecStart=/home/ubuntu/kobibot/venv/bin/",
+    "context": "Environment=PATH=/home/ubuntu/kobibot/venv/bin\nExecStart=/home/ubuntu/kobibot/venv/bin/python webhook_system.py\nRestart=always",
+    "severity": "HIGH"
+  },
+  {
+    "file": "domain_config.py",
+    "line": 259,
+    "pattern": "aws_secret_key",
+    "match": "Environment=PATH=/home/ubuntu/kobibot/ve",
+    "context": "WorkingDirectory=/home/ubuntu/kobibot\nEnvironment=PATH=/home/ubuntu/kobibot/venv/bin\nExecStart=/home/ubuntu/kobibot/venv/bin/python customer_onboarding_system.py",
+    "severity": "HIGH"
+  },
+  {
+    "file": "domain_config.py",
+    "line": 260,
+    "pattern": "aws_secret_key",
+    "match": "ExecStart=/home/ubuntu/kobibot/venv/bin/",
+    "context": "Environment=PATH=/home/ubuntu/kobibot/venv/bin\nExecStart=/home/ubuntu/kobibot/venv/bin/python customer_onboarding_system.py\nRestart=always",
+    "severity": "HIGH"
+  },
+  {
+    "file": "server_setup.sh",
+    "line": 267,
+    "pattern": "aws_secret_key",
+    "match": "Environment=PATH=/home/ubuntu/kobibot/ve",
+    "context": "WorkingDirectory=/home/ubuntu/kobibot\nEnvironment=PATH=/home/ubuntu/kobibot/venv/bin\nExecStart=/home/ubuntu/kobibot/venv/bin/python admin_web_interface.py",
+    "severity": "HIGH"
+  },
+  {
+    "file": "server_setup.sh",
+    "line": 268,
+    "pattern": "aws_secret_key",
+    "match": "ExecStart=/home/ubuntu/kobibot/venv/bin/",
+    "context": "Environment=PATH=/home/ubuntu/kobibot/venv/bin\nExecStart=/home/ubuntu/kobibot/venv/bin/python admin_web_interface.py\nRestart=always",
+    "severity": "HIGH"
+  },
+  {
+    "file": "server_setup.sh",
+    "line": 286,
+    "pattern": "aws_secret_key",
+    "match": "Environment=PATH=/home/ubuntu/kobibot/ve",
+    "context": "WorkingDirectory=/home/ubuntu/kobibot\nEnvironment=PATH=/home/ubuntu/kobibot/venv/bin\nExecStart=/home/ubuntu/kobibot/venv/bin/python production_web_interface.py",
+    "severity": "HIGH"
+  },
+  {
+    "file": "server_setup.sh",
+    "line": 287,
+    "pattern": "aws_secret_key",
+    "match": "ExecStart=/home/ubuntu/kobibot/venv/bin/",
+    "context": "Environment=PATH=/home/ubuntu/kobibot/venv/bin\nExecStart=/home/ubuntu/kobibot/venv/bin/python production_web_interface.py\nRestart=always",
+    "severity": "HIGH"
+  },
+  {
+    "file": "server_setup.sh",
+    "line": 305,
+    "pattern": "aws_secret_key",
+    "match": "Environment=PATH=/home/ubuntu/kobibot/ve",
+    "context": "WorkingDirectory=/home/ubuntu/kobibot\nEnvironment=PATH=/home/ubuntu/kobibot/venv/bin\nExecStart=/home/ubuntu/kobibot/venv/bin/python webhook_system.py",
+    "severity": "HIGH"
+  },
+  {
+    "file": "server_setup.sh",
+    "line": 306,
+    "pattern": "aws_secret_key",
+    "match": "ExecStart=/home/ubuntu/kobibot/venv/bin/",
+    "context": "Environment=PATH=/home/ubuntu/kobibot/venv/bin\nExecStart=/home/ubuntu/kobibot/venv/bin/python webhook_system.py\nRestart=always",
+    "severity": "HIGH"
+  },
+  {
+    "file": "server_setup.sh",
+    "line": 324,
+    "pattern": "aws_secret_key",
+    "match": "Environment=PATH=/home/ubuntu/kobibot/ve",
+    "context": "WorkingDirectory=/home/ubuntu/kobibot\nEnvironment=PATH=/home/ubuntu/kobibot/venv/bin\nExecStart=/home/ubuntu/kobibot/venv/bin/python customer_onboarding_system.py",
+    "severity": "HIGH"
+  },
+  {
+    "file": "server_setup.sh",
+    "line": 325,
+    "pattern": "aws_secret_key",
+    "match": "ExecStart=/home/ubuntu/kobibot/venv/bin/",
+    "context": "Environment=PATH=/home/ubuntu/kobibot/venv/bin\nExecStart=/home/ubuntu/kobibot/venv/bin/python customer_onboarding_system.py\nRestart=always",
+    "severity": "HIGH"
+  },
+  {
+    "file": "manual_deployment_guide.md",
+    "line": 274,
+    "pattern": "aws_secret_key",
+    "match": "Environment=PATH=/home/ubuntu/kobibot/ve",
+    "context": "WorkingDirectory=/home/ubuntu/kobibot\nEnvironment=PATH=/home/ubuntu/kobibot/venv/bin\nExecStart=/home/ubuntu/kobibot/venv/bin/python admin_web_interface.py",
+    "severity": "HIGH"
+  },
+  {
+    "file": "manual_deployment_guide.md",
+    "line": 275,
+    "pattern": "aws_secret_key",
+    "match": "ExecStart=/home/ubuntu/kobibot/venv/bin/",
+    "context": "Environment=PATH=/home/ubuntu/kobibot/venv/bin\nExecStart=/home/ubuntu/kobibot/venv/bin/python admin_web_interface.py\nRestart=always",
+    "severity": "HIGH"
+  },
+  {
+    "file": "manual_deployment_guide.md",
+    "line": 293,
+    "pattern": "aws_secret_key",
+    "match": "Environment=PATH=/home/ubuntu/kobibot/ve",
+    "context": "WorkingDirectory=/home/ubuntu/kobibot\nEnvironment=PATH=/home/ubuntu/kobibot/venv/bin\nExecStart=/home/ubuntu/kobibot/venv/bin/python production_web_interface.py",
+    "severity": "HIGH"
+  },
+  {
+    "file": "manual_deployment_guide.md",
+    "line": 294,
+    "pattern": "aws_secret_key",
+    "match": "ExecStart=/home/ubuntu/kobibot/venv/bin/",
+    "context": "Environment=PATH=/home/ubuntu/kobibot/venv/bin\nExecStart=/home/ubuntu/kobibot/venv/bin/python production_web_interface.py\nRestart=always",
+    "severity": "HIGH"
+  },
+  {
+    "file": "manual_deployment_guide.md",
+    "line": 312,
+    "pattern": "aws_secret_key",
+    "match": "Environment=PATH=/home/ubuntu/kobibot/ve",
+    "context": "WorkingDirectory=/home/ubuntu/kobibot\nEnvironment=PATH=/home/ubuntu/kobibot/venv/bin\nExecStart=/home/ubuntu/kobibot/venv/bin/python webhook_system.py",
+    "severity": "HIGH"
+  },
+  {
+    "file": "manual_deployment_guide.md",
+    "line": 313,
+    "pattern": "aws_secret_key",
+    "match": "ExecStart=/home/ubuntu/kobibot/venv/bin/",
+    "context": "Environment=PATH=/home/ubuntu/kobibot/venv/bin\nExecStart=/home/ubuntu/kobibot/venv/bin/python webhook_system.py\nRestart=always",
+    "severity": "HIGH"
+  },
+  {
+    "file": "manual_deployment_guide.md",
+    "line": 331,
+    "pattern": "aws_secret_key",
+    "match": "Environment=PATH=/home/ubuntu/kobibot/ve",
+    "context": "WorkingDirectory=/home/ubuntu/kobibot\nEnvironment=PATH=/home/ubuntu/kobibot/venv/bin\nExecStart=/home/ubuntu/kobibot/venv/bin/python customer_onboarding_system.py",
+    "severity": "HIGH"
+  },
+  {
+    "file": "manual_deployment_guide.md",
+    "line": 332,
+    "pattern": "aws_secret_key",
+    "match": "ExecStart=/home/ubuntu/kobibot/venv/bin/",
+    "context": "Environment=PATH=/home/ubuntu/kobibot/venv/bin\nExecStart=/home/ubuntu/kobibot/venv/bin/python customer_onboarding_system.py\nRestart=always",
+    "severity": "HIGH"
+  },
+  {
+    "file": "setup_auto_deploy.sh",
+    "line": 31,
+    "pattern": "aws_secret_key",
+    "match": "Environment=PATH=/home/ubuntu/kobibot/ve",
+    "context": "WorkingDirectory=/home/ubuntu/kobibot\nEnvironment=PATH=/home/ubuntu/kobibot/venv/bin\nEnvironment=GITHUB_WEBHOOK_SECRET=your-github-webhook-secret",
+    "severity": "HIGH"
+  },
+  {
+    "file": "setup_auto_deploy.sh",
+    "line": 34,
+    "pattern": "aws_secret_key",
+    "match": "ExecStart=/home/ubuntu/kobibot/venv/bin/",
+    "context": "Environment=DEPLOY_PORT=9000\nExecStart=/home/ubuntu/kobibot/venv/bin/python auto_deploy.py\nRestart=always",
+    "severity": "HIGH"
+  },
+  {
+    "file": "GITHUB_WEBHOOK_SETUP.md",
+    "line": 106,
+    "pattern": "hardcoded_url_with_auth",
+    "match": "http://3.74.156.223:5004/health      # API\ncurl ht...",
+    "context": "# Tüm endpoint'leri kontrol et\ncurl http://3.74.156.223:5004/health      # API\ncurl http://3.74.156.223:5006/api/system/health  # Admin",
+    "severity": "LOW"
+  },
+  {
+    "file": "GITHUB_WEBHOOK_SETUP.md",
+    "line": 126,
+    "pattern": "hardcoded_url_with_auth",
+    "match": "http://3.74.156.223:9000/deploy/manual\n\n# Logları ...",
+    "context": "# Manuel deploy dene\ncurl -X POST http://3.74.156.223:9000/deploy/manual\n",
+    "severity": "LOW"
+  },
+  {
+    "file": "FINAL_DEPLOYMENT_GUIDE.md",
+    "line": 51,
+    "pattern": "hardcoded_url_with_auth",
+    "match": "http://3.74.156.223:5004/health      # API\ncurl ht...",
+    "context": "# Health check\ncurl http://3.74.156.223:5004/health      # API\ncurl http://3.74.156.223:5006/api/system/health  # Admin  ",
+    "severity": "LOW"
+  }
+]

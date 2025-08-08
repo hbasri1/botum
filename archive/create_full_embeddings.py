@@ -9,7 +9,7 @@ from semantic_product_search import SemanticProductSearch
 
 def main():
     # API key'i ayarla
-    os.environ['GEMINI_API_KEY'] = 'AIzaSyBvbQ_-4RGBGGJJvQxQxQxQxQxQxQxQxQx'
+    os.environ['GEMINI_API_KEY'] = 'your-gemini-api-key-here'
     
     # Temizlenmiş ürünleri yükle
     with open('data/products.json', 'r', encoding='utf-8') as f:

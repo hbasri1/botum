@@ -30,8 +30,14 @@ class TestResult:
 class ComprehensiveTestSystem:
     """Comprehensive testing system for the chatbot"""
     
-    def __init__(self, base_url: str = "http://localhost:5005"):
-        self.base_url = base_url
+    def __init__(self, base_url: str = None, port: int = None):
+        if base_url:
+            self.base_url = base_url
+        elif port:
+            self.base_url = f"http://localhost:{port}"
+        else:
+            # Default to production_web_interface.py port
+            self.base_url = "http://localhost:5004"
         self.results = []
         self.performance_stats = {
             'total_tests': 0,
@@ -528,6 +534,61 @@ class ComprehensiveTestSystem:
         
         print("\n" + "=" * 60)
 
+def run_smoke_test(port: int = 5004):
+    """Run a quick smoke test with essential checks"""
+    print(f"🚀 Running smoke test on port {port}...")
+    
+    tester = ComprehensiveTestSystem(port=port)
+    
+    # Essential smoke tests
+    smoke_tests = [
+        ("merhaba", "greeting"),
+        ("hamile pijama", "product_search"),
+        ("telefon", "contact_info"),
+        ("teşekkürler", "farewell")
+    ]
+    
+    print("\n📋 Smoke Test Results:")
+    print("-" * 50)
+    
+    success_count = 0
+    for message, expected_intent in smoke_tests:
+        try:
+            result = tester._send_request(message)
+            if result.success and result.intent == expected_intent:
+                print(f"✅ {message} -> {result.intent} (confidence: {result.confidence:.2f})")
+                success_count += 1
+            elif result.success:
+                print(f"⚠️  {message} -> {result.intent} (expected: {expected_intent}, confidence: {result.confidence:.2f})")
+                success_count += 0.5  # Partial credit for working but wrong intent
+            else:
+                print(f"❌ {message} -> Failed: {result.error}")
+        except Exception as e:
+            print(f"❌ {message} -> Error: {e}")
+    
+    success_rate = (success_count / len(smoke_tests)) * 100
+    print(f"\n📊 Smoke Test Summary: {success_count}/{len(smoke_tests)} passed ({success_rate:.1f}%)")
+    
+    if success_rate >= 75:
+        print("🎉 Smoke test PASSED! System is ready.")
+        return True
+    else:
+        print("⚠️  Smoke test FAILED! Check system configuration.")
+        return False
+
 if __name__ == "__main__":
-    tester = ComprehensiveTestSystem()
-    tester.run_all_tests()
+    import sys
+    
+    if len(sys.argv) > 1:
+        if sys.argv[1] == "smoke":
+            port = int(sys.argv[2]) if len(sys.argv) > 2 else 5004
+            run_smoke_test(port)
+        elif sys.argv[1] == "full":
+            port = int(sys.argv[2]) if len(sys.argv) > 2 else 5004
+            tester = ComprehensiveTestSystem(port=port)
+            tester.run_all_tests()
+        else:
+            print("Usage: python comprehensive_test_system.py [smoke|full] [port]")
+    else:
+        # Default: run smoke test
+        run_smoke_test()

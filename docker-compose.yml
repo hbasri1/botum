@@ -25,16 +25,78 @@ services:
   chatbot:
     build: .
     ports:
-      - "8000:8000"
+      - "5004:5004"
     depends_on:
       - redis
       - postgres
     environment:
       - DATABASE_URL=postgresql://chatbot_user:chatbot_password@postgres/chatbot_db
       - REDIS_URL=redis://redis:6379/1
+      - GEMINI_API_KEY=${GEMINI_API_KEY}
+      - AWS_BEDROCK_API_KEY=${AWS_BEDROCK_API_KEY}
+      - PORT=5004
     volumes:
       - .:/app
-    command: python orchestrator/app/main.py
+      - ./business_data:/app/business_data
+      - ./data:/app/data
+      - ./uploads:/app/uploads
+    command: python production_web_interface.py
+    
+  admin:
+    build: .
+    ports:
+      - "5006:5006"
+    depends_on:
+      - redis
+      - postgres
+    environment:
+      - DATABASE_URL=postgresql://chatbot_user:chatbot_password@postgres/chatbot_db
+      - REDIS_URL=redis://redis:6379/1
+      - GEMINI_API_KEY=${GEMINI_API_KEY}
+      - AWS_BEDROCK_API_KEY=${AWS_BEDROCK_API_KEY}
+      - ADMIN_PORT=5006
+    volumes:
+      - .:/app
+      - ./business_data:/app/business_data
+      - ./uploads:/app/uploads
+    command: python admin_web_interface.py
+    
+  webhook:
+    build: .
+    ports:
+      - "5007:5007"
+    depends_on:
+      - redis
+      - postgres
+    environment:
+      - DATABASE_URL=postgresql://chatbot_user:chatbot_password@postgres/chatbot_db
+      - REDIS_URL=redis://redis:6379/1
+      - WHATSAPP_VERIFY_TOKEN=${WHATSAPP_VERIFY_TOKEN}
+      - WHATSAPP_ACCESS_TOKEN=${WHATSAPP_ACCESS_TOKEN}
+      - WHATSAPP_WEBHOOK_SECRET=${WHATSAPP_WEBHOOK_SECRET}
+      - WEBHOOK_PORT=5007
+    volumes:
+      - .:/app
+      - ./business_data:/app/business_data
+    command: python webhook_system.py
+    
+  customer:
+    build: .
+    ports:
+      - "5008:5008"
+    depends_on:
+      - redis
+      - postgres
+    environment:
+      - DATABASE_URL=postgresql://chatbot_user:chatbot_password@postgres/chatbot_db
+      - REDIS_URL=redis://redis:6379/1
+      - INSTAGRAM_APP_ID=${INSTAGRAM_APP_ID}
+      - INSTAGRAM_APP_SECRET=${INSTAGRAM_APP_SECRET}
+      - CUSTOMER_PORT=5008
+    volumes:
+      - .:/app
+      - ./business_data:/app/business_data
+    command: python customer_onboarding_system.py
 
 volumes:
   redis_data:

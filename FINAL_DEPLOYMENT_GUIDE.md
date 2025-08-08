@@ -45,26 +45,26 @@ git push origin main  # Otomatik deploy tetiklenir!
 ### Sistem Kontrolü
 ```bash
 # Tüm servislerin durumu
-ssh -i ~/Downloads/kobibot-key.pem ubuntu@3.74.156.223 "sudo systemctl status kobibot-*"
+ssh -i ~/Downloads/kobibot-key.pem ubuntu@YOUR_SERVER_IP "sudo systemctl status kobibot-*"
 
 # Health check
-curl http://3.74.156.223:5004/health      # API
-curl http://3.74.156.223:5006/api/system/health  # Admin  
-curl http://3.74.156.223:5007/webhook/status     # Webhook
-curl http://3.74.156.223:5008/                   # Customer
+curl http://YOUR_SERVER_IP:5004/health      # API
+curl http://YOUR_SERVER_IP:5006/api/system/health  # Admin  
+curl http://YOUR_SERVER_IP:5007/webhook/status     # Webhook
+curl http://YOUR_SERVER_IP:5008/                   # Customer
 ```
 
 ### Acil Durum
 ```bash
 # Manuel deploy
-ssh -i ~/Downloads/kobibot-key.pem ubuntu@3.74.156.223 "
+ssh -i ~/Downloads/kobibot-key.pem ubuntu@YOUR_SERVER_IP "
 cd /home/ubuntu/kobibot && 
 git pull origin main && 
 sudo systemctl restart kobibot-*
 "
 
 # Servisleri yeniden başlat
-ssh -i ~/Downloads/kobibot-key.pem ubuntu@3.74.156.223 "sudo systemctl restart kobibot-api kobibot-admin kobibot-webhook kobibot-customer"
+ssh -i ~/Downloads/kobibot-key.pem ubuntu@YOUR_SERVER_IP "sudo systemctl restart kobibot-api kobibot-admin kobibot-webhook kobibot-customer"
 ```
 
 ## 📋 Meta Developer Console Setup
@@ -86,9 +86,9 @@ Webhook Fields: messages
 
 ### 3. GitHub Webhook
 ```
-URL: http://3.74.156.223:9000/deploy
+URL: http://YOUR_SERVER_IP:9000/deploy
 Content type: application/json
-Secret: kobibot-deploy-secret-2024
+Secret: your-github-webhook-secret
 Events: Just the push event
 ```
 
@@ -96,17 +96,17 @@ Events: Just the push event
 
 kobibot.com domain provider'da:
 ```
-A Record: kobibot.com → 3.74.156.223
-A Record: admin.kobibot.com → 3.74.156.223
-A Record: api.kobibot.com → 3.74.156.223
-A Record: webhook.kobibot.com → 3.74.156.223
-A Record: customer.kobibot.com → 3.74.156.223
-A Record: chat.kobibot.com → 3.74.156.223
+A Record: kobibot.com → YOUR_SERVER_IP
+A Record: admin.kobibot.com → YOUR_SERVER_IP
+A Record: api.kobibot.com → YOUR_SERVER_IP
+A Record: webhook.kobibot.com → YOUR_SERVER_IP
+A Record: customer.kobibot.com → YOUR_SERVER_IP
+A Record: chat.kobibot.com → YOUR_SERVER_IP
 ```
 
 DNS propagation sonrası SSL sertifikaları:
 ```bash
-ssh -i ~/Downloads/kobibot-key.pem ubuntu@3.74.156.223 "
+ssh -i ~/Downloads/kobibot-key.pem ubuntu@YOUR_SERVER_IP "
 sudo certbot --nginx -d kobibot.com -d admin.kobibot.com -d api.kobibot.com -d webhook.kobibot.com -d customer.kobibot.com -d chat.kobibot.com --non-interactive --agree-tos --email admin@kobibot.com
 "
 ```
@@ -115,21 +115,21 @@ sudo certbot --nginx -d kobibot.com -d admin.kobibot.com -d api.kobibot.com -d w
 
 ### Chat Testi
 ```bash
-curl -X POST http://3.74.156.223:5004/chat \
+curl -X POST http://YOUR_SERVER_IP:5004/chat \
   -H "Content-Type: application/json" \
   -d '{"message": "hamile pijama arıyorum"}'
 ```
 
 ### Webhook Testi
 ```bash
-curl -X POST http://3.74.156.223:5007/webhook/test \
+curl -X POST http://YOUR_SERVER_IP:5007/webhook/test \
   -H "Content-Type: application/json" \
   -d '{"phone": "905551234567", "message": "hamile pijama"}'
 ```
 
 ### Instagram Webhook Testi
 ```bash
-curl -X POST http://3.74.156.223:5007/instagram/webhook/test \
+curl -X POST http://YOUR_SERVER_IP:5007/instagram/webhook/test \
   -H "Content-Type: application/json" \
   -d '{"sender_id": "12345", "message": "Instagram test"}'
 ```

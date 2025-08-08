@@ -27,8 +27,8 @@ class AWSBedrockClient:
     def __init__(self):
         """Initialize Bedrock client"""
         
-        # AWS credentials from API key
-        self.api_key = "ABSKQmVkcm9ja0FQSUtleS12OXUzLWF0LTczMDQ3MDA5MDM2MzoxdmVEV2hUZFlCSVJ0K25JWWlUdTgzYlJJajhYWG5jNXpHeStsZWV2SkxtbmZnQ3BQS1Uyd2VaTE9mST0="
+        # AWS credentials from environment variable
+        self.api_key = os.getenv('AWS_BEDROCK_API_KEY', 'your-aws-bedrock-api-key-here')
         
         try:
             # For now, disable Bedrock and use fallback

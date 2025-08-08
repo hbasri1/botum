@@ -85,8 +85,8 @@ sudo systemctl start kobibot-*
 ### 3. DNS Configuration
 AWS Route 53 veya domain provider'da:
 ```
-A Record: kobibot.com → 3.74.156.223
-A Record: *.kobibot.com → 3.74.156.223
+A Record: kobibot.com → YOUR_SERVER_IP
+A Record: *.kobibot.com → YOUR_SERVER_IP
 ```
 
 ### 4. Meta Developer Console Setup

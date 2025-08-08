@@ -147,7 +147,7 @@ class LLMService:
         api_key = os.getenv('GEMINI_API_KEY')
         if not api_key:
             # Geçici çözüm: Google AI Studio'dan alınan API key
-            api_key = "AIzaSyBH7vZKmxqKqKqKqKqKqKqKqKqKqKqKqKq"  # Placeholder
+            api_key = "your-gemini-api-key-here"  # Placeholder
         return api_key
     
     def _initialize_with_api_key(self):

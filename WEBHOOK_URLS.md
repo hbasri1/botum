@@ -26,11 +26,11 @@ OAuth Redirect URI: https://customer.kobibot.com/instagram/callback
 - **Chat Interface**: https://chat.kobibot.com
 
 ### Geçici URL'ler (DNS öncesi)
-- **Ana Site**: http://3.74.156.223:5004
-- **Admin Panel**: http://3.74.156.223:5006
-- **Chat API**: http://3.74.156.223:5004
-- **Webhook**: http://3.74.156.223:5007
-- **Customer Portal**: http://3.74.156.223:5008
+- **Ana Site**: http://YOUR_SERVER_IP:5004
+- **Admin Panel**: http://YOUR_SERVER_IP:5006
+- **Chat API**: http://YOUR_SERVER_IP:5004
+- **Webhook**: http://YOUR_SERVER_IP:5007
+- **Customer Portal**: http://YOUR_SERVER_IP:5008
 
 ## 🧪 Test URL'leri
 
@@ -71,16 +71,16 @@ curl https://webhook.kobibot.com/webhook/status
 ### 3. Instagram Access Token
 Mevcut token'ınız:
 ```
-IGAAVPSog3VRBBZAE5LZAmxPd3dtZAEJ6d0M4ZAl9sZAXhPTmRmTWQtRExhbEtKUkxMbkJRWWZAGLXBhbFU4SDlhODltZAFJvOTlrOFFqVDBZAV2cteGR5ZA1M4NURndGw2bGZAkR3dKVDY5dEc5a0xLdjl6c0ZAnVHFNVU9Idk1felJxZAVpfRQZDZD
+your-instagram-access-token-here
 ```
 
 Bu token sisteme eklendi ve customer onboarding'de kullanılacak.
 
 ## 🔄 GitHub Webhook
 ```
-URL: http://3.74.156.223:9000/deploy
+URL: http://YOUR_SERVER_IP:9000/deploy
 Content type: application/json
-Secret: kobibot-deploy-secret-2024
+Secret: your-github-webhook-secret
 Events: Just the push event
 ```
 

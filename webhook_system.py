@@ -4,6 +4,9 @@ Webhook System - Meta WhatsApp Business API ve Instagram için
 """
 
 from flask import Flask, request, jsonify
+from flask_cors import CORS
+from flask_limiter import Limiter
+from flask_limiter.util import get_remote_address
 import os
 import json
 import logging
@@ -23,6 +26,22 @@ logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
 
 app = Flask(__name__)
+
+# CORS Configuration - Whitelist specific domains
+CORS(app, origins=[
+    "https://api.whatsapp.com",
+    "https://graph.facebook.com", 
+    "https://webhook.your-domain.com",
+    "https://your-domain.com",
+    "http://localhost:5007"  # Development
+])
+
+# Rate Limiting Configuration
+limiter = Limiter(
+    key_func=get_remote_address,
+    default_limits=["200 per day", "50 per hour", "10 per minute"]
+)
+limiter.init_app(app)
 
 # WhatsApp Business API Configuration
 VERIFY_TOKEN = os.getenv('WHATSAPP_VERIFY_TOKEN', 'your-verify-token-here')
@@ -492,6 +511,7 @@ whatsapp_handler = WhatsAppWebhookHandler()
 instagram_handler = InstagramWebhookHandler()
 
 @app.route('/webhook', methods=['GET'])
+@limiter.limit("30 per minute")
 def verify_webhook():
     """WhatsApp webhook verification endpoint"""
     mode = request.args.get('hub.mode')
@@ -508,6 +528,7 @@ def verify_webhook():
         return "Bad Request", 400
 
 @app.route('/instagram/webhook', methods=['GET'])
+@limiter.limit("30 per minute")
 def verify_instagram_webhook():
     """Instagram webhook verification endpoint"""
     mode = request.args.get('hub.mode')
@@ -524,6 +545,7 @@ def verify_instagram_webhook():
         return "Bad Request", 400
 
 @app.route('/webhook', methods=['POST'])
+@limiter.limit("100 per hour")
 def handle_webhook():
     """Handle incoming WhatsApp webhook messages"""
     try:
@@ -547,6 +569,7 @@ def handle_webhook():
         return jsonify({'error': str(e)}), 500
 
 @app.route('/instagram/webhook', methods=['POST'])
+@limiter.limit("100 per hour")
 def handle_instagram_webhook():
     """Handle incoming Instagram webhook messages"""
     try:
@@ -570,6 +593,7 @@ def handle_instagram_webhook():
         return jsonify({'error': str(e)}), 500
 
 @app.route('/webhook/test', methods=['POST'])
+@limiter.limit("20 per minute")
 def test_webhook():
     """Test webhook functionality"""
     try:

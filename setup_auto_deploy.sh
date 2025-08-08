@@ -29,7 +29,7 @@ Type=simple
 User=ubuntu
 WorkingDirectory=/home/ubuntu/kobibot
 Environment=PATH=/home/ubuntu/kobibot/venv/bin
-Environment=GITHUB_WEBHOOK_SECRET=kobibot-deploy-secret-2024
+Environment=GITHUB_WEBHOOK_SECRET=your-github-webhook-secret
 Environment=DEPLOY_PORT=9000
 ExecStart=/home/ubuntu/kobibot/venv/bin/python auto_deploy.py
 Restart=always
@@ -65,7 +65,7 @@ echo "1. GitHub'da webhook ekle:"
 echo "   - Repo Settings > Webhooks > Add webhook"
 echo "   - URL: http://$SERVER_IP:9000/deploy"
 echo "   - Content type: application/json"
-echo "   - Secret: kobibot-deploy-secret-2024"
+echo "   - Secret: your-github-webhook-secret"
 echo "   - Events: Just the push event"
 echo ""
 echo "2. Test deploy:"

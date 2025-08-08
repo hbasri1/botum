@@ -30,7 +30,7 @@ class SimpleSemanticSearch:
             load_dotenv()
             
             api_key = os.getenv('GEMINI_API_KEY')
-            if not api_key or api_key == 'AIzaSyBH7vZKmxqKqKqKqKqKqKqKqKqKqKqKqKq':
+            if not api_key or api_key == 'your-gemini-api-key-here':
                 logger.warning("GEMINI_API_KEY not set or using mock key, embeddings will use fallback")
                 return
             

@@ -40,7 +40,7 @@ async def check_system_status():
     load_dotenv()
     
     gemini_key = os.getenv('GEMINI_API_KEY')
-    if gemini_key and gemini_key != 'AIzaSyBH7vZKmxqKqKqKqKqKqKqKqKqKqKqKqKq':
+    if gemini_key and gemini_key != 'your-gemini-api-key-here':
         print("   ✅ GEMINI_API_KEY: Set (real key)")
     else:
         print("   ⚠️ GEMINI_API_KEY: Not set or using mock key")

@@ -25,9 +25,9 @@ logger = logging.getLogger(__name__)
 app = Flask(__name__)
 
 # WhatsApp Business API Configuration
-VERIFY_TOKEN = os.getenv('WHATSAPP_VERIFY_TOKEN', 'your-verify-token-here')
-WEBHOOK_SECRET = os.getenv('WHATSAPP_WEBHOOK_SECRET', 'your-webhook-secret')
-ACCESS_TOKEN = os.getenv('WHATSAPP_ACCESS_TOKEN', 'your-access-token')
+VERIFY_TOKEN = os.getenv('WHATSAPP_VERIFY_TOKEN', 'your-verify-token-change-this')
+WEBHOOK_SECRET = os.getenv('WHATSAPP_WEBHOOK_SECRET', 'your-webhook-secret-change-this')
+ACCESS_TOKEN = os.getenv('WHATSAPP_ACCESS_TOKEN', 'your-access-token-from-meta')
 
 # Initialize components
 business_manager = get_business_manager()

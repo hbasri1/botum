@@ -20,7 +20,7 @@ logger = logging.getLogger(__name__)
 app = Flask(__name__)
 
 # GitHub webhook secret (güvenlik için)
-WEBHOOK_SECRET = os.getenv('GITHUB_WEBHOOK_SECRET', 'kobibot-deploy-secret-2024')
+WEBHOOK_SECRET = os.getenv('GITHUB_WEBHOOK_SECRET', 'your-github-webhook-secret')
 PROJECT_PATH = '/home/ubuntu/kobibot'
 BRANCH = 'main'
 
@@ -257,7 +257,7 @@ if __name__ == '__main__':
     print("\n📋 GitHub Webhook Setup:")
     print(f"   URL: http://YOUR_SERVER_IP:{port}/deploy")
     print("   Content type: application/json")
-    print("   Secret: kobibot-deploy-secret-2024")
+    print("   Secret: your-github-webhook-secret")
     print("   Events: Just the push event")
     
     app.run(host='0.0.0.0', port=port, debug=False)

@@ -11,7 +11,7 @@ import time
 from typing import Dict, List, Optional, Tuple
 from dataclasses import dataclass
 import google.generativeai as genai
-from fuzzywuzzy import fuzz
+from rapidfuzz import fuzz
 from dotenv import load_dotenv
 from aws_bedrock_integration import get_bedrock_client
 from enhanced_conversation_handler import EnhancedConversationHandler
@@ -46,6 +46,7 @@ class Product:
     final_price: float
     category: str
     stock: int
+    description: str = ""
 
 @dataclass
 class IntentResult:

@@ -14,7 +14,7 @@ class ServerDeployment:
     """Server deployment yöneticisi"""
     
     def __init__(self):
-        self.server_ip = "3.74.156.223"
+        self.server_ip = "YOUR_SERVER_IP"
         self.server_user = "ubuntu"
         self.key_path = "~/Downloads/kobibot-key.pem"
         self.remote_path = "/home/ubuntu/kobibot"
@@ -127,10 +127,10 @@ class ServerDeployment:
         env_content = f"""# Production Environment for kobibot.com
 
 # Google Gemini API Key
-GEMINI_API_KEY=AIzaSyDNcOfDasPMbZdaZ_rkMDQ4u-OraAHbNcI
+GEMINI_API_KEY=your-gemini-api-key-here
 
 # AWS Bedrock API Key
-AWS_BEDROCK_API_KEY=ABSKQmVkcm9ja0FQSUtleS12OXUzLWF0LTczMDQ3MDA5MDM2MzoxdmVEV2hUZFlCSVJ0K25JWWlUdTgzYlJJajhYWG5jNXpHeStsZWV2SkxtbmZnQ3BQS1Uyd2VaTE9mST0=
+AWS_BEDROCK_API_KEY=your-aws-bedrock-api-key-here
 
 # Flask Configuration
 FLASK_ENV=production
@@ -142,9 +142,9 @@ EMBEDDING_BATCH_SIZE=10
 RATE_LIMIT_DELAY=0.5
 
 # WhatsApp Business API Configuration
-WHATSAPP_VERIFY_TOKEN=kobibot-webhook-verify-2024
+WHATSAPP_VERIFY_TOKEN=your-verify-token-change-this
 WHATSAPP_ACCESS_TOKEN=your-access-token-from-meta
-WHATSAPP_WEBHOOK_SECRET=kobibot-webhook-secret-2024
+WHATSAPP_WEBHOOK_SECRET=your-webhook-secret-change-this
 
 # Server Ports
 ADMIN_PORT=5006

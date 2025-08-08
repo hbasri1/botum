@@ -74,3 +74,33 @@ test_results.json
 *.temp
 temp/
 tmp/
+
+# Security - Never commit these
+*.key
+*.pem
+*.p12
+*.pfx
+*.crt
+*.cer
+*.der
+secrets/
+credentials/
+keys/
+*.bak
+*.backup
+*_backup.*
+*_secret.*
+*_key.*
+*_token.*
+*_password.*
+
+# AWS
+.aws/
+aws-credentials
+aws-config
+
+# API Keys and Tokens
+*api_key*
+*access_token*
+*secret_key*
+*private_key*

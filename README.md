@@ -75,7 +75,7 @@ Bu proje, işletmeler için AI destekli, özelleştirilebilir chatbot sistemidir
 `.env` dosyasını güncelleyin:
 ```env
 # Google Gemini API Key
-GEMINI_API_KEY=AIzaSyDNcOfDasPMbZdaZ_rkMDQ4u-OraAHbNcI2
+GEMINI_API_KEY=your-gemini-api-key-here
 
 # WhatsApp Business API
 WHATSAPP_VERIFY_TOKEN=your-verify-token-change-this
